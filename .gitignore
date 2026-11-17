@@ -1,0 +1,5 @@
+cloudflared
+*.log
+server.log
+tunnel.log
+__pycache__/

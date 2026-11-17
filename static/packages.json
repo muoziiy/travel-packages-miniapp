@@ -1,0 +1,48 @@
+[
+  {
+    "id": "umra-lux",
+    "type": "umra",
+    "title": "Umra Lux (Makka va Madina)",
+    "days": "10 kun",
+    "from": "Toshkent",
+    "tiers": [{"name": "Lux", "price_per_person": 1000, "suffix": "+"}],
+    "note": "Guruh umrasi ham bor (14 kun) - narx so'rov bo'yicha"
+  },
+  {
+    "id": "istanbul",
+    "type": "city",
+    "title": "Istanbul",
+    "days": "7 kun",
+    "from": "Toshkent",
+    "tiers": [
+      {"name": "3 yulduzli", "price_per_person": 650},
+      {"name": "4 yulduzli", "price_per_person": 820},
+      {"name": "5 yulduzli", "price_per_person": 1050}
+    ],
+    "note": ""
+  },
+  {
+    "id": "phuket",
+    "type": "city",
+    "title": "Phuket",
+    "days": "7 kun",
+    "from": "Toshkent",
+    "tiers": [
+      {"name": "3 yulduzli", "price_per_person": 980},
+      {"name": "5 yulduzli", "price_per_person": 1150}
+    ],
+    "note": ""
+  },
+  {
+    "id": "dubai",
+    "type": "city",
+    "title": "Dubai",
+    "days": "5 kun",
+    "from": "Toshkent",
+    "tiers": [
+      {"name": "4 yulduzli", "price_per_person": 700},
+      {"name": "5 yulduzli", "price_per_person": 900}
+    ],
+    "note": ""
+  }
+]
