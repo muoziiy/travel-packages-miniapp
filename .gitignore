@@ -3,3 +3,10 @@ cloudflared
 server.log
 tunnel.log
 __pycache__/
+
+# bot secrets and runtime state
+bot/config.json
+bot/*.db
+bot/*.log
+bot/*.pid
+__pycache__/

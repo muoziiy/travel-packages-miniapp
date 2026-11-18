@@ -1,0 +1,12 @@
+{
+  "bot_token": "1234567890:AA-your-bot-token-here",
+  "admin_chat_id": 5635746788,
+  "mode": "manual",
+  "read_receipts": true,
+  "gemini_key": "",
+  "intro_text": "",
+  "system_prompt": "",
+  "system_prompt_file": "agent_prompt.md",
+  "kb_file": "travel_kb.md",
+  "mcp_token": "your-mcp-access-secret"
+}
