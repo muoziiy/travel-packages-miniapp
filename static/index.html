@@ -2,44 +2,87 @@
 <html lang="uz">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="theme-color" content="#17212b">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Safar paketlari: Umra va shahar bo'ylab turlar, yakuniy narx bilan">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <title>Safar paketlar</title>
 <style>
-  :root { --bg:#17212b; --card:#232e3c; --accent:#2ea6ff; --text:#e8eef5; --muted:#8fa3b8; }
+  :root {
+    --bg:#17212b; --card:#202b38; --accent:#2ea6ff; --text:#eef3f8; --muted:#8ba0b5;
+    --border:rgba(255,255,255,.07);
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+  }
   * { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
-  html { -webkit-text-size-adjust:100%; }
-  html, body { overscroll-behavior-y:none; }
-  body { background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; padding:calc(12px + env(safe-area-inset-top)) 12px calc(28px + env(safe-area-inset-bottom)); }
-  h1 { font-size:20px; margin:6px 4px 10px; }
-  .sub { color:var(--muted); font-size:13px; line-height:1.45; margin:0 4px 16px; }
-  .chips { display:flex; gap:8px; margin-bottom:16px; overflow-x:auto; padding:2px 2px 6px; scrollbar-width:none; }
+  html { -webkit-text-size-adjust:100%; overscroll-behavior:none; }
+  body {
+    min-height:100dvh; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding:calc(14px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
+  }
+  h1 { font-size:22px; font-weight:700; letter-spacing:-0.02em; margin:8px 2px 6px; }
+  .sub { color:var(--muted); font-size:13px; line-height:1.5; margin:0 2px 18px; user-select:text; }
+  .chips { display:flex; gap:8px; margin-bottom:18px; overflow-x:auto; padding:2px 2px 4px; scrollbar-width:none; touch-action:pan-x; }
   .chips::-webkit-scrollbar { display:none; }
-  .chip { padding:8px 15px; border-radius:20px; background:var(--card); color:var(--muted); font-size:13px; white-space:nowrap; cursor:pointer; border:1px solid transparent; user-select:none; touch-action:manipulation; transition:transform 100ms ease-out; }
+  .chip {
+    flex:none; padding:8px 16px; border-radius:999px; background:var(--card); color:var(--muted);
+    font-size:13.5px; font-weight:500; white-space:nowrap; cursor:pointer;
+    user-select:none; -webkit-user-select:none; touch-action:manipulation; border:1px solid var(--border);
+    transition:background 150ms var(--ease-out), color 150ms var(--ease-out), border-color 150ms var(--ease-out), transform 160ms var(--ease-out);
+  }
   .chip:active { transform:scale(0.96); }
-  .chip.on { background:rgba(46,166,255,.15); color:var(--accent); border-color:rgba(46,166,255,.4); }
-  .card { background:var(--card); border-radius:16px; margin-bottom:14px; overflow:hidden; }
-  .banner { height:112px; display:flex; align-items:flex-end; padding:12px 14px; font-size:22px; font-weight:700; color:#fff; text-shadow:0 1px 4px rgba(0,0,0,.5); }
-  .inner { padding:12px 14px 14px; }
-  .meta { color:var(--muted); font-size:13px; line-height:1.45; margin-bottom:10px; }
-  .tier { display:flex; justify-content:space-between; padding:9px 0; border-top:1px solid rgba(255,255,255,.07); font-size:14px; }
-  .tier span:last-child { font-weight:700; color:var(--accent); }
-  .note { color:var(--muted); font-size:12px; margin-top:8px; line-height:1.4; }
-  .btn { display:block; margin-top:12px; text-align:center; background:var(--accent); color:#fff; padding:11px; border-radius:10px; font-size:14px; font-weight:600; text-decoration:none; user-select:none; touch-action:manipulation; transition:transform 100ms ease-out; }
-  .btn:active { transform:scale(0.97); }
+  .chip.on { background:rgba(46,166,255,.16); color:var(--accent); border-color:rgba(46,166,255,.35); }
+  .card {
+    background:var(--card); border:1px solid var(--border); border-radius:18px; margin-bottom:16px; overflow:hidden;
+    box-shadow:0 1px 2px rgba(0,0,0,.2), 0 8px 24px rgba(0,0,0,.18);
+    opacity:0; transform:translateY(10px); animation:enter 320ms var(--ease-out) forwards;
+  }
+  .card.no-anim { animation:none; opacity:1; transform:none; }
+  .card:nth-child(2) { animation-delay:50ms; }
+  .card:nth-child(3) { animation-delay:90ms; }
+  .card:nth-child(4) { animation-delay:130ms; }
+  .card:nth-child(n+5) { animation-delay:170ms; }
+  @keyframes enter { to { opacity:1; transform:none; } }
+  .banner {
+    position:relative; height:128px; display:flex; align-items:flex-end; padding:14px 16px;
+    font-size:21px; font-weight:700; letter-spacing:-0.01em; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.45);
+  }
+  .banner::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.35)); }
+  .banner span { position:relative; z-index:1; }
+  .inner { padding:14px 16px 16px; }
+  .meta { color:var(--muted); font-size:13px; line-height:1.5; margin-bottom:12px; user-select:text; }
+  .tier { display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:10px 0; border-top:1px solid var(--border); font-size:14.5px; }
+  .tier .price { font-weight:700; font-size:16px; color:var(--accent); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .note { color:var(--muted); font-size:12.5px; line-height:1.5; margin-top:10px; user-select:text; }
+  .btn {
+    display:block; margin-top:14px; text-align:center; background:var(--accent); color:#fff; padding:12px;
+    border-radius:12px; font-size:15px; font-weight:600; text-decoration:none;
+    user-select:none; -webkit-user-select:none; touch-action:manipulation;
+    box-shadow:0 4px 14px rgba(46,166,255,.28);
+    transition:transform 160ms var(--ease-out), filter 160ms var(--ease-out);
+  }
+  .btn:active { transform:scale(0.97); filter:brightness(.92); }
+  .chip:focus-visible, .btn:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .empty { color:var(--muted); text-align:center; padding:36px 0; font-size:14px; line-height:1.5; }
+  @media (prefers-reduced-motion:reduce) {
+    .card { animation:fade 200ms ease forwards; }
+    @keyframes fade { to { opacity:1; } }
+    .chip, .btn { transition:none; }
+  }
 </style>
 </head>
 <body>
-<h1>✈️ Safar paketlar</h1>
+<h1>Safar paketlar</h1>
 <div class="sub">Yakuniy narx, 1 kishi uchun (2 kishi borasiz), Toshkentdan to'g'ri parvoz</div>
 <div class="chips" id="chips"></div>
 <div id="list"></div>
 <script>
 const tg = window.Telegram && window.Telegram.WebApp;
 if (tg) { tg.ready(); tg.expand(); if (tg.setHeaderColor) tg.setHeaderColor('#17212b'); if (tg.setBackgroundColor) tg.setBackgroundColor('#17212b'); }
-let pkgs = [], filter = 'all';
-const chips = [['all','Hammasi'],['umra','Umra'],['city','Shahar bo\'ylab']];
+let pkgs = [], filter = 'all', firstRender = true;
+const chips = [['all','Hammasi'],['umra','Umra'],['city',"Shahar bo'ylab"]];
 const grads = {
   'umra-lux':'linear-gradient(135deg,#1e5799,#7db9e8)',
   'istanbul':'linear-gradient(135deg,#8e2de2,#4a00e0)',
@@ -51,22 +94,24 @@ const BOOK = 'https://t.me/muoziiy';
 function money(n){ return '$' + n.toLocaleString('en-US'); }
 function renderChips(){
   document.getElementById('chips').innerHTML = chips.map(c =>
-    `<div class="chip ${filter===c[0]?'on':''}" role="button" onclick="setFilter('${c[0]}')">${c[1]}</div>`).join('');
+    `<div class="chip ${filter===c[0]?'on':''}" role="button" tabindex="0" onclick="setFilter('${c[0]}')">${c[1]}</div>`).join('');
 }
 function setFilter(f){ filter = f; renderChips(); render(); }
 function render(){
   const list = document.getElementById('list');
   const shown = pkgs.filter(p => filter==='all' || p.type===filter);
-  list.innerHTML = shown.map(p => `
-    <div class="card">
-      <div class="banner" style="background:${grads[p.id]||'linear-gradient(135deg,#232e3c,#17212b)'}">${emoji[p.type]} ${p.title}</div>
+  const cls = firstRender ? '' : ' no-anim';
+  list.innerHTML = shown.length ? shown.map(p => `
+    <div class="card${cls}">
+      <div class="banner" style="background:${grads[p.id]||'linear-gradient(135deg,#232e3c,#17212b)'}"><span>${emoji[p.type]||''} ${p.title}</span></div>
       <div class="inner">
         <div class="meta">${p.days} · ${p.from}dan · mehmonxona (nonushta), parvoz, transfer${p.type==='city' ? ', viza' : ''}</div>
-        ${p.tiers.map(t => `<div class="tier"><span>${t.name}</span><span>${money(t.price_per_person)}${t.suffix||''}</span></div>`).join('')}
+        ${p.tiers.map(t => `<div class="tier"><span>${t.name}</span><span class="price">${money(t.price_per_person)}${t.suffix||''}</span></div>`).join('')}
         ${p.note ? `<div class="note">${p.note}</div>` : ''}
         <a class="btn" href="${BOOK}" ${tg?'onclick="return openBook(event)"':''}>Band qilish</a>
       </div>
-    </div>`).join('');
+    </div>`).join('') : `<div class="empty">Bu yo'nalishda hozircha paket yo'q.<br>Tez orada qo'shiladi.</div>`;
+  firstRender = false;
 }
 function openBook(e){ e.preventDefault(); tg.openTelegramLink(BOOK); return false; }
 async function load_data(){
