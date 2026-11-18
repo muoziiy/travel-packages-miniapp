@@ -46,7 +46,7 @@
   .card:nth-child(n+5) { animation-delay:170ms; }
   @keyframes enter { to { opacity:1; transform:none; } }
   .banner {
-    position:relative; height:128px; display:flex; align-items:flex-end; padding:14px 16px;
+    position:relative; height:140px; background-size:cover; background-position:center; display:flex; align-items:flex-end; padding:14px 16px;
     font-size:21px; font-weight:700; letter-spacing:-0.01em; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.45);
   }
   .banner::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.35)); }
@@ -56,6 +56,22 @@
   .tier { display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:10px 0; border-top:1px solid var(--border); font-size:14.5px; }
   .tier .price { font-weight:700; font-size:16px; color:var(--accent); font-variant-numeric:tabular-nums; white-space:nowrap; }
   .note { color:var(--muted); font-size:12.5px; line-height:1.5; margin-top:10px; user-select:text; }
+  .more-btn {
+    width:100%; display:flex; align-items:center; justify-content:center; gap:6px; margin-top:14px; padding:10px;
+    border-radius:10px; background:transparent; border:1px solid var(--border); color:var(--text);
+    font-size:13.5px; font-weight:500; cursor:pointer; font-family:inherit;
+    user-select:none; -webkit-user-select:none; touch-action:manipulation;
+    transition:transform 160ms var(--ease-out), background 150ms var(--ease-out);
+  }
+  .more-btn:active { transform:scale(0.97); background:rgba(255,255,255,.04); }
+  .more-btn .chev { display:inline-block; transition:transform 200ms var(--ease-out); }
+  .more-btn.open .chev { transform:rotate(180deg); }
+  .more-body { display:grid; grid-template-rows:0fr; transition:grid-template-rows 250ms var(--ease-out); }
+  .more-body.open { grid-template-rows:1fr; }
+  .more-inner { overflow:hidden; min-height:0; }
+  .more-list { list-style:none; padding:10px 2px 0; }
+  .more-list li { display:flex; gap:8px; font-size:13px; color:var(--muted); padding:5px 0; line-height:1.45; user-select:text; }
+  .more-list li::before { content:'✓'; color:var(--accent); font-weight:700; }
   .btn {
     display:block; margin-top:14px; text-align:center; background:var(--accent); color:#fff; padding:12px;
     border-radius:12px; font-size:15px; font-weight:600; text-decoration:none;
@@ -97,17 +113,20 @@ function renderChips(){
     `<div class="chip ${filter===c[0]?'on':''}" role="button" tabindex="0" onclick="setFilter('${c[0]}')">${c[1]}</div>`).join('');
 }
 function setFilter(f){ filter = f; renderChips(); render(); }
+function toggleInfo(btn){ btn.classList.toggle('open'); btn.nextElementSibling.classList.toggle('open'); }
 function render(){
   const list = document.getElementById('list');
   const shown = pkgs.filter(p => filter==='all' || p.type===filter);
   const cls = firstRender ? '' : ' no-anim';
   list.innerHTML = shown.length ? shown.map(p => `
     <div class="card${cls}">
-      <div class="banner" style="background:${grads[p.id]||'linear-gradient(135deg,#232e3c,#17212b)'}"><span>${emoji[p.type]||''} ${p.title}</span></div>
+      <div class="banner" style="background-image:url('img/${p.id}.jpg'),${grads[p.id]||'linear-gradient(135deg,#232e3c,#17212b)'}"><span>${emoji[p.type]||''} ${p.title}</span></div>
       <div class="inner">
         <div class="meta">${p.days} · ${p.from}dan · mehmonxona (nonushta), parvoz, transfer${p.type==='city' ? ', viza' : ''}</div>
         ${p.tiers.map(t => `<div class="tier"><span>${t.name}</span><span class="price">${money(t.price_per_person)}${t.suffix||''}</span></div>`).join('')}
         ${p.note ? `<div class="note">${p.note}</div>` : ''}
+        <button class="more-btn" onclick="toggleInfo(this)">Batafsil ma'lumot <span class="chev">▾</span></button>
+        <div class="more-body"><div class="more-inner"><ul class="more-list">${(p.info||[]).map(i=>`<li>${i}</li>`).join('')}</ul></div></div>
         <a class="btn" href="${BOOK}" ${tg?'onclick="return openBook(event)"':''}>Band qilish</a>
       </div>
     </div>`).join('') : `<div class="empty">Bu yo'nalishda hozircha paket yo'q.<br>Tez orada qo'shiladi.</div>`;

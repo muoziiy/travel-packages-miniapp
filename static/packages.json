@@ -5,8 +5,21 @@
     "title": "Umra Lux (Makka va Madina)",
     "days": "10 kun",
     "from": "Toshkent",
-    "tiers": [{"name": "Lux", "price_per_person": 1000, "suffix": "+"}],
-    "note": "Guruh umrasi ham bor (14 kun) - narx so'rov bo'yicha"
+    "tiers": [
+      {
+        "name": "Lux",
+        "price_per_person": 1000,
+        "suffix": "+"
+      }
+    ],
+    "note": "Guruh umrasi ham bor (14 kun) - narx so'rov bo'yicha",
+    "info": [
+      "Makka va Madina ziyoratlari",
+      "To'g'ri parvoz Toshkentdan",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+      "Umra vizasi (50$ / kishi)",
+      "Guruh umrasi ham bor (14 kun) — narx so'rov bo'yicha"
+    ]
   },
   {
     "id": "istanbul",
@@ -15,11 +28,26 @@
     "days": "7 kun",
     "from": "Toshkent",
     "tiers": [
-      {"name": "3 yulduzli", "price_per_person": 650},
-      {"name": "4 yulduzli", "price_per_person": 820},
-      {"name": "5 yulduzli", "price_per_person": 1050}
+      {
+        "name": "3 yulduzli",
+        "price_per_person": 650
+      },
+      {
+        "name": "4 yulduzli",
+        "price_per_person": 820
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": 1050
+      }
     ],
-    "note": ""
+    "note": "",
+    "info": [
+      "7 kun / 6 tun",
+      "To'g'ri parvoz Toshkentdan",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+      "Viza (50$ / kishi)"
+    ]
   },
   {
     "id": "phuket",
@@ -28,10 +56,22 @@
     "days": "7 kun",
     "from": "Toshkent",
     "tiers": [
-      {"name": "3 yulduzli", "price_per_person": 980},
-      {"name": "5 yulduzli", "price_per_person": 1150}
+      {
+        "name": "3 yulduzli",
+        "price_per_person": 980
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": 1150
+      }
     ],
-    "note": ""
+    "note": "",
+    "info": [
+      "7 kun / 6 tun",
+      "To'g'ri parvoz Toshkentdan",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+      "Viza (50$ / kishi)"
+    ]
   },
   {
     "id": "dubai",
@@ -40,9 +80,21 @@
     "days": "5 kun",
     "from": "Toshkent",
     "tiers": [
-      {"name": "4 yulduzli", "price_per_person": 700},
-      {"name": "5 yulduzli", "price_per_person": 900}
+      {
+        "name": "4 yulduzli",
+        "price_per_person": 700
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": 900
+      }
     ],
-    "note": ""
+    "note": "",
+    "info": [
+      "5 kun / 4 tun",
+      "To'g'ri parvoz Toshkentdan",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+      "Viza (50$ / kishi)"
+    ]
   }
 ]
