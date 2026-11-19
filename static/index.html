@@ -258,7 +258,7 @@ async function boot(){
   if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 window.addEventListener('hashchange', route);
-boot();
+boot().catch(e => { app.innerHTML = `<div class=\"empty\" style=\"padding-top:80px\">Yuklanmadi 🔄<br><br><button class=\"cta\" onclick=\"location.reload()\">Qayta yuklash</button></div>`; });
 </script>
 </body>
 </html>
