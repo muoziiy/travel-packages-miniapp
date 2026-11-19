@@ -480,6 +480,38 @@ ADMIN_CMDS = {
 }
 
 
+
+
+def handle_lead(msg):
+    """Mini app 'Request pricing' web_app_data (message.web_app_data)."""
+    try:
+        payload = json.loads((msg.get("web_app_data") or {}).get("data") or "{}")
+    except Exception:
+        payload = {}
+    if not payload.get("fo_lead"):
+        return
+    contact = str(payload.get("contact") or "").strip()
+    how = {"call": "Telefon", "tg": "Telegram"}.get(payload.get("how"), "Telegram")
+    u = payload.get("user") or {}
+    uname = ("@" + u["username"]) if u.get("username") else ""
+    label = " / ".join(x for x in [u.get("name"), uname, f"id {u.get('id')}" if u.get("id") else ""] if x) or "-"
+    when = time.strftime("%d.%m %H:%M")
+    hotel = payload.get("hotel") or ""
+    tier = payload.get("tier") or ""
+    where = payload.get("city") or "?"
+    if hotel:
+        where += f" \u2014 {hotel}" if False else " - " + hotel
+    elif tier:
+        where += " - " + tier
+    text = ("\U0001F195 NARX SO'RUVI - mini app\n"
+            f"Shahar: {where}\n"
+            f"Bog'lanish: {contact}\n"
+            f"Turi: {how}\n"
+            f"Foydalanuvchi: {label}\n"
+            f"Vaqt: {when}")
+    tell_admin(text)
+    log.info("lead %s %s %s", where, how, contact)
+
 def handle_admin_message(msg):
     text = (msg.get("text") or "").strip()
     if not text.startswith("/"):
@@ -553,7 +585,9 @@ def main():
                         chat = m.get("chat", {})
                         if chat.get("type") != "private":
                             continue  # never use or message groups
-                        if chat.get("id") == ADMIN:
+                        if "web_app_data" in m:
+                            handle_lead(m)
+                        elif chat.get("id") == ADMIN:
                             handle_admin_message(m)
                         elif (m.get("text") or "").strip().lower().startswith(("/start", "/help")):
                             tg("sendMessage", {"chat_id": chat["id"],

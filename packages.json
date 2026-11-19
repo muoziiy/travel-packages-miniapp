@@ -1,898 +1,1277 @@
 [
-  {
-    "id": "istanbul",
-    "type": "city",
-    "title": "Istanbul",
-    "country": "Turkiya",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "direct": true,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": 650
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": 820
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 1050
-      }
-    ],
-    "attractions": [
-      {
-        "name": "Ayasofya masjidi",
-        "img": "img/a/istanbul-0.jpg",
-        "desc": "1500 yillik tarix: 537-yilda qurilgan Rim bazilikasidan masjiga aylangan me'moriy mo'jiza ✨ Gumbazi deyarli 1000 yil davomida dunyodagi eng kattasi bo'lib qoldi.",
-        "bt": "Tong 08:00-10:00",
-        "dur": "1-1.5 soat",
-        "tip": "Namoz vaqtlarida turistlarga ichki qism yopiladi, shunga reja tuzing",
-        "imgs": [
-          "img/a/istanbul-0.jpg",
-          "img/a/istanbul-0-3.jpg",
-          "img/a/istanbul-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Sultonahmad masjidi (Ko'k masjid)",
-        "img": "img/a/istanbul-1.jpg",
-        "desc": "1616-yilda qurilgan 6 minorali masjid 🕌 Ichi 20 000 dan ortiq ko'k iznik plitkalari bilan bezatilgan, shu rangi uchun 'Ko'k masjid' deb ataladi.",
-        "bt": "Tong, sokin soatlarda",
-        "dur": "45-60 daqiqa",
-        "tip": "Yopinqlar bilan keling, kirishda beriladigan yopinqlar ham bor",
-        "imgs": [
-          "img/a/istanbul-1.jpg",
-          "img/a/istanbul-1-3.jpg",
-          "img/a/istanbul-1-4.jpg"
-        ]
-      },
-      {
-        "name": "Topqapi saroyi",
-        "img": "img/a/istanbul-2.jpg",
-        "desc": "Usmonli sultonlar 400 yil yashagan saroy 👑 Xazina, hovlilar va Bosphor manzarali terrasalari bilan dunyodagi eng katta saroylardan biri.",
-        "bt": "08:30-10:00, ochilishda",
-        "dur": "2-3 soat",
-        "tip": "Xazina bo'limi uchun alohida navbat bor - birinchi navbat unga boring",
-        "imgs": [
-          "img/a/istanbul-2.jpg",
-          "img/a/istanbul-2-3.jpg",
-          "img/a/istanbul-2-4.jpg"
-        ]
-      },
-      {
-        "name": "Bosfor bo'g'ozi parom sayohati",
-        "img": "img/a/istanbul-3.jpg",
-        "desc": "Ikki qit'ani bog'lovchi 30 kmlik bo'g'oz bo'ylab kruiz 🌊 Saroylar, qal'alar va Yevropa-Osiyo osmon chizig'i suvdan ko'rinadi.",
-        "bt": "Quyosh botishi oldi (18:00-19:30)",
-        "dur": "1.5 soat",
-        "tip": "Yuqori palubaning o'ng tomonidagi o'rindiq - eng yaxshi manzara",
-        "imgs": [
-          "img/a/istanbul-3.jpg",
-          "img/a/istanbul-3-3.jpg",
-          "img/a/istanbul-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Gran Bozor",
-        "img": "img/a/istanbul-4.jpg",
-        "desc": "1461-yildan beri ishlaydigan 4000 do'konli o'rta asr bozori 🛍️ Ziravorlar, gilam, zargarlik va hunarmandchilik — savdo qilib chiqishga bir kun kerak.",
-        "bt": "10:00-15:00",
-        "dur": "2 soat",
-        "tip": "Narxlar birinchi so'ralganidan 30-40% past bo'ladi, savdolashish odat",
-        "imgs": [
-          "img/a/istanbul-4.jpg",
-          "img/a/istanbul-4-3.jpg",
-          "img/a/istanbul-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Ottoman Hotel Park",
-        "Sirkeci Mansion"
-      ],
-      "4 yulduzli": [
-        "Hotel Ibrahim Pasha",
-        "DoubleTree by Hilton Istanbul Old Town"
-      ],
-      "5 yulduzli": [
-        "CVK Park Bosphorus",
-        "Swissotel The Bosphorus",
-        "Shangri-La Bosphorus"
+ {
+  "id": "istanbul",
+  "type": "city",
+  "title": "Istanbul",
+  "country": "Turkiya",
+  "days": "7 kun",
+  "from": "Toshkent",
+  "direct": true,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": 650,
+    "hotels_data": [
+     {
+      "n": "Ottoman Hotel Park",
+      "pending": true
+     },
+     {
+      "n": "Sirkeci Mansion",
+      "rn": "Sirkeci Mansion Hotel",
+      "s": 4,
+      "r": "9.8",
+      "rc": 4172,
+      "a": "Taya Hatun Cad., 5, Istanbul",
+      "im": [
+       "hotels/istanbul_0_1_0.jpg",
+       "hotels/istanbul_0_1_1.jpg",
+       "hotels/istanbul_0_1_2.jpg"
       ]
-    },
-    "info": [
-      "7 kun / 6 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ],
-    "note": "",
-    "vibes": [
-      "cultural",
-      "family",
-      "friends",
-      "couples",
-      "honeymoon"
-    ],
-    "things_to_do": [
-      "Bosfor kechki kruizi",
-      "Hammam (turk cho'milxonasi)",
-      "Istiklol ko'chasi bo'ylab sayr",
-      "Gran Bozorda savdo"
-    ],
-    "featured": "Madaniyat va tarix sevgililariga",
-    "gallery": [
-      "img/g/istanbul-0.jpg",
-      "img/g/istanbul-1.jpg",
-      "img/g/istanbul-2.jpg",
-      "img/g/istanbul-3.jpg",
-      "img/g/istanbul-4.jpg",
-      "img/g/istanbul-5.jpg"
+     }
     ]
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": 820,
+    "hotels_data": [
+     {
+      "n": "Hotel Ibrahim Pasha",
+      "pending": true
+     },
+     {
+      "n": "DoubleTree by Hilton Istanbul Old Town",
+      "pending": true
+     }
+    ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": 1050,
+    "hotels_data": [
+     {
+      "n": "CVK Park Bosphorus",
+      "pending": true
+     },
+     {
+      "n": "Swissotel The Bosphorus",
+      "pending": true
+     },
+     {
+      "n": "Shangri-La Bosphorus",
+      "pending": true
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Ayasofya masjidi",
+    "img": "img/a/istanbul-0.jpg",
+    "desc": "1500 yillik tarix: 537-yilda qurilgan Rim bazilikasidan masjiga aylangan me'moriy mo'jiza ✨ Gumbazi deyarli 1000 yil davomida dunyodagi eng kattasi bo'lib qoldi.",
+    "bt": "Tong 08:00-10:00",
+    "dur": "1-1.5 soat",
+    "tip": "Namoz vaqtlarida turistlarga ichki qism yopiladi, shunga reja tuzing",
+    "imgs": [
+     "img/a/istanbul-0.jpg",
+     "img/a/istanbul-0-3.jpg",
+     "img/a/istanbul-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Sultonahmad masjidi (Ko'k masjid)",
+    "img": "img/a/istanbul-1.jpg",
+    "desc": "1616-yilda qurilgan 6 minorali masjid 🕌 Ichi 20 000 dan ortiq ko'k iznik plitkalari bilan bezatilgan, shu rangi uchun 'Ko'k masjid' deb ataladi.",
+    "bt": "Tong, sokin soatlarda",
+    "dur": "45-60 daqiqa",
+    "tip": "Yopinqlar bilan keling, kirishda beriladigan yopinqlar ham bor",
+    "imgs": [
+     "img/a/istanbul-1.jpg",
+     "img/a/istanbul-1-3.jpg",
+     "img/a/istanbul-1-4.jpg"
+    ]
+   },
+   {
+    "name": "Topqapi saroyi",
+    "img": "img/a/istanbul-2.jpg",
+    "desc": "Usmonli sultonlar 400 yil yashagan saroy 👑 Xazina, hovlilar va Bosphor manzarali terrasalari bilan dunyodagi eng katta saroylardan biri.",
+    "bt": "08:30-10:00, ochilishda",
+    "dur": "2-3 soat",
+    "tip": "Xazina bo'limi uchun alohida navbat bor - birinchi navbat unga boring",
+    "imgs": [
+     "img/a/istanbul-2.jpg",
+     "img/a/istanbul-2-3.jpg",
+     "img/a/istanbul-2-4.jpg"
+    ]
+   },
+   {
+    "name": "Bosfor bo'g'ozi parom sayohati",
+    "img": "img/a/istanbul-3.jpg",
+    "desc": "Ikki qit'ani bog'lovchi 30 kmlik bo'g'oz bo'ylab kruiz 🌊 Saroylar, qal'alar va Yevropa-Osiyo osmon chizig'i suvdan ko'rinadi.",
+    "bt": "Quyosh botishi oldi (18:00-19:30)",
+    "dur": "1.5 soat",
+    "tip": "Yuqori palubaning o'ng tomonidagi o'rindiq - eng yaxshi manzara",
+    "imgs": [
+     "img/a/istanbul-3.jpg",
+     "img/a/istanbul-3-3.jpg",
+     "img/a/istanbul-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Gran Bozor",
+    "img": "img/a/istanbul-4.jpg",
+    "desc": "1461-yildan beri ishlaydigan 4000 do'konli o'rta asr bozori 🛍️ Ziravorlar, gilam, zargarlik va hunarmandchilik — savdo qilib chiqishga bir kun kerak.",
+    "bt": "10:00-15:00",
+    "dur": "2 soat",
+    "tip": "Narxlar birinchi so'ralganidan 30-40% past bo'ladi, savdolashish odat",
+    "imgs": [
+     "img/a/istanbul-4.jpg",
+     "img/a/istanbul-4-3.jpg",
+     "img/a/istanbul-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Ottoman Hotel Park",
+    "Sirkeci Mansion"
+   ],
+   "4 yulduzli": [
+    "Hotel Ibrahim Pasha",
+    "DoubleTree by Hilton Istanbul Old Town"
+   ],
+   "5 yulduzli": [
+    "CVK Park Bosphorus",
+    "Swissotel The Bosphorus",
+    "Shangri-La Bosphorus"
+   ]
   },
-  {
-    "id": "dubai",
-    "type": "city",
-    "title": "Dubai",
-    "country": "BAA",
-    "days": "5 kun",
-    "from": "Toshkent",
-    "direct": true,
-    "tiers": [
-      {
-        "name": "4 yulduzli",
-        "price_per_person": 700
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 900
-      }
-    ],
-    "attractions": [
-      {
-        "name": "Burj Khalifa",
-        "img": "img/a/dubai-0.jpg",
-        "desc": "828 metr, dunyoning eng baland binosi ✨ 124-qavatdagi kuzatuv maydonchasidan butun shahar ko'rinadi, tunda yorug'lik shousi alohida.",
-        "bt": "Kechqurun 17:30-19:00",
-        "dur": "1-1.5 soat",
-        "tip": "Chiptani oldindan onlayn oling, tonggi slotlar arzonroq",
-        "imgs": [
-          "img/a/dubai-0.jpg",
-          "img/a/dubai-0-3.jpg",
-          "img/a/dubai-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Dubai Fountain shousi",
-        "img": "img/a/dubai-1.jpg",
-        "desc": "Burj Khalifa ostida har 30 daqiqada boshlanadigan musiqali suv shousi 🌊 Suv oqimlari 150 metr balandlikka otiladi.",
-        "bt": "Kechqurun shoular, 18:00 dan",
-        "dur": "30-45 daqiqa",
-        "tip": "Eng yaxshi ko'rish nuqtasi Souk Al Bahar ko'prigi tomoni",
-        "imgs": [
-          "img/a/dubai-1.jpg",
-          "img/a/dubai-1-3.jpg",
-          "img/a/dubai-1-4.jpg"
-        ]
-      },
-      {
-        "name": "Dubai Mall",
-        "img": "img/a/dubai-2.jpg",
-        "desc": "1200 do'kon, ulkan akvarium va muz saroyi bilan dunyoning eng katta savdo markazlaridan biri 🛍️",
-        "bt": "Kun bo'yi, tunda ham ochiq",
-        "dur": "3-4 soat",
-        "tip": "Akvarium uchun kombinatsiyalangan chipta oldindan arzonroq",
-        "imgs": [
-          "img/a/dubai-2.jpg",
-          "img/a/dubai-2-3.jpg",
-          "img/a/dubai-2-4.jpg"
-        ]
-      },
-      {
-        "name": "Palm Jumeirah",
-        "img": "img/a/dubai-3.jpg",
-        "desc": "Dengizga qurilgan palma shaklidagi sun'iy orol 🌴 Atlantis mehmonxonasi va o'z plyajlari bilan dam olish markazi.",
-        "bt": "Kechqurun yoritish vaqti",
-        "dur": "2-3 soat",
-        "tip": "The View at The Palm maydonchasidan palma shakli to'liq ko'rinadi",
-        "imgs": [
-          "img/a/dubai-3.jpg",
-          "img/a/dubai-3-3.jpg",
-          "img/a/dubai-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Dubai Miracle Garden",
-        "img": "img/a/dubai-4.jpg",
-        "desc": "150 million gul bilan qurilgan dunyodagi eng katta gul bog'i 🌸 Noyabrdan maygacha ochiq bo'ladi.",
-        "bt": "Tong 09:00-11:00",
-        "dur": "2 soat",
-        "tip": "May-oktabr oylarida yopiq, noyabr-aprel orasida borish kerak",
-        "imgs": [
-          "img/a/dubai-4.jpg",
-          "img/a/dubai-4-3.jpg",
-          "img/a/dubai-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "4 yulduzli": [
-        "Rove Downtown",
-        "Millennium Atria Business Bay"
-      ],
-      "5 yulduzli": [
-        "Address Downtown",
-        "Atlantis The Palm"
+  "info": [
+   "7 kun / 6 tun",
+   "To'g'ri parvoz Toshkentdan",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+   "Viza (50$ / kishi)"
+  ],
+  "note": "",
+  "vibes": [
+   "cultural",
+   "family",
+   "friends",
+   "couples",
+   "honeymoon"
+  ],
+  "things_to_do": [
+   "Bosfor kechki kruizi",
+   "Hammam (turk cho'milxonasi)",
+   "Istiklol ko'chasi bo'ylab sayr",
+   "Gran Bozorda savdo"
+  ],
+  "featured": "Madaniyat va tarix sevgililariga",
+  "gallery": [
+   "img/g/istanbul-0.jpg",
+   "img/g/istanbul-1.jpg",
+   "img/g/istanbul-2.jpg",
+   "img/g/istanbul-3.jpg",
+   "img/g/istanbul-4.jpg",
+   "img/g/istanbul-5.jpg"
+  ]
+ },
+ {
+  "id": "dubai",
+  "type": "city",
+  "title": "Dubai",
+  "country": "BAA",
+  "days": "5 kun",
+  "from": "Toshkent",
+  "direct": true,
+  "tiers": [
+   {
+    "name": "4 yulduzli",
+    "price_per_person": 700,
+    "hotels_data": [
+     {
+      "n": "Rove Downtown",
+      "rn": "Rove Downtown Dubai Hotel",
+      "s": 3,
+      "r": "9.6",
+      "rc": 6570,
+      "a": "312 Al Mustaqbal Street, Za'abeel 2, Dubai",
+      "im": [
+       "hotels/dubai_0_0_0.jpg",
+       "hotels/dubai_0_0_1.jpg",
+       "hotels/dubai_0_0_2.jpg"
       ]
-    },
-    "info": [
-      "5 kun / 4 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ],
-    "note": "",
-    "vibes": [
-      "family",
-      "couples",
-      "experience"
-    ],
-    "things_to_do": [
-      "Cho'lda safari va barbekyu",
-      "Dhow kruizi Dubay ko'rfazida",
-      "Ski Dubai (ichki chang'i)",
-      "Global Village kechki sayohat"
-    ],
-    "featured": "Oila bilan dam olish uchun",
-    "gallery": [
-      "img/g/dubai-0.jpg",
-      "img/g/dubai-1.jpg",
-      "img/g/dubai-2.jpg",
-      "img/g/dubai-3.jpg"
+     },
+     {
+      "n": "Millennium Atria Business Bay",
+      "rn": "Millennium Atria Business Bay",
+      "s": 4,
+      "r": "9.5",
+      "rc": 1195,
+      "a": "Al Abraj Street, Business Bay, Dubai",
+      "im": [
+       "hotels/dubai_0_1_0.jpg",
+       "hotels/dubai_0_1_1.jpg",
+       "hotels/dubai_0_1_2.jpg"
+      ]
+     }
     ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": 900,
+    "hotels_data": [
+     {
+      "n": "Address Downtown",
+      "pending": true
+     },
+     {
+      "n": "Atlantis The Palm",
+      "rn": "Atlantis, The Palm",
+      "s": 5,
+      "r": "9.4",
+      "rc": 12313,
+      "a": "Crescent Road, The Palm, Dubai",
+      "im": [
+       "hotels/dubai_1_1_0.jpg",
+       "hotels/dubai_1_1_1.jpg",
+       "hotels/dubai_1_1_2.jpg"
+      ]
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Burj Khalifa",
+    "img": "img/a/dubai-0.jpg",
+    "desc": "828 metr, dunyoning eng baland binosi ✨ 124-qavatdagi kuzatuv maydonchasidan butun shahar ko'rinadi, tunda yorug'lik shousi alohida.",
+    "bt": "Kechqurun 17:30-19:00",
+    "dur": "1-1.5 soat",
+    "tip": "Chiptani oldindan onlayn oling, tonggi slotlar arzonroq",
+    "imgs": [
+     "img/a/dubai-0.jpg",
+     "img/a/dubai-0-3.jpg",
+     "img/a/dubai-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Dubai Fountain shousi",
+    "img": "img/a/dubai-1.jpg",
+    "desc": "Burj Khalifa ostida har 30 daqiqada boshlanadigan musiqali suv shousi 🌊 Suv oqimlari 150 metr balandlikka otiladi.",
+    "bt": "Kechqurun shoular, 18:00 dan",
+    "dur": "30-45 daqiqa",
+    "tip": "Eng yaxshi ko'rish nuqtasi Souk Al Bahar ko'prigi tomoni",
+    "imgs": [
+     "img/a/dubai-1.jpg",
+     "img/a/dubai-1-3.jpg",
+     "img/a/dubai-1-4.jpg"
+    ]
+   },
+   {
+    "name": "Dubai Mall",
+    "img": "img/a/dubai-2.jpg",
+    "desc": "1200 do'kon, ulkan akvarium va muz saroyi bilan dunyoning eng katta savdo markazlaridan biri 🛍️",
+    "bt": "Kun bo'yi, tunda ham ochiq",
+    "dur": "3-4 soat",
+    "tip": "Akvarium uchun kombinatsiyalangan chipta oldindan arzonroq",
+    "imgs": [
+     "img/a/dubai-2.jpg",
+     "img/a/dubai-2-3.jpg",
+     "img/a/dubai-2-4.jpg"
+    ]
+   },
+   {
+    "name": "Palm Jumeirah",
+    "img": "img/a/dubai-3.jpg",
+    "desc": "Dengizga qurilgan palma shaklidagi sun'iy orol 🌴 Atlantis mehmonxonasi va o'z plyajlari bilan dam olish markazi.",
+    "bt": "Kechqurun yoritish vaqti",
+    "dur": "2-3 soat",
+    "tip": "The View at The Palm maydonchasidan palma shakli to'liq ko'rinadi",
+    "imgs": [
+     "img/a/dubai-3.jpg",
+     "img/a/dubai-3-3.jpg",
+     "img/a/dubai-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Dubai Miracle Garden",
+    "img": "img/a/dubai-4.jpg",
+    "desc": "150 million gul bilan qurilgan dunyodagi eng katta gul bog'i 🌸 Noyabrdan maygacha ochiq bo'ladi.",
+    "bt": "Tong 09:00-11:00",
+    "dur": "2 soat",
+    "tip": "May-oktabr oylarida yopiq, noyabr-aprel orasida borish kerak",
+    "imgs": [
+     "img/a/dubai-4.jpg",
+     "img/a/dubai-4-3.jpg",
+     "img/a/dubai-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "4 yulduzli": [
+    "Rove Downtown",
+    "Millennium Atria Business Bay"
+   ],
+   "5 yulduzli": [
+    "Address Downtown",
+    "Atlantis The Palm"
+   ]
   },
-  {
-    "id": "phuket",
-    "type": "city",
-    "title": "Phuket",
-    "country": "Tailand",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "direct": true,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": 980
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 1150
-      }
-    ],
-    "attractions": [
-      {
-        "name": "Patong plyaji",
-        "img": "img/a/phuket-0.jpg",
-        "desc": "Suv sportlari va tungi hayot markazi, 3 km oq qumli plyaj 🏖️ Kechqurun Bangla Road gavjum bo'ladi.",
-        "bt": "Erta tong suv sportlari",
-        "dur": "Kun bo'yi",
-        "tip": "Jet ski va parasailing narxlarini oldindan kelishib oling",
-        "imgs": [
-          "img/a/phuket-0.jpg",
-          "img/a/phuket-0-3.jpg",
-          "img/a/phuket-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Katta Budda haykali",
-        "img": "img/a/phuket-1.jpg",
-        "desc": "45 metrli oq marmar Budda haykali 🛕 Nakkerd tepasida turib butun orolni ko'rish mumkin.",
-        "bt": "Tong 08:00-10:00, salqin",
-        "dur": "1-1.5 soat",
-        "tip": "Yelkalar yopiq kiyim kerak, kirishda sarong beriladi",
-        "imgs": [
-          "img/a/phuket-1.jpg",
-          "img/a/phuket-1-3.jpg",
-          "img/a/phuket-1-4.jpg"
-        ]
-      },
-      {
-        "name": "Phi Phi orollari ekskursiyasi",
-        "img": "img/a/phuket-2.jpg",
-        "desc": "Tez qayiqda bir kunlik ekskursiya 🏝️ Maya Bay, snorkeley va baliqlar orasida suzish kiritilgan.",
-        "bt": "Noyabr-aprel, dengiz tinch",
-        "dur": "Kun bo'yi (7:30-17:00)",
-        "tip": "Maya Bay tashrif cheklovlarini tur operatoridan so'rang",
-        "imgs": [
-          "img/a/phuket-2.jpg",
-          "img/a/phuket-2-3.jpg",
-          "img/a/phuket-2-4.jpg"
-        ]
-      },
-      {
-        "name": "Karon plyaji",
-        "img": "img/a/phuket-3.jpg",
-        "desc": "Patongdan tinchroq, uzun qumli plyaj 🏖️ Maishiy muhit saqlangan, kunduzi sokin dam olish uchun qulay.",
-        "bt": "Kun bo'yi",
-        "dur": "2-3 soat",
-        "tip": "Janubiy uchi sokinroq, oila bilan uchun qulay",
-        "imgs": [
-          "img/a/phuket-3.jpg",
-          "img/a/phuket-3-3.jpg",
-          "img/a/phuket-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Promthep burni (quyosh botishi)",
-        "img": "img/a/phuket-4.jpg",
-        "desc": "Orolning eng mashhur quyosh botish nuqtasi 🌅 Janubiy burnidagi maydoncha har kuni to'lgan bo'ladi.",
-        "bt": "Quyosh botishidan 40 daqiqa oldin",
-        "dur": "45-60 daqiqa",
-        "tip": "Tumanli kunlarda manzara yopiladi, ob-havoni tekshiring",
-        "imgs": [
-          "img/a/phuket-4.jpg",
-          "img/a/phuket-4-3.jpg",
-          "img/a/phuket-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Baan Laimai Beach Resort",
-        "Andaman Beach Suites"
-      ],
-      "5 yulduzli": [
-        "Amari Phuket",
-        "Dusit Thani Laguna Phuket"
+  "info": [
+   "5 kun / 4 tun",
+   "To'g'ri parvoz Toshkentdan",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+   "Viza (50$ / kishi)"
+  ],
+  "note": "",
+  "vibes": [
+   "family",
+   "couples",
+   "experience"
+  ],
+  "things_to_do": [
+   "Cho'lda safari va barbekyu",
+   "Dhow kruizi Dubay ko'rfazida",
+   "Ski Dubai (ichki chang'i)",
+   "Global Village kechki sayohat"
+  ],
+  "featured": "Oila bilan dam olish uchun",
+  "gallery": [
+   "img/g/dubai-0.jpg",
+   "img/g/dubai-1.jpg",
+   "img/g/dubai-2.jpg",
+   "img/g/dubai-3.jpg"
+  ]
+ },
+ {
+  "id": "phuket",
+  "type": "city",
+  "title": "Phuket",
+  "country": "Tailand",
+  "days": "7 kun",
+  "from": "Toshkent",
+  "direct": true,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": 980,
+    "hotels_data": [
+     {
+      "n": "Baan Laimai Beach Resort",
+      "rn": "Baan Laimai Beach Resort & Spa",
+      "s": 4,
+      "r": "9.2",
+      "rc": 7911,
+      "a": "66 Thaweewong Road Patong Beach, Patong",
+      "im": [
+       "hotels/phuket_0_0_0.jpg",
+       "hotels/phuket_0_0_1.jpg",
+       "hotels/phuket_0_0_2.jpg"
       ]
-    },
-    "info": [
-      "7 kun / 6 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ],
-    "note": "",
-    "vibes": [
-      "friends",
-      "couples",
-      "honeymoon"
-    ],
-    "things_to_do": [
-      "Long-tail qayiqda orollarga sayohat",
-      "Snorkeling",
-      "Tailand masaji",
-      "Kechki bozor (Malin Plaza)"
-    ],
-    "featured": "Dengiz va plyaj kayfiyati uchun",
-    "gallery": [
-      "img/g/phuket-0.jpg",
-      "img/g/phuket-1.jpg",
-      "img/g/phuket-2.jpg",
-      "img/g/phuket-3.jpg",
-      "img/g/phuket-4.jpg",
-      "img/g/phuket-5.jpg",
-      "img/g/phuket-6.jpg"
+     },
+     {
+      "n": "Andaman Beach Suites",
+      "rn": "Andaman Beach Suites Hotel",
+      "s": 4,
+      "r": "8.2",
+      "rc": 1059,
+      "a": "60/12 Rat-Uthit Song Roi Pee Road, Phuket, Patong",
+      "im": [
+       "hotels/phuket_0_1_0.jpg",
+       "hotels/phuket_0_1_1.jpg",
+       "hotels/phuket_0_1_2.jpg"
+      ]
+     }
     ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": 1150,
+    "hotels_data": [
+     {
+      "n": "Amari Phuket",
+      "rn": null,
+      "s": 0,
+      "r": "",
+      "rc": 0,
+      "a": "",
+      "im": []
+     },
+     {
+      "n": "Dusit Thani Laguna Phuket",
+      "rn": "Dusit Thani Laguna Phuket",
+      "s": 5,
+      "r": "8.7",
+      "rc": 450,
+      "a": "390 Moo1 Srisoontorn Road, Phuket Town",
+      "im": [
+       "hotels/phuket_1_1_0.jpg",
+       "hotels/phuket_1_1_1.jpg",
+       "hotels/phuket_1_1_2.jpg"
+      ]
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Patong plyaji",
+    "img": "img/a/phuket-0.jpg",
+    "desc": "Suv sportlari va tungi hayot markazi, 3 km oq qumli plyaj 🏖️ Kechqurun Bangla Road gavjum bo'ladi.",
+    "bt": "Erta tong suv sportlari",
+    "dur": "Kun bo'yi",
+    "tip": "Jet ski va parasailing narxlarini oldindan kelishib oling",
+    "imgs": [
+     "img/a/phuket-0.jpg",
+     "img/a/phuket-0-3.jpg",
+     "img/a/phuket-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Katta Budda haykali",
+    "img": "img/a/phuket-1.jpg",
+    "desc": "45 metrli oq marmar Budda haykali 🛕 Nakkerd tepasida turib butun orolni ko'rish mumkin.",
+    "bt": "Tong 08:00-10:00, salqin",
+    "dur": "1-1.5 soat",
+    "tip": "Yelkalar yopiq kiyim kerak, kirishda sarong beriladi",
+    "imgs": [
+     "img/a/phuket-1.jpg",
+     "img/a/phuket-1-3.jpg",
+     "img/a/phuket-1-4.jpg"
+    ]
+   },
+   {
+    "name": "Phi Phi orollari ekskursiyasi",
+    "img": "img/a/phuket-2.jpg",
+    "desc": "Tez qayiqda bir kunlik ekskursiya 🏝️ Maya Bay, snorkeley va baliqlar orasida suzish kiritilgan.",
+    "bt": "Noyabr-aprel, dengiz tinch",
+    "dur": "Kun bo'yi (7:30-17:00)",
+    "tip": "Maya Bay tashrif cheklovlarini tur operatoridan so'rang",
+    "imgs": [
+     "img/a/phuket-2.jpg",
+     "img/a/phuket-2-3.jpg",
+     "img/a/phuket-2-4.jpg"
+    ]
+   },
+   {
+    "name": "Karon plyaji",
+    "img": "img/a/phuket-3.jpg",
+    "desc": "Patongdan tinchroq, uzun qumli plyaj 🏖️ Maishiy muhit saqlangan, kunduzi sokin dam olish uchun qulay.",
+    "bt": "Kun bo'yi",
+    "dur": "2-3 soat",
+    "tip": "Janubiy uchi sokinroq, oila bilan uchun qulay",
+    "imgs": [
+     "img/a/phuket-3.jpg",
+     "img/a/phuket-3-3.jpg",
+     "img/a/phuket-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Promthep burni (quyosh botishi)",
+    "img": "img/a/phuket-4.jpg",
+    "desc": "Orolning eng mashhur quyosh botish nuqtasi 🌅 Janubiy burnidagi maydoncha har kuni to'lgan bo'ladi.",
+    "bt": "Quyosh botishidan 40 daqiqa oldin",
+    "dur": "45-60 daqiqa",
+    "tip": "Tumanli kunlarda manzara yopiladi, ob-havoni tekshiring",
+    "imgs": [
+     "img/a/phuket-4.jpg",
+     "img/a/phuket-4-3.jpg",
+     "img/a/phuket-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Baan Laimai Beach Resort",
+    "Andaman Beach Suites"
+   ],
+   "5 yulduzli": [
+    "Amari Phuket",
+    "Dusit Thani Laguna Phuket"
+   ]
   },
-  {
-    "id": "kuala-lumpur",
-    "type": "city",
-    "title": "Kuala Lumpur",
-    "country": "Malayziya",
-    "days": "6 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      {
-        "name": "Petronas qo'sh minoralari",
-        "img": "img/a/kuala-lumpur-0.jpg",
-        "desc": "451 metrli egizak minoralar ✨ 41-qavatdagi osmon ko'prigi orqali ikkisi bog'langan, kechqurun yoritish ayni go'zal.",
-        "bt": "Tong, navbatsiz",
-        "dur": "1-1.5 soat",
-        "tip": "Skybridge chiptalari tushgach tugaydi, ertalab onlayn oling",
-        "imgs": [
-          "img/a/kuala-lumpur-0.jpg",
-          "img/a/kuala-lumpur-0-3.jpg",
-          "img/a/kuala-lumpur-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Batu cave'lari",
-        "img": "img/a/kuala-lumpur-1.jpg",
-        "desc": "272 pog'onadan yuqoridagi g'or ibodatxonalari 🛕 Old tomonda 42 metrli oltin Budda haykali turadi.",
-        "bt": "Tong 07:00-09:00",
-        "dur": "1.5-2 soat",
-        "tip": "Maymunlar sumkani olishadi, ichimlikni yashiring",
-        "imgs": [
-          "img/a/kuala-lumpur-1.jpg",
-          "img/a/kuala-lumpur-1-3.jpg",
-          "img/a/kuala-lumpur-1-4.jpg"
-        ]
-      },
-      {
-        "name": "KLCC parki",
-        "img": "img/a/kuala-lumpur-2.jpg",
-        "desc": "Minoralar ostidagi yashil voha 🌴 Tongi yugurish va kechqurun musiqali fontonlar sevimli joy.",
-        "bt": "Tong yoki 19:00-21:00",
-        "dur": "1 soat",
-        "tip": "Kechqurun musiqali fonton shousi shu parkdan ko'rinadi",
-        "imgs": [
-          "img/a/kuala-lumpur-2.jpg",
-          "img/a/kuala-lumpur-2-3.jpg",
-          "img/a/kuala-lumpur-2-4.jpg"
-        ]
-      },
-      {
-        "name": "Merdeka maydoni",
-        "img": "img/a/kuala-lumpur-3.jpg",
-        "desc": "Mustaqilik e'lon qilingan tarixiy maydon 🏛️ Atrofida Moorish uslubidagi eski binolar saqlangan.",
-        "bt": "Kun bo'yi",
-        "dur": "30-45 daqiqa",
-        "tip": "Yaqindagi Sultan Abdul Samad binosi tunda chiroyli yoritiladi",
-        "imgs": [
-          "img/a/kuala-lumpur-3.jpg",
-          "img/a/kuala-lumpur-3-3.jpg",
-          "img/a/kuala-lumpur-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Bukit Bintang ko'chasi",
-        "img": "img/a/kuala-lumpur-4.jpg",
-        "desc": "Shaharning asosiy savdo va taom ko'chasi 🍜 Kechqurun ko'cha taomlari va jonli muhit ayni qiziqarli.",
-        "bt": "Kechqurun 18:00-23:00",
-        "dur": "2-3 soat",
-        "tip": "Jalan Alor ko'cha taomlari shu hududda, 19:00 dan jonli",
-        "imgs": [
-          "img/a/kuala-lumpur-4.jpg",
-          "img/a/kuala-lumpur-4-3.jpg",
-          "img/a/kuala-lumpur-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Hotel Sentral Kuala Lumpur",
-        "Apple 1 Hotel"
-      ],
-      "4 yulduzli": [
-        "DoubleTree by Hilton Kuala Lumpur",
-        "Sunway Putra Hotel"
-      ],
-      "5 yulduzli": [
-        "Mandarin Oriental Kuala Lumpur",
-        "Grand Hyatt Kuala Lumpur"
+  "info": [
+   "7 kun / 6 tun",
+   "To'g'ri parvoz Toshkentdan",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+   "Viza (50$ / kishi)"
+  ],
+  "note": "",
+  "vibes": [
+   "friends",
+   "couples",
+   "honeymoon"
+  ],
+  "things_to_do": [
+   "Long-tail qayiqda orollarga sayohat",
+   "Snorkeling",
+   "Tailand masaji",
+   "Kechki bozor (Malin Plaza)"
+  ],
+  "featured": "Dengiz va plyaj kayfiyati uchun",
+  "gallery": [
+   "img/g/phuket-0.jpg",
+   "img/g/phuket-1.jpg",
+   "img/g/phuket-2.jpg",
+   "img/g/phuket-3.jpg",
+   "img/g/phuket-4.jpg",
+   "img/g/phuket-5.jpg",
+   "img/g/phuket-6.jpg"
+  ]
+ },
+ {
+  "id": "kuala-lumpur",
+  "type": "city",
+  "title": "Kuala Lumpur",
+  "country": "Malayziya",
+  "days": "6 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Hotel Sentral Kuala Lumpur",
+      "rn": "Hotel Sentral KL @ KL Sentral Station",
+      "s": 3,
+      "r": "6.8",
+      "rc": 1522,
+      "a": "30 Jalan Thambypillai, Brickfields, 30 232, Kuala Lumpur",
+      "im": [
+       "hotels/kuala-lumpur_0_0_0.jpg",
+       "hotels/kuala-lumpur_0_0_1.jpg",
+       "hotels/kuala-lumpur_0_0_2.jpg"
       ]
-    },
-    "info": [
-      "6 kun / 5 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": "",
-    "vibes": [
-      "family",
-      "cultural",
-      "experience"
-    ],
-    "things_to_do": [
-      "Sunway Lagoon suv parki",
-      "Petaling ko'chasi kechki bozori",
-      "Genting Highlands tog' kurorti",
-      "KL Tower kuzatuv maydoni"
-    ],
-    "featured": "",
-    "gallery": [
-      "img/g/kuala-lumpur-0.jpg",
-      "img/g/kuala-lumpur-1.jpg",
-      "img/g/kuala-lumpur-2.jpg",
-      "img/g/kuala-lumpur-3.jpg",
-      "img/g/kuala-lumpur-4.jpg",
-      "img/g/kuala-lumpur-5.jpg",
-      "img/g/kuala-lumpur-6.jpg",
-      "img/g/kuala-lumpur-7.jpg"
+     },
+     {
+      "n": "Apple 1 Hotel",
+      "pending": true
+     }
     ]
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "DoubleTree by Hilton Kuala Lumpur",
+      "pending": true
+     },
+     {
+      "n": "Sunway Putra Hotel",
+      "rn": "Sunway Putra Hotel Kuala Lumpur",
+      "s": 5,
+      "r": "8.8",
+      "rc": 4709,
+      "a": "100 Jalan Putra, Kuala Lumpur",
+      "im": [
+       "hotels/kuala-lumpur_1_1_0.jpg",
+       "hotels/kuala-lumpur_1_1_1.jpg",
+       "hotels/kuala-lumpur_1_1_2.jpg"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Mandarin Oriental Kuala Lumpur",
+      "rn": null,
+      "s": 0,
+      "r": "",
+      "rc": 0,
+      "a": "",
+      "im": []
+     },
+     {
+      "n": "Grand Hyatt Kuala Lumpur",
+      "rn": "Grand Hyatt Kuala Lumpur",
+      "s": 5,
+      "r": "9.2",
+      "rc": 6999,
+      "a": "12 Jalan Pinang, Kuala Lumpur",
+      "im": [
+       "hotels/kuala-lumpur_2_1_0.jpg",
+       "hotels/kuala-lumpur_2_1_1.jpg",
+       "hotels/kuala-lumpur_2_1_2.jpg"
+      ]
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Petronas qo'sh minoralari",
+    "img": "img/a/kuala-lumpur-0.jpg",
+    "desc": "451 metrli egizak minoralar ✨ 41-qavatdagi osmon ko'prigi orqali ikkisi bog'langan, kechqurun yoritish ayni go'zal.",
+    "bt": "Tong, navbatsiz",
+    "dur": "1-1.5 soat",
+    "tip": "Skybridge chiptalari tushgach tugaydi, ertalab onlayn oling",
+    "imgs": [
+     "img/a/kuala-lumpur-0.jpg",
+     "img/a/kuala-lumpur-0-3.jpg",
+     "img/a/kuala-lumpur-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Batu cave'lari",
+    "img": "img/a/kuala-lumpur-1.jpg",
+    "desc": "272 pog'onadan yuqoridagi g'or ibodatxonalari 🛕 Old tomonda 42 metrli oltin Budda haykali turadi.",
+    "bt": "Tong 07:00-09:00",
+    "dur": "1.5-2 soat",
+    "tip": "Maymunlar sumkani olishadi, ichimlikni yashiring",
+    "imgs": [
+     "img/a/kuala-lumpur-1.jpg",
+     "img/a/kuala-lumpur-1-3.jpg",
+     "img/a/kuala-lumpur-1-4.jpg"
+    ]
+   },
+   {
+    "name": "KLCC parki",
+    "img": "img/a/kuala-lumpur-2.jpg",
+    "desc": "Minoralar ostidagi yashil voha 🌴 Tongi yugurish va kechqurun musiqali fontonlar sevimli joy.",
+    "bt": "Tong yoki 19:00-21:00",
+    "dur": "1 soat",
+    "tip": "Kechqurun musiqali fonton shousi shu parkdan ko'rinadi",
+    "imgs": [
+     "img/a/kuala-lumpur-2.jpg",
+     "img/a/kuala-lumpur-2-3.jpg",
+     "img/a/kuala-lumpur-2-4.jpg"
+    ]
+   },
+   {
+    "name": "Merdeka maydoni",
+    "img": "img/a/kuala-lumpur-3.jpg",
+    "desc": "Mustaqilik e'lon qilingan tarixiy maydon 🏛️ Atrofida Moorish uslubidagi eski binolar saqlangan.",
+    "bt": "Kun bo'yi",
+    "dur": "30-45 daqiqa",
+    "tip": "Yaqindagi Sultan Abdul Samad binosi tunda chiroyli yoritiladi",
+    "imgs": [
+     "img/a/kuala-lumpur-3.jpg",
+     "img/a/kuala-lumpur-3-3.jpg",
+     "img/a/kuala-lumpur-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Bukit Bintang ko'chasi",
+    "img": "img/a/kuala-lumpur-4.jpg",
+    "desc": "Shaharning asosiy savdo va taom ko'chasi 🍜 Kechqurun ko'cha taomlari va jonli muhit ayni qiziqarli.",
+    "bt": "Kechqurun 18:00-23:00",
+    "dur": "2-3 soat",
+    "tip": "Jalan Alor ko'cha taomlari shu hududda, 19:00 dan jonli",
+    "imgs": [
+     "img/a/kuala-lumpur-4.jpg",
+     "img/a/kuala-lumpur-4-3.jpg",
+     "img/a/kuala-lumpur-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Hotel Sentral Kuala Lumpur",
+    "Apple 1 Hotel"
+   ],
+   "4 yulduzli": [
+    "DoubleTree by Hilton Kuala Lumpur",
+    "Sunway Putra Hotel"
+   ],
+   "5 yulduzli": [
+    "Mandarin Oriental Kuala Lumpur",
+    "Grand Hyatt Kuala Lumpur"
+   ]
   },
-  {
-    "id": "muscat",
-    "type": "city",
-    "title": "Maskat",
-    "country": "Oman",
-    "days": "5 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      {
-        "name": "Sulton Qobus katta masjidi",
-        "img": "img/a/muscat-0.jpg",
-        "desc": "346 tonnalik gilam va ikkinchi yirik qandil bilan mashhur masjid 🕌 Marmar devorlar va arab naqshlari hayratda qoldiradi.",
-        "bt": "Tong 08:00-10:00",
-        "dur": "1-1.5 soat",
-        "tip": "Juma kunlari tashrif cheklanadi, yopiq kiyim majburiy",
-        "imgs": [
-          "img/a/muscat-0.jpg",
-          "img/a/muscat-0-3.jpg",
-          "img/a/muscat-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Muttrah bozori (souq)",
-        "img": "img/a/muscat-1.jpg",
-        "desc": "An'anaviy arab bozori ✨ Tamyon (baxor), ziravorlar, kumush buyumlar va hunarmandchilik sotiladi.",
-        "bt": "Kechqurun 17:00-20:00",
-        "dur": "1-1.5 soat",
-        "tip": "Tamyon va ziravor narxini bir nechta do'konda solishtiring",
-        "imgs": [
-          "img/a/muscat-1.jpg",
-          "img/a/muscat-1-3.jpg",
-          "img/a/muscat-1-4.jpg"
-        ]
-      },
-      {
-        "name": "Qirollik opera teatri",
-        "img": "img/a/muscat-2.jpg",
-        "desc": "2011-yilda ochilgan marmar opera uyi 🎭 Xalqaro repertuar va klassik arab musiqasi konsertlari o'tkaziladi.",
-        "bt": "Konsert kechalari",
-        "dur": "45-60 daqiqa",
-        "tip": "Gidli tur kuniga cheklangan vaqtda, oldindan ro'yxatdan o'ting"
-      },
-      {
-        "name": "Muttrah Corniche qirg'og'i",
-        "img": "img/a/muscat-3.jpg",
-        "desc": "Port qarashlari bilan sohil sayrgohi 🌊 Kechqurun yoritilganda suvdagi akslar ayni chiroyli ko'rinadi.",
-        "bt": "Quyosh botishi",
-        "dur": "45 daqiqa",
-        "tip": "Sohildagi kofelardan karak choyi ichib sayr qiling",
-        "imgs": [
-          "img/a/muscat-3.jpg",
-          "img/a/muscat-3-3.jpg",
-          "img/a/muscat-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Al Qurum plyaji",
-        "img": "img/a/muscat-4.jpg",
-        "desc": "Shahar markaziga yaqin jamoat plyaji 🏖️ Palmalar soyasi va suv sportlari bilan dam olishga qulay.",
-        "bt": "Tong va kechqurun",
-        "dur": "2-3 soat",
-        "tip": "Soya oz, shlyapa va suv olib boring",
-        "imgs": [
-          "img/a/muscat-4.jpg",
-          "img/a/muscat-4-3.jpg",
-          "img/a/muscat-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Ibis Muscat",
-        "City Seasons Muscat"
-      ],
-      "4 yulduzli": [
-        "Crowne Plaza Muscat",
-        "Millennium Resort Mussanah"
-      ],
-      "5 yulduzli": [
-        "Grand Millennium Muscat",
-        "InterContinental Muscat",
-        "Shangri-La Al Husn"
+  "info": [
+   "6 kun / 5 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "family",
+   "cultural",
+   "experience"
+  ],
+  "things_to_do": [
+   "Sunway Lagoon suv parki",
+   "Petaling ko'chasi kechki bozori",
+   "Genting Highlands tog' kurorti",
+   "KL Tower kuzatuv maydoni"
+  ],
+  "featured": "",
+  "gallery": [
+   "img/g/kuala-lumpur-0.jpg",
+   "img/g/kuala-lumpur-1.jpg",
+   "img/g/kuala-lumpur-2.jpg",
+   "img/g/kuala-lumpur-3.jpg",
+   "img/g/kuala-lumpur-4.jpg",
+   "img/g/kuala-lumpur-5.jpg",
+   "img/g/kuala-lumpur-6.jpg",
+   "img/g/kuala-lumpur-7.jpg"
+  ]
+ },
+ {
+  "id": "muscat",
+  "type": "city",
+  "title": "Maskat",
+  "country": "Oman",
+  "days": "5 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Ibis Muscat",
+      "rn": "Ibis Muscat Hotel",
+      "s": 3,
+      "r": "9.1",
+      "rc": 2503,
+      "a": "130 Al Azaiba Dohat Aladab Road, Muscat",
+      "im": [
+       "hotels/muscat_0_0_0.jpg",
+       "hotels/muscat_0_0_1.jpg",
+       "hotels/muscat_0_0_2.jpg"
       ]
-    },
-    "info": [
-      "5 kun / 4 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": "",
-    "vibes": [
-      "cultural",
-      "family"
-    ],
-    "things_to_do": [
-      "Delfinlarni kuzatish kruizi",
-      "Wadi Shab sayohati",
-      "Daymaniyat orollarida snorkeling",
-      "Muttrah Corniche kechki sayr"
-    ],
-    "featured": "",
-    "gallery": [
-      "img/g/muscat-0.jpg",
-      "img/g/muscat-1.jpg",
-      "img/g/muscat-2.jpg",
-      "img/g/muscat-3.jpg",
-      "img/g/muscat-4.jpg",
-      "img/g/muscat-5.jpg"
+     },
+     {
+      "n": "City Seasons Muscat",
+      "pending": true
+     }
     ]
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Crowne Plaza Muscat",
+      "rn": "Crowne Plaza Muscat by IHG Hotel",
+      "s": 4,
+      "r": "8.9",
+      "rc": 2887,
+      "a": "Muscat Governorate, Mutrah Wilayat, Murtafat Al Qurum, Block 224, Muscat",
+      "im": [
+       "hotels/muscat_1_0_0.jpg",
+       "hotels/muscat_1_0_1.jpg",
+       "hotels/muscat_1_0_2.jpg"
+      ]
+     },
+     {
+      "n": "Millennium Resort Mussanah",
+      "pending": true
+     }
+    ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Grand Millennium Muscat",
+      "rn": "Grand Millennium Muscat Hotel",
+      "s": 5,
+      "r": "9.3",
+      "rc": 1609,
+      "a": "Dohat al Adab Street Al Khuwair, Muscat",
+      "im": [
+       "hotels/muscat_2_0_0.jpg",
+       "hotels/muscat_2_0_1.jpg",
+       "hotels/muscat_2_0_2.jpg"
+      ]
+     },
+     {
+      "n": "InterContinental Muscat",
+      "rn": "InterContinental Muscat by IHG Hotel",
+      "s": 5,
+      "r": "9",
+      "rc": 4623,
+      "a": "Al Kharjiya Street, Al Shati Area, Muscat",
+      "im": [
+       "hotels/muscat_2_1_0.jpg",
+       "hotels/muscat_2_1_1.jpg",
+       "hotels/muscat_2_1_2.jpg"
+      ]
+     },
+     {
+      "n": "Shangri-La Al Husn",
+      "pending": true
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Sulton Qobus katta masjidi",
+    "img": "img/a/muscat-0.jpg",
+    "desc": "346 tonnalik gilam va ikkinchi yirik qandil bilan mashhur masjid 🕌 Marmar devorlar va arab naqshlari hayratda qoldiradi.",
+    "bt": "Tong 08:00-10:00",
+    "dur": "1-1.5 soat",
+    "tip": "Juma kunlari tashrif cheklanadi, yopiq kiyim majburiy",
+    "imgs": [
+     "img/a/muscat-0.jpg",
+     "img/a/muscat-0-3.jpg",
+     "img/a/muscat-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Muttrah bozori (souq)",
+    "img": "img/a/muscat-1.jpg",
+    "desc": "An'anaviy arab bozori ✨ Tamyon (baxor), ziravorlar, kumush buyumlar va hunarmandchilik sotiladi.",
+    "bt": "Kechqurun 17:00-20:00",
+    "dur": "1-1.5 soat",
+    "tip": "Tamyon va ziravor narxini bir nechta do'konda solishtiring",
+    "imgs": [
+     "img/a/muscat-1.jpg",
+     "img/a/muscat-1-3.jpg",
+     "img/a/muscat-1-4.jpg"
+    ]
+   },
+   {
+    "name": "Qirollik opera teatri",
+    "img": "img/a/muscat-2.jpg",
+    "desc": "2011-yilda ochilgan marmar opera uyi 🎭 Xalqaro repertuar va klassik arab musiqasi konsertlari o'tkaziladi.",
+    "bt": "Konsert kechalari",
+    "dur": "45-60 daqiqa",
+    "tip": "Gidli tur kuniga cheklangan vaqtda, oldindan ro'yxatdan o'ting"
+   },
+   {
+    "name": "Muttrah Corniche qirg'og'i",
+    "img": "img/a/muscat-3.jpg",
+    "desc": "Port qarashlari bilan sohil sayrgohi 🌊 Kechqurun yoritilganda suvdagi akslar ayni chiroyli ko'rinadi.",
+    "bt": "Quyosh botishi",
+    "dur": "45 daqiqa",
+    "tip": "Sohildagi kofelardan karak choyi ichib sayr qiling",
+    "imgs": [
+     "img/a/muscat-3.jpg",
+     "img/a/muscat-3-3.jpg",
+     "img/a/muscat-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Al Qurum plyaji",
+    "img": "img/a/muscat-4.jpg",
+    "desc": "Shahar markaziga yaqin jamoat plyaji 🏖️ Palmalar soyasi va suv sportlari bilan dam olishga qulay.",
+    "bt": "Tong va kechqurun",
+    "dur": "2-3 soat",
+    "tip": "Soya oz, shlyapa va suv olib boring",
+    "imgs": [
+     "img/a/muscat-4.jpg",
+     "img/a/muscat-4-3.jpg",
+     "img/a/muscat-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Ibis Muscat",
+    "City Seasons Muscat"
+   ],
+   "4 yulduzli": [
+    "Crowne Plaza Muscat",
+    "Millennium Resort Mussanah"
+   ],
+   "5 yulduzli": [
+    "Grand Millennium Muscat",
+    "InterContinental Muscat",
+    "Shangri-La Al Husn"
+   ]
   },
-  {
-    "id": "bali",
-    "type": "city",
-    "title": "Bali",
-    "country": "Indoneziya",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      {
-        "name": "Tanah Lot dengiz ibodatxonasi",
-        "img": "img/a/bali-0.jpg",
-        "desc": "Qoya ustidagi dengiz ibodatxonasi 🌅 Quyosh botish paytida eng chiroyli manzara ochiladi.",
-        "bt": "Quyosh botishi (17:30-18:30)",
-        "dur": "1.5 soat",
-        "tip": "Suv ko'tarilganda qoyaga chiqish yopiladi, past suvda ochiladi",
-        "imgs": [
-          "img/a/bali-0.jpg",
-          "img/a/bali-0-3.jpg",
-          "img/a/bali-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Ubud guruch terrasalari (Tegallalang)",
-        "img": "img/a/bali-1.jpg",
-        "desc": "Tepaliklarga qurilgan yashil guruch terrasalari 🌾 Palma daraxtlari orasidagi choy xonalar va chinjarka maydonlari.",
-        "bt": "Tong 07:00-09:00",
-        "dur": "1-2 soat",
-        "tip": "Swing va kafe narxlari turlicha, bir nechasini solishtiring",
-        "imgs": [
-          "img/a/bali-1.jpg",
-          "img/a/bali-1-3.jpg",
-          "img/a/bali-1-4.jpg"
-        ]
-      },
-      {
-        "name": "Uluwatu ibodatxonasi",
-        "img": "img/a/bali-2.jpg",
-        "desc": "70 metrli qoya ustidagi ibodatxona 🛕 Kechqurun an'anaviy Kecak olov raqsi namoyish etiladi.",
-        "bt": "18:00, Kecak raqsi",
-        "dur": "2 soat",
-        "tip": "Raqs chiptalarini bir kun oldin oling, o'tirish joyini tanlang",
-        "imgs": [
-          "img/a/bali-2.jpg",
-          "img/a/bali-2-3.jpg",
-          "img/a/bali-2-4.jpg"
-        ]
-      },
-      {
-        "name": "Seminyak plyaji",
-        "img": "img/a/bali-3.jpg",
-        "desc": "Kafe va beach-clublar bilan mashhur plyaj 🏖️ Quyosh botishi paytida sohil bo'ylab sayr qilinadi.",
-        "bt": "15:00-19:00",
-        "dur": "Kun bo'yi",
-        "tip": "Beach-clublarga min sarflash bo'lishi mumkin, oldindan band qiling",
-        "imgs": [
-          "img/a/bali-3.jpg",
-          "img/a/bali-3-3.jpg",
-          "img/a/bali-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Nusa Penida oroli ekskursiyasi",
-        "img": "img/a/bali-4.jpg",
-        "desc": "Tez qayiqda bir kunlik safari 🏝️ Kelingking plyaji, Angel's Billabong va Broken Beach manzaralari.",
-        "bt": "April-noyabr, dengiz tinch",
-        "dur": "Kun bo'yi (6:30-18:30)",
-        "tip": "Yo'lllar tor, haydovchili tur olib boring",
-        "imgs": [
-          "img/a/bali-4.jpg",
-          "img/a/bali-4-3.jpg",
-          "img/a/bali-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Ibis Styles Bali Legian",
-        "Ozz Hotel Kuta"
-      ],
-      "4 yulduzli": [
-        "Holiday Inn Resort Baruna Bali",
-        "Bali Dynasty Resort"
-      ],
-      "5 yulduzli": [
-        "AYANA Resort Jimbaran",
-        "Padma Resort Legian"
+  "info": [
+   "5 kun / 4 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "cultural",
+   "family"
+  ],
+  "things_to_do": [
+   "Delfinlarni kuzatish kruizi",
+   "Wadi Shab sayohati",
+   "Daymaniyat orollarida snorkeling",
+   "Muttrah Corniche kechki sayr"
+  ],
+  "featured": "",
+  "gallery": [
+   "img/g/muscat-0.jpg",
+   "img/g/muscat-1.jpg",
+   "img/g/muscat-2.jpg",
+   "img/g/muscat-3.jpg",
+   "img/g/muscat-4.jpg",
+   "img/g/muscat-5.jpg"
+  ]
+ },
+ {
+  "id": "bali",
+  "type": "city",
+  "title": "Bali",
+  "country": "Indoneziya",
+  "days": "7 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Ibis Styles Bali Legian",
+      "pending": true
+     },
+     {
+      "n": "Ozz Hotel Kuta",
+      "rn": "Ozz Hotel - Kuta Bali",
+      "s": 3,
+      "r": "7.5",
+      "rc": 399,
+      "a": "Jln. Kubu Anyar Gg. Biduri, Kuta",
+      "im": [
+       "hotels/bali_0_1_0.jpg",
+       "hotels/bali_0_1_1.jpg",
+       "hotels/bali_0_1_2.jpg"
       ]
-    },
-    "info": [
-      "7 kun / 6 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": "",
-    "vibes": [
-      "honeymoon",
-      "couples",
-      "experience"
-    ],
-    "things_to_do": [
-      "Bali swing va jungl fotolari",
-      "Ayung daryosida rafting",
-      "Bali spa va massaj",
-      "Kechki Kechak raqsi tomoshasi"
-    ],
-    "featured": "Asal oyi uchun 1-raqamli tanlov",
-    "gallery": [
-      "img/g/bali-0.jpg",
-      "img/g/bali-1.jpg",
-      "img/g/bali-2.jpg",
-      "img/g/bali-3.jpg",
-      "img/g/bali-4.jpg",
-      "img/g/bali-5.jpg"
+     }
     ]
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Holiday Inn Resort Baruna Bali",
+      "rn": "Holiday Inn Resort Baruna Bali by IHG",
+      "s": 5,
+      "r": "9",
+      "rc": 2368,
+      "a": "Jalan Wana Segara 33, Bali",
+      "im": [
+       "hotels/bali_1_0_0.jpg",
+       "hotels/bali_1_0_1.jpg",
+       "hotels/bali_1_0_2.jpg"
+      ]
+     },
+     {
+      "n": "Bali Dynasty Resort",
+      "rn": "Bali Dynasty Resort",
+      "s": 5,
+      "r": "8.6",
+      "rc": 4488,
+      "a": "Jl. Kartika, Kuta",
+      "im": [
+       "hotels/bali_1_1_0.jpg",
+       "hotels/bali_1_1_1.jpg",
+       "hotels/bali_1_1_2.jpg"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "AYANA Resort Jimbaran",
+      "pending": true
+     },
+     {
+      "n": "Padma Resort Legian",
+      "pending": true
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Tanah Lot dengiz ibodatxonasi",
+    "img": "img/a/bali-0.jpg",
+    "desc": "Qoya ustidagi dengiz ibodatxonasi 🌅 Quyosh botish paytida eng chiroyli manzara ochiladi.",
+    "bt": "Quyosh botishi (17:30-18:30)",
+    "dur": "1.5 soat",
+    "tip": "Suv ko'tarilganda qoyaga chiqish yopiladi, past suvda ochiladi",
+    "imgs": [
+     "img/a/bali-0.jpg",
+     "img/a/bali-0-3.jpg",
+     "img/a/bali-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Ubud guruch terrasalari (Tegallalang)",
+    "img": "img/a/bali-1.jpg",
+    "desc": "Tepaliklarga qurilgan yashil guruch terrasalari 🌾 Palma daraxtlari orasidagi choy xonalar va chinjarka maydonlari.",
+    "bt": "Tong 07:00-09:00",
+    "dur": "1-2 soat",
+    "tip": "Swing va kafe narxlari turlicha, bir nechasini solishtiring",
+    "imgs": [
+     "img/a/bali-1.jpg",
+     "img/a/bali-1-3.jpg",
+     "img/a/bali-1-4.jpg"
+    ]
+   },
+   {
+    "name": "Uluwatu ibodatxonasi",
+    "img": "img/a/bali-2.jpg",
+    "desc": "70 metrli qoya ustidagi ibodatxona 🛕 Kechqurun an'anaviy Kecak olov raqsi namoyish etiladi.",
+    "bt": "18:00, Kecak raqsi",
+    "dur": "2 soat",
+    "tip": "Raqs chiptalarini bir kun oldin oling, o'tirish joyini tanlang",
+    "imgs": [
+     "img/a/bali-2.jpg",
+     "img/a/bali-2-3.jpg",
+     "img/a/bali-2-4.jpg"
+    ]
+   },
+   {
+    "name": "Seminyak plyaji",
+    "img": "img/a/bali-3.jpg",
+    "desc": "Kafe va beach-clublar bilan mashhur plyaj 🏖️ Quyosh botishi paytida sohil bo'ylab sayr qilinadi.",
+    "bt": "15:00-19:00",
+    "dur": "Kun bo'yi",
+    "tip": "Beach-clublarga min sarflash bo'lishi mumkin, oldindan band qiling",
+    "imgs": [
+     "img/a/bali-3.jpg",
+     "img/a/bali-3-3.jpg",
+     "img/a/bali-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Nusa Penida oroli ekskursiyasi",
+    "img": "img/a/bali-4.jpg",
+    "desc": "Tez qayiqda bir kunlik safari 🏝️ Kelingking plyaji, Angel's Billabong va Broken Beach manzaralari.",
+    "bt": "April-noyabr, dengiz tinch",
+    "dur": "Kun bo'yi (6:30-18:30)",
+    "tip": "Yo'lllar tor, haydovchili tur olib boring",
+    "imgs": [
+     "img/a/bali-4.jpg",
+     "img/a/bali-4-3.jpg",
+     "img/a/bali-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Ibis Styles Bali Legian",
+    "Ozz Hotel Kuta"
+   ],
+   "4 yulduzli": [
+    "Holiday Inn Resort Baruna Bali",
+    "Bali Dynasty Resort"
+   ],
+   "5 yulduzli": [
+    "AYANA Resort Jimbaran",
+    "Padma Resort Legian"
+   ]
   },
-  {
-    "id": "shanghai",
-    "type": "city",
-    "title": "Shanxay",
-    "country": "Xitoy",
-    "days": "6 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      {
-        "name": "The Bund (Vaytan qirg'og'i)",
-        "img": "img/a/shanghai-0.jpg",
-        "desc": "Kolonial binolar qatoridan Pudongning osmono'par binolariga qarash 🌃 Kechqurun yorug'lik shousi ayni mashhur.",
-        "bt": "Kechqurun 19:00-21:00",
-        "dur": "1-2 soat",
-        "tip": "Pudong manzarasi uchun daryo bo'yining shimoliy qismiga boring",
-        "imgs": [
-          "img/a/shanghai-0.jpg",
-          "img/a/shanghai-0-3.jpg",
-          "img/a/shanghai-0-4.jpg"
-        ]
-      },
-      {
-        "name": "Yu bog'i (Yu Garden)",
-        "img": "img/a/shanghai-1.jpg",
-        "desc": "Ming sulolasidan qolgan klassik xitoy bog'i 🏮 Tosh ko'priklar, koi baliqlari va choyxonalar saqlangan.",
-        "bt": "Tong 09:00-10:30",
-        "dur": "1.5 soat",
-        "tip": "Atrofidagi Chenghuang bozoriga ham vaqt qoldiring",
-        "imgs": [
-          "img/a/shanghai-1.jpg",
-          "img/a/shanghai-1-3.jpg",
-          "img/a/shanghai-1-4.jpg"
-        ]
-      },
-      {
-        "name": "Shanxay minorasi",
-        "img": "img/a/shanghai-2.jpg",
-        "desc": "468 metrli TV minorasi 🌆 Shar shaklidagi kuzatuv sharlaridan butun shahar ko'rinadi.",
-        "bt": "Kechqurun",
-        "dur": "1-1.5 soat",
-        "tip": "Ob-havo yaxshi bo'lgan kunda ko'rish maqsadga muvofiq",
-        "imgs": [
-          "img/a/shanghai-2.jpg",
-          "img/a/shanghai-2-3.jpg",
-          "img/a/shanghai-2-4.jpg"
-        ]
-      },
-      {
-        "name": "Zhujiajiao suv shahri",
-        "img": "img/a/shanghai-3.jpg",
-        "desc": "1700 yillik kanal shahri 🛶 Tosh ko'priklar, qayiq sayrlari va eski ko'cha bozori saqlangan.",
-        "bt": "Dushanba-juma, tinchroq",
-        "dur": "3-4 soat (yo'l bilan)",
-        "tip": "Shahardan 17-metro liniyasi bilan boriladi, qayiq sayri arzon",
-        "imgs": [
-          "img/a/shanghai-3.jpg",
-          "img/a/shanghai-3-3.jpg",
-          "img/a/shanghai-3-4.jpg"
-        ]
-      },
-      {
-        "name": "Nankin yo'li (Nanjing Road)",
-        "img": "img/a/shanghai-4.jpg",
-        "desc": "Dunyoning eng gavjum savdo ko'chalaridan biri 🛍️ Kechqurun neon yoritish va ko'cha shoulari boshlanadi.",
-        "bt": "Kechqurun",
-        "dur": "2-3 soat",
-        "tip": "Piyoda zona East Nanjing Road, People's Square dan boshlang",
-        "imgs": [
-          "img/a/shanghai-4.jpg",
-          "img/a/shanghai-4-3.jpg",
-          "img/a/shanghai-4-4.jpg"
-        ]
-      }
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Holiday Inn Express Shanghai",
-        "Atour Hotel"
-      ],
-      "4 yulduzli": [
-        "Hotel Indigo Shanghai on the Bund",
-        "Radisson Hotel Shanghai"
-      ],
-      "5 yulduzli": [
-        "Fairmont Peace Hotel",
-        "The Peninsula Shanghai"
-      ]
-    },
-    "info": [
-      "6 kun / 5 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": "",
-    "vibes": [
-      "cultural",
-      "family",
-      "experience"
-    ],
-    "things_to_do": [
-      "Huangpu daryosi kechki kruizi",
-      "Shanxay Disneylend",
-      "Maglev tezyurar poyezdda sayohat",
-      "Tianzifang ko'chalarida sayr"
-    ],
-    "featured": "",
-    "gallery": [
-      "img/g/shanghai-0.jpg",
-      "img/g/shanghai-1.jpg",
-      "img/g/shanghai-2.jpg",
-      "img/g/shanghai-3.jpg",
-      "img/g/shanghai-4.jpg",
-      "img/g/shanghai-5.jpg"
+  "info": [
+   "7 kun / 6 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "honeymoon",
+   "couples",
+   "experience"
+  ],
+  "things_to_do": [
+   "Bali swing va jungl fotolari",
+   "Ayung daryosida rafting",
+   "Bali spa va massaj",
+   "Kechki Kechak raqsi tomoshasi"
+  ],
+  "featured": "Asal oyi uchun 1-raqamli tanlov",
+  "gallery": [
+   "img/g/bali-0.jpg",
+   "img/g/bali-1.jpg",
+   "img/g/bali-2.jpg",
+   "img/g/bali-3.jpg",
+   "img/g/bali-4.jpg",
+   "img/g/bali-5.jpg"
+  ]
+ },
+ {
+  "id": "shanghai",
+  "type": "city",
+  "title": "Shanxay",
+  "country": "Xitoy",
+  "days": "6 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Holiday Inn Express Shanghai",
+      "pending": true
+     },
+     {
+      "n": "Atour Hotel",
+      "pending": true
+     }
     ]
-  }
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Hotel Indigo Shanghai on the Bund",
+      "pending": true
+     },
+     {
+      "n": "Radisson Hotel Shanghai",
+      "pending": true
+     }
+    ]
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null,
+    "hotels_data": [
+     {
+      "n": "Fairmont Peace Hotel",
+      "rn": "Fairmont Peace Hotel",
+      "s": 5,
+      "r": "10",
+      "rc": 20380,
+      "a": "20 Nanjing Road East, Shanghai",
+      "im": [
+       "hotels/shanghai_2_0_0.jpg",
+       "hotels/shanghai_2_0_1.jpg",
+       "hotels/shanghai_2_0_2.jpg"
+      ]
+     },
+     {
+      "n": "The Peninsula Shanghai",
+      "rn": "The Peninsula Shanghai",
+      "s": 5,
+      "r": "9.4",
+      "rc": 1757,
+      "a": "32 Zhongshan Dong Yi Road, Shanghai",
+      "im": [
+       "hotels/shanghai_2_1_0.jpg",
+       "hotels/shanghai_2_1_1.jpg",
+       "hotels/shanghai_2_1_2.jpg"
+      ]
+     }
+    ]
+   }
+  ],
+  "attractions": [
+   {
+    "name": "The Bund (Vaytan qirg'og'i)",
+    "img": "img/a/shanghai-0.jpg",
+    "desc": "Kolonial binolar qatoridan Pudongning osmono'par binolariga qarash 🌃 Kechqurun yorug'lik shousi ayni mashhur.",
+    "bt": "Kechqurun 19:00-21:00",
+    "dur": "1-2 soat",
+    "tip": "Pudong manzarasi uchun daryo bo'yining shimoliy qismiga boring",
+    "imgs": [
+     "img/a/shanghai-0.jpg",
+     "img/a/shanghai-0-3.jpg",
+     "img/a/shanghai-0-4.jpg"
+    ]
+   },
+   {
+    "name": "Yu bog'i (Yu Garden)",
+    "img": "img/a/shanghai-1.jpg",
+    "desc": "Ming sulolasidan qolgan klassik xitoy bog'i 🏮 Tosh ko'priklar, koi baliqlari va choyxonalar saqlangan.",
+    "bt": "Tong 09:00-10:30",
+    "dur": "1.5 soat",
+    "tip": "Atrofidagi Chenghuang bozoriga ham vaqt qoldiring",
+    "imgs": [
+     "img/a/shanghai-1.jpg",
+     "img/a/shanghai-1-3.jpg",
+     "img/a/shanghai-1-4.jpg"
+    ]
+   },
+   {
+    "name": "Shanxay minorasi",
+    "img": "img/a/shanghai-2.jpg",
+    "desc": "468 metrli TV minorasi 🌆 Shar shaklidagi kuzatuv sharlaridan butun shahar ko'rinadi.",
+    "bt": "Kechqurun",
+    "dur": "1-1.5 soat",
+    "tip": "Ob-havo yaxshi bo'lgan kunda ko'rish maqsadga muvofiq",
+    "imgs": [
+     "img/a/shanghai-2.jpg",
+     "img/a/shanghai-2-3.jpg",
+     "img/a/shanghai-2-4.jpg"
+    ]
+   },
+   {
+    "name": "Zhujiajiao suv shahri",
+    "img": "img/a/shanghai-3.jpg",
+    "desc": "1700 yillik kanal shahri 🛶 Tosh ko'priklar, qayiq sayrlari va eski ko'cha bozori saqlangan.",
+    "bt": "Dushanba-juma, tinchroq",
+    "dur": "3-4 soat (yo'l bilan)",
+    "tip": "Shahardan 17-metro liniyasi bilan boriladi, qayiq sayri arzon",
+    "imgs": [
+     "img/a/shanghai-3.jpg",
+     "img/a/shanghai-3-3.jpg",
+     "img/a/shanghai-3-4.jpg"
+    ]
+   },
+   {
+    "name": "Nankin yo'li (Nanjing Road)",
+    "img": "img/a/shanghai-4.jpg",
+    "desc": "Dunyoning eng gavjum savdo ko'chalaridan biri 🛍️ Kechqurun neon yoritish va ko'cha shoulari boshlanadi.",
+    "bt": "Kechqurun",
+    "dur": "2-3 soat",
+    "tip": "Piyoda zona East Nanjing Road, People's Square dan boshlang",
+    "imgs": [
+     "img/a/shanghai-4.jpg",
+     "img/a/shanghai-4-3.jpg",
+     "img/a/shanghai-4-4.jpg"
+    ]
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Holiday Inn Express Shanghai",
+    "Atour Hotel"
+   ],
+   "4 yulduzli": [
+    "Hotel Indigo Shanghai on the Bund",
+    "Radisson Hotel Shanghai"
+   ],
+   "5 yulduzli": [
+    "Fairmont Peace Hotel",
+    "The Peninsula Shanghai"
+   ]
+  },
+  "info": [
+   "6 kun / 5 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "cultural",
+   "family",
+   "experience"
+  ],
+  "things_to_do": [
+   "Huangpu daryosi kechki kruizi",
+   "Shanxay Disneylend",
+   "Maglev tezyurar poyezdda sayohat",
+   "Tianzifang ko'chalarida sayr"
+  ],
+  "featured": "",
+  "gallery": [
+   "img/g/shanghai-0.jpg",
+   "img/g/shanghai-1.jpg",
+   "img/g/shanghai-2.jpg",
+   "img/g/shanghai-3.jpg",
+   "img/g/shanghai-4.jpg",
+   "img/g/shanghai-5.jpg"
+  ]
+ }
 ]
