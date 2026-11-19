@@ -214,9 +214,9 @@ const LQ = [];
 const app = document.getElementById('app'), hdr = document.getElementById('hdr');
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const price = v => v ? '$' + v : "So'rov bo'yicha";
-const emj = (ch, px) => AEMO[ch.replace(/\uFE0F/g,'')]
-  ? `<span class="ae" data-j="${AEMO[ch.replace(/\uFE0F/g,'')]}" style="width:${px}px;height:${px}px"></span>`
-  : `<span class="ae-s" style="font-size:${px}px">${ch}</span>`;
+const emj = (ch, px) => { const k = AEMO[ch] || AEMO[ch.replace(/\uFE0F/g,'')];
+  return k ? `<span class="ae" data-j="${k}" style="width:${px}px;height:${px}px"></span>`
+    : `<span class="ae-s" style="font-size:${px}px">${ch}</span>`; };
 const emojify = (txt, px) => txt.replace(EMOJI_RE, m => /\p{Extended_Pictographic}|⭐/u.test(m) ? emj(m, px || 17) : m);
 function startLottie(el){ try{ lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:el.dataset.j}); }catch(e){} }
 function hydrate(root){ if(!root) return; root.querySelectorAll('.ae[data-j]').forEach(el => { if(el._a) return; el._a = 1; lottieReady ? startLottie(el) : LQ.push(el); }); }
