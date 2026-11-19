@@ -85,7 +85,13 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--muted);opacity:.4;transition:opacity .2s,width .2s}
 .dot.on{opacity:1;background:var(--accent);width:16px;border-radius:3px}
 .hero{position:relative;height:270px;border-radius:0 0 22px 22px;overflow:hidden;background:linear-gradient(135deg,#2b4c6f,#1d3550)}
-.hero img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.12)}
+.hero .sky{position:absolute;inset:0;overflow:hidden}
+.sky-track{display:flex;height:100%;width:max-content;animation:skyscroll 46s linear infinite;will-change:transform}
+.sky-track img{height:100%;width:auto;flex:0 0 auto;display:block}
+@keyframes skyscroll{from{transform:translateX(0)}to{transform:translateX(-25%)}}
+.hero .skyf{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;filter:saturate(1.12)}
+.hero.nosky .skyf{display:block}
+.hero.nosky .sky{display:none}
 .hero .grid{position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,var(--accent) 30%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--accent) 30%,transparent) 1px,transparent 1px);background-size:36px 36px;opacity:.16;-webkit-mask-image:linear-gradient(to top,black 25%,transparent 88%);mask-image:linear-gradient(to top,black 25%,transparent 88%)}
 .hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.82))}
 .hero .nm{font-size:26px;font-weight:800;color:#fff;text-shadow:0 0 22px color-mix(in srgb,var(--accent) 55%,transparent)}
@@ -97,7 +103,7 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
 .in{animation:fin .45s cubic-bezier(.23,1,.32,1) both}
 @keyframes fin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.in{animation:none!important;transition:none!important}}
+@media (prefers-reduced-motion:reduce){.in{animation:none!important;transition:none!important}.sky-track{animation:none!important}}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
 #sheet{position:fixed;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:var(--card);border-radius:20px 20px 0 0;transform:translateY(105%);transition:transform .3s cubic-bezier(.23,1,.32,1);z-index:51;padding-bottom:calc(env(safe-area-inset-bottom) + 18px);will-change:transform}
@@ -275,7 +281,8 @@ function renderCity(p){
   if(TG){ try{ TG.BackButton.show(); if(TG.MainButton){ TG.MainButton.setText("Narx so'rash"); TG.MainButton.show(); TG.MainButton.onClick(() => openReq(p, -1, "")); } }catch(e){} }
   const gal = p.gallery || [];
   app.innerHTML = `
-  <div class="hero in"><img src="img/${p.id}.jpg" alt="" onerror="this.remove()">
+  <div class="hero in"><img class="skyf" src="img/${p.id}.jpg" alt="" onerror="this.remove()">
+    <div class="sky"><div class="sky-track"><img src="img/sky/${p.id}.webp" alt="" onerror="skyFail(this)"><img src="img/sky/${p.id}.webp" alt=""><img src="img/sky/${p.id}.webp" alt=""><img src="img/sky/${p.id}.webp" alt=""></div></div>
     <div class="grid"></div>
     <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${flag(p.country)}<span>${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div>
     <div class="beam"></div></div>
@@ -393,6 +400,7 @@ function openSheet(city, a){
   if(TG){ try{ TG.BackButton.show(); }catch(e){} if(TG.HapticFeedback){ try{ TG.HapticFeedback.impactOccurred('light'); }catch(e){} } }
 }
 function closeSheet(){ sheetBg.classList.remove('open'); sheet.classList.remove('open'); sheetIsOpen = false; }
+function skyFail(el){ const h = el.closest('.hero'); if(h) h.classList.add('nosky'); }
 sheetBg.addEventListener('click', closeSheet);
 document.getElementById('sheet-handle').addEventListener('click', closeSheet);
 async function boot(){
