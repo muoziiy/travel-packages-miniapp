@@ -290,7 +290,7 @@ function renderCity(p){
   if(TG){ try{ TG.BackButton.show(); if(TG.MainButton){ TG.MainButton.setText("Narx so'rash"); TG.MainButton.show(); TG.MainButton.onClick(() => openReq(p, -1, "")); } }catch(e){} }
   const gal = p.gallery || [];
   app.innerHTML = `
-  <div class="hero"><img class="skyf" src="img/${p.id}.jpg" alt="" onerror="this.remove()">
+  <div class="hero">
     <div class="sky"><div class="sky-track">${SKY[p.id] ? `<div class="sky-unit">${SKY[p.id]}</div><div class="sky-unit">${SKY[p.id]}</div>` : ""}</div></div>
     <div class="ov"><div class="kick">${flag(p.country)}<span>${esc(p.country)}</span></div><div class="nm">${esc(p.title)}</div><div class="meta"><span>${esc(p.days)}</span><i></i><span>${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div></div>
   <section class="sec in"><div class="sec-title">Galereya</div>
