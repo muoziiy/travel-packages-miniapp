@@ -23,7 +23,7 @@ body{background:var(--bg);color:var(--text);font-family:'Rubik',-apple-system,'S
 .hrow{display:flex;align-items:center;gap:10px}
 h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 #lottie{display:inline-block;width:27px;height:27px}
-.sub{color:var(--muted);font-size:14px;margin-top:1px}
+.sub{color:var(--text);opacity:.62;font-size:14px;margin-top:1px}
 #app{flex:1 1 auto;overflow-y:auto;padding:6px 16px 48px;position:relative;z-index:1;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 #app::-webkit-scrollbar{display:none}
 .sec{margin-top:22px}
@@ -36,13 +36,18 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .row .s{color:var(--muted);font-size:13px;margin-top:1px}
 .row .v{font-size:15.5px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap}
 .row .v.mut{color:var(--muted);font-weight:500;font-size:13px}
-.tile{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;flex:0 0 auto;box-shadow:inset 0 -6px 12px rgba(0,0,0,.18)}
+.tile{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;box-shadow:inset 0 -6px 12px rgba(0,0,0,.18)}
 .g1{background:linear-gradient(135deg,#4facfe,#2563eb)}
 .g2{background:linear-gradient(135deg,#fbbf24,#f97316)}
 .g3{background:linear-gradient(135deg,#4ade80,#16a34a)}
 .g4{background:linear-gradient(135deg,#fb7185,#e11d48)}
 .g5{background:linear-gradient(135deg,#a5b4fc,#4f46e5)}
 .g6{background:linear-gradient(135deg,#2dd4bf,#0d9488)}
+.ae{display:inline-block;vertical-align:middle;line-height:0}
+.ae svg{width:100%;height:100%;display:block}
+.ae-s{display:inline-block;vertical-align:middle;line-height:1;animation:aeb 2.4s ease-in-out infinite}
+@keyframes aeb{0%,100%{transform:translateY(0)}50%{transform:translateY(-8%)}}
+@media (prefers-reduced-motion:reduce){.ae-s{animation:none!important}}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 4px 6px;scrollbar-width:none;-ms-overflow-style:none;touch-action:pan-x}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;background:color-mix(in srgb,var(--text) 8%,transparent);color:var(--text);border:none;border-radius:20px;padding:8px 15px;font-size:14px;font-weight:600;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1),background .2s,color .2s}
@@ -75,7 +80,7 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .attr-card img{width:100%;height:100%;object-fit:cover;display:block}
 .attr-card .ov{position:absolute;inset:auto 0 0 0;padding:28px 10px 9px;background:linear-gradient(transparent,rgba(0,0,0,.78))}
 .attr-card .fnm{font-size:13.5px;font-weight:700;color:#fff}
-.attr-card .ph{width:100%;height:158px;background:linear-gradient(160deg,rgb(var(--tint,100 149 237) /.55),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center;font-size:40px}
+.attr-card .ph{width:100%;height:158px;background:linear-gradient(160deg,rgb(var(--tint,100 149 237) /.55),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center}
 .attr-card .anm{font-size:14px;font-weight:700;padding:9px 11px 11px;line-height:1.3}
 .slides{margin:0 -16px}
 .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
@@ -90,7 +95,6 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.75))}
 .hero .nm{font-size:26px;font-weight:800;color:#fff}
 .hero .cn{font-size:13.5px;color:#fff;opacity:.92}
-.ok-ic{color:var(--accent);font-weight:800;flex:0 0 auto}
 .cta{display:block;width:100%;margin-top:24px;background:var(--accent);color:var(--btn-text);border:none;border-radius:14px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
 .cta:active{transform:scale(.97)}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
@@ -104,16 +108,16 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 #sheet.open{transform:translateY(0)}
 #sheet .handle{width:40px;height:4px;border-radius:2px;background:var(--muted);opacity:.5;margin:10px auto 0;cursor:pointer}
 #sheet .sh-img{width:100%;height:200px;object-fit:cover;display:block}
-#sheet .sh-ph{width:100%;height:120px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center;font-size:52px}
+#sheet .sh-ph{width:100%;height:120px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center}
 #sheet .sh-body{padding:14px 18px 0}
 #sheet .sh-name{font-size:19px;font-weight:800}
-#sheet .sh-desc{color:var(--text);opacity:.85;font-size:14.5px;margin-top:6px;line-height:1.5}
+#sheet .sh-desc{font-size:14.5px;margin-top:6px;line-height:1.6}
 #sheet .sh-city{color:var(--sec-header);font-size:12.5px;font-weight:600;margin-top:10px}
 </style>
 </head>
 <body>
 <div id="fx"><img src="img/istanbul.jpg" alt="" onerror="this.remove()"></div>
-<header id="hdr"><div class="hrow"><h1>Safar paketlar</h1><span id="lottie"></span></div><p class="sub">Toshkentdan to'g'ri parvozlar bilan</p></header>
+<header id="hdr"><div class="hrow"><h1>Safar paketlar</h1><span id="lottie" class="ae" data-j="emoji/plane.json"></span></div><p class="sub">Toshkentdan to'g'ri parvozlar bilan</p></header>
 <main id="app"></main>
 <div id="sheet-bg"></div>
 <div id="sheet" role="dialog"><div class="handle" id="sheet-handle"></div><div id="sheet-content"></div></div>
@@ -124,15 +128,28 @@ const VIBES = {family:"Oila bilan",friends:"Do'stlar bilan",couples:"Juftliklar 
 const EMO = ['🕌','🌆','🏝️','🛕','🕌','🌾','🏮'];
 const TODO_EMO = ['🚤','🧖','🚶','🛍️','🍜','📸','🏖️','🌃'];
 const TINT = {'istanbul':'59 130 246','dubai':'234 179 8','phuket':'6 182 212','kuala-lumpur':'139 92 246','muscat':'217 164 65','bali':'34 197 94','shanghai':'244 63 94'};
-let DATA = [], vibe = '', country = '', sheetIsOpen = false, slideTimer = null;
+const AEMO = {'✈️':'emoji/plane.json','🏝️':'emoji/island.json','🛍️':'emoji/bags.json','🏖️':'emoji/beach.json','✅':'emoji/check.json','✨':'emoji/sparkles.json','⭐':'emoji/star.json','🌟':'emoji/glowstar.json','💫':'emoji/dizzy.json','🌴':'emoji/palm.json','🔥':'emoji/fire.json','🎉':'emoji/party.json','💎':'emoji/gem.json'};
+const EMOJI_RE = /[\p{Extended_Pictographic}\uFE0F\u200D\u2B50]+/gu;
+let DATA = [], vibe = '', country = '', sheetIsOpen = false, slideTimer = null, lottieReady = false;
+const LQ = [];
 const app = document.getElementById('app'), hdr = document.getElementById('hdr');
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const price = v => v ? '$' + v : "So'rov bo'yicha";
-
+const emj = (ch, px) => AEMO[ch.replace(/\uFE0F/g,'')]
+  ? `<span class="ae" data-j="${AEMO[ch.replace(/\uFE0F/g,'')]}" style="width:${px}px;height:${px}px"></span>`
+  : `<span class="ae-s" style="font-size:${px}px">${ch}</span>`;
+const emojify = (txt, px) => txt.replace(EMOJI_RE, m => /\p{Extended_Pictographic}|⭐/u.test(m) ? emj(m, px || Math.round(1.15 * 16)) : m);
+function startLottie(el){ try{ lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:el.dataset.j}); }catch(e){} }
+function hydrate(root){ if(!root) return; root.querySelectorAll('.ae[data-j]').forEach(el => { if(el._a) return; el._a = 1; lottieReady ? startLottie(el) : LQ.push(el); }); }
+function initEmoji(){
+  const s = document.createElement('script');
+  s.src = 'https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie_light.min.js';
+  s.onload = () => { lottieReady = true; LQ.splice(0).forEach(startLottie); };
+  document.head.appendChild(s);
+}
 function applyTheme(){
   if(!TG) return;
   const p = TG.themeParams || {};
-  // Muoziiy's theme: secondary_bg_color is the page, bg_color is the section card
   const m = {bg:'secondary_bg_color',card:'bg_color',text:'text_color',muted:'hint_color',accent:'button_color','btn-text':'button_text_color','sec-header':'section_header_text_color',sep:'section_separator_color'};
   const fb = {'sec-header':'button_color',bg:'bg_color',card:'section_bg_color'};
   for(const k in m){ if(p[m[k]]) document.documentElement.style.setProperty('--'+k, p[m[k]]); else if(fb[k] && p[fb[k]]) document.documentElement.style.setProperty('--'+k, p[fb[k]]); }
@@ -197,15 +214,16 @@ function renderCity(p){
     ${gal.length > 1 ? `<div class="dots">${gal.map((_,i)=>`<span class="dot${i?'':' on'}"></span>`).join('')}</div>` : ''}</div></section>
   <section class="sec in"><div class="sec-title">Narxlar · 1 kishi</div><div class="card">${p.tiers.map(t=>`<div class="row"><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${p.days} · ${esc(p.from)}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
   <section class="sec in"><div class="sec-title">Mashhur joylar</div><div class="hscroll">${p.attractions.map((a,i)=> a.img
-    ? `<div class="attr-card" data-att="${i}"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.textContent='📍';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm">${esc(a.name)}</div></div></div>`
-    : `<div class="attr-card" data-att="${i}"><div class="ph">${EMO[i % EMO.length]}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${TODO_EMO[i % TODO_EMO.length]}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(t)}</div></div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">🏨</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">✓</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(x)}</div></div></div>`).join('')}</div></section>
+    ? `<div class="attr-card" data-att="${i}"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.innerHTML='${emj(EMO[i % EMO.length],44).replace(/'/g,'&#39;')}';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm">${esc(a.name)}</div></div></div>`
+    : `<div class="attr-card" data-att="${i}"><div class="ph">${emj(EMO[i % EMO.length],44)}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${emj(TODO_EMO[i % TODO_EMO.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${emj('🏨',18)}</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${emj('✅',18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(x),16)}</div></div></div>`).join('')}</div></section>
   ${TG ? '' : '<button class="cta" id="book">Band qilish</button>'}`;
   app.querySelectorAll('[data-att]').forEach(el => el.addEventListener('click', () => openSheet(p, p.attractions[+el.dataset.att])));
   const bk = document.getElementById('book'); if(bk) bk.addEventListener('click', () => { if(TG && TG.openTelegramLink) TG.openTelegramLink(BOOK); else location.href = BOOK; });
   initSlides(gal.length);
+  hydrate(app);
   app.scrollTop = 0;
 }
 function initSlides(n){
@@ -221,26 +239,23 @@ function initSlides(n){
 function stopSlides(){ if(slideTimer){ clearInterval(slideTimer); slideTimer = null; } }
 const sheet = document.getElementById('sheet'), sheetBg = document.getElementById('sheet-bg'), sheetContent = document.getElementById('sheet-content');
 function openSheet(city, a){
-  sheetContent.innerHTML = `${a.img ? `<img class="sh-img" src="${a.img}" alt="" onerror="this.remove()">` : `<div class="sh-ph">📍</div>`}
-    <div class="sh-body"><div class="sh-name">${esc(a.name)}</div><div class="sh-desc">${esc(a.desc || '')}</div>
+  sheetContent.innerHTML = `${a.img ? `<img class="sh-img" src="${a.img}" alt="" onerror="this.remove()">` : `<div class="sh-ph">${emj('📍',52)}</div>`}
+    <div class="sh-body"><div class="sh-name">${esc(a.name)}</div><div class="sh-desc">${emojify(esc(a.desc || ''),17)}</div>
     <div class="sh-city">${esc(city.title)} · ${esc(city.country)} paketiga kiradi</div></div>`;
   sheetBg.classList.add('open'); sheet.classList.add('open'); sheetIsOpen = true;
+  hydrate(sheetContent);
   if(TG){ try{ TG.BackButton.show(); }catch(e){} if(TG.HapticFeedback){ try{ TG.HapticFeedback.impactOccurred('light'); }catch(e){} } }
 }
 function closeSheet(){ sheetBg.classList.remove('open'); sheet.classList.remove('open'); sheetIsOpen = false; }
 sheetBg.addEventListener('click', closeSheet);
 document.getElementById('sheet-handle').addEventListener('click', closeSheet);
-function initEmoji(){
-  const s = document.createElement('script');
-  s.src = 'https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie_light.min.js';
-  s.onload = () => { try{ lottie.loadAnimation({container:document.getElementById('lottie'),renderer:'svg',loop:true,autoplay:true,path:'emoji/plane.json'}); }catch(e){} };
-  document.head.appendChild(s);
-}
+function initEmojiLoader(){ initEmoji(); }
 async function boot(){
   try{ const r = await fetch('api/packages'); DATA = await r.json(); }
   catch(e){ const r2 = await fetch('packages.json'); DATA = await r2.json(); }
   if(!Array.isArray(DATA)) DATA = DATA.packages || [];
-  initTG(); initEmoji(); route();
+  initTG(); initEmojiLoader(); hydrate(document.getElementById('hdr')); route();
+  if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 window.addEventListener('hashchange', route);
 boot();
