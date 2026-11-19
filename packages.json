@@ -1,32 +1,12 @@
 [
   {
-    "id": "umra-lux",
-    "type": "umra",
-    "title": "Umra Lux (Makka va Madina)",
-    "days": "10 kun",
-    "from": "Toshkent",
-    "tiers": [
-      {
-        "name": "Lux",
-        "price_per_person": 1000,
-        "suffix": "+"
-      }
-    ],
-    "note": "Guruh umrasi ham bor (14 kun) - narx so'rov bo'yicha",
-    "info": [
-      "Makka va Madina ziyoratlari",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Umra vizasi (50$ / kishi)",
-      "Guruh umrasi ham bor (14 kun) — narx so'rov bo'yicha"
-    ]
-  },
-  {
     "id": "istanbul",
     "type": "city",
     "title": "Istanbul",
+    "country": "Turkiya",
     "days": "7 kun",
     "from": "Toshkent",
+    "direct": true,
     "tiers": [
       {
         "name": "3 yulduzli",
@@ -41,44 +21,44 @@
         "price_per_person": 1050
       }
     ],
-    "note": "",
-    "info": [
-      "7 kun / 6 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ]
-  },
-  {
-    "id": "phuket",
-    "type": "city",
-    "title": "Phuket",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": 980
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 1150
-      }
+    "attractions": [
+      "Ayasofya masjidi",
+      "Sultonahmad masjidi (Ko'k masjid)",
+      "Topqapi saroyi",
+      "Bosfor bo'g'ozi parom sayohati",
+      "Gran Bozor"
     ],
-    "note": "",
+    "hotels": {
+      "3 yulduzli": [
+        "Ottoman Hotel Park",
+        "Sirkeci Mansion"
+      ],
+      "4 yulduzli": [
+        "Hotel Ibrahim Pasha",
+        "DoubleTree by Hilton Istanbul Old Town"
+      ],
+      "5 yulduzli": [
+        "CVK Park Bosphorus",
+        "Swissotel The Bosphorus",
+        "Shangri-La Bosphorus"
+      ]
+    },
     "info": [
       "7 kun / 6 tun",
       "To'g'ri parvoz Toshkentdan",
       "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
       "Viza (50$ / kishi)"
-    ]
+    ],
+    "note": ""
   },
   {
     "id": "dubai",
     "type": "city",
     "title": "Dubai",
+    "country": "BAA",
     "days": "5 kun",
     "from": "Toshkent",
+    "direct": true,
     "tiers": [
       {
         "name": "4 yulduzli",
@@ -89,12 +69,273 @@
         "price_per_person": 900
       }
     ],
-    "note": "",
+    "attractions": [
+      "Burj Khalifa",
+      "Dubai Fountain shousi",
+      "Dubai Mall",
+      "Palm Jumeirah",
+      "Dubai Miracle Garden"
+    ],
+    "hotels": {
+      "4 yulduzli": [
+        "Rove Downtown",
+        "Millennium Atria Business Bay"
+      ],
+      "5 yulduzli": [
+        "Address Downtown",
+        "Atlantis The Palm"
+      ]
+    },
     "info": [
       "5 kun / 4 tun",
       "To'g'ri parvoz Toshkentdan",
       "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
       "Viza (50$ / kishi)"
-    ]
+    ],
+    "note": ""
+  },
+  {
+    "id": "phuket",
+    "type": "city",
+    "title": "Phuket",
+    "country": "Tailand",
+    "days": "7 kun",
+    "from": "Toshkent",
+    "direct": true,
+    "tiers": [
+      {
+        "name": "3 yulduzli",
+        "price_per_person": 980
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": 1150
+      }
+    ],
+    "attractions": [
+      "Patong plyaji",
+      "Katta Budda haykali",
+      "Phi Phi orollari ekskursiyasi",
+      "Karon plyaji",
+      "Promthep burni (quyosh botishi)"
+    ],
+    "hotels": {
+      "3 yulduzli": [
+        "Baan Laimai Beach Resort",
+        "Andaman Beach Suites"
+      ],
+      "5 yulduzli": [
+        "Amari Phuket",
+        "Dusit Thani Laguna Phuket"
+      ]
+    },
+    "info": [
+      "7 kun / 6 tun",
+      "To'g'ri parvoz Toshkentdan",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+      "Viza (50$ / kishi)"
+    ],
+    "note": ""
+  },
+  {
+    "id": "kuala-lumpur",
+    "type": "city",
+    "title": "Kuala Lumpur",
+    "country": "Malayziya",
+    "days": "6 kun",
+    "from": "Toshkent",
+    "direct": false,
+    "tiers": [
+      {
+        "name": "3 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "4 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": null
+      }
+    ],
+    "attractions": [
+      "Petronas qo'sh minoralari",
+      "Batu cave'lari",
+      "KLCC parki",
+      "Merdeka maydoni",
+      "Bukit Bintang ko'chasi"
+    ],
+    "hotels": {
+      "3 yulduzli": [
+        "Hotel Sentral Kuala Lumpur",
+        "Apple 1 Hotel"
+      ],
+      "4 yulduzli": [
+        "DoubleTree by Hilton Kuala Lumpur",
+        "Sunway Putra Hotel"
+      ],
+      "5 yulduzli": [
+        "Mandarin Oriental Kuala Lumpur",
+        "Grand Hyatt Kuala Lumpur"
+      ]
+    },
+    "info": [
+      "6 kun / 5 tun",
+      "Toshkentdan parvoz",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+    ],
+    "note": ""
+  },
+  {
+    "id": "muscat",
+    "type": "city",
+    "title": "Maskat",
+    "country": "Oman",
+    "days": "5 kun",
+    "from": "Toshkent",
+    "direct": false,
+    "tiers": [
+      {
+        "name": "3 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "4 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": null
+      }
+    ],
+    "attractions": [
+      "Sulton Qobus katta masjidi",
+      "Muttrah bozori (souq)",
+      "Qirollik opera teatri",
+      "Muttrah Corniche qirg'og'i",
+      "Al Qurum plyaji"
+    ],
+    "hotels": {
+      "3 yulduzli": [
+        "Ibis Muscat",
+        "City Seasons Muscat"
+      ],
+      "4 yulduzli": [
+        "Crowne Plaza Muscat",
+        "Millennium Resort Mussanah"
+      ],
+      "5 yulduzli": [
+        "Grand Millennium Muscat",
+        "InterContinental Muscat",
+        "Shangri-La Al Husn"
+      ]
+    },
+    "info": [
+      "5 kun / 4 tun",
+      "Toshkentdan parvoz",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+    ],
+    "note": ""
+  },
+  {
+    "id": "bali",
+    "type": "city",
+    "title": "Bali",
+    "country": "Indoneziya",
+    "days": "7 kun",
+    "from": "Toshkent",
+    "direct": false,
+    "tiers": [
+      {
+        "name": "3 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "4 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": null
+      }
+    ],
+    "attractions": [
+      "Tanah Lot dengiz ibodatxonasi",
+      "Ubud guruch terrasalari (Tegallalang)",
+      "Uluwatu ibodatxonasi",
+      "Seminyak plyaji",
+      "Nusa Penida oroli ekskursiyasi"
+    ],
+    "hotels": {
+      "3 yulduzli": [
+        "Ibis Styles Bali Legian",
+        "Ozz Hotel Kuta"
+      ],
+      "4 yulduzli": [
+        "Holiday Inn Resort Baruna Bali",
+        "Bali Dynasty Resort"
+      ],
+      "5 yulduzli": [
+        "AYANA Resort Jimbaran",
+        "Padma Resort Legian"
+      ]
+    },
+    "info": [
+      "7 kun / 6 tun",
+      "Toshkentdan parvoz",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+    ],
+    "note": ""
+  },
+  {
+    "id": "shanghai",
+    "type": "city",
+    "title": "Shanxay",
+    "country": "Xitoy",
+    "days": "6 kun",
+    "from": "Toshkent",
+    "direct": false,
+    "tiers": [
+      {
+        "name": "3 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "4 yulduzli",
+        "price_per_person": null
+      },
+      {
+        "name": "5 yulduzli",
+        "price_per_person": null
+      }
+    ],
+    "attractions": [
+      "The Bund (Vaytan qirg'og'i)",
+      "Yu bog'i (Yu Garden)",
+      "Shanxay minorasi",
+      "Zhujiajiao suv shahri",
+      "Nankin yo'li (Nanjing Road)"
+    ],
+    "hotels": {
+      "3 yulduzli": [
+        "Holiday Inn Express Shanghai",
+        "Atour Hotel"
+      ],
+      "4 yulduzli": [
+        "Hotel Indigo Shanghai on the Bund",
+        "Radisson Hotel Shanghai"
+      ],
+      "5 yulduzli": [
+        "Fairmont Peace Hotel",
+        "The Peninsula Shanghai"
+      ]
+    },
+    "info": [
+      "6 kun / 5 tun",
+      "Toshkentdan parvoz",
+      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+    ],
+    "note": ""
   }
 ]
