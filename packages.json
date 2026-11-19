@@ -1,341 +1,572 @@
 [
-  {
-    "id": "istanbul",
-    "type": "city",
-    "title": "Istanbul",
-    "country": "Turkiya",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "direct": true,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": 650
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": 820
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 1050
-      }
-    ],
-    "attractions": [
-      "Ayasofya masjidi",
-      "Sultonahmad masjidi (Ko'k masjid)",
-      "Topqapi saroyi",
-      "Bosfor bo'g'ozi parom sayohati",
-      "Gran Bozor"
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Ottoman Hotel Park",
-        "Sirkeci Mansion"
-      ],
-      "4 yulduzli": [
-        "Hotel Ibrahim Pasha",
-        "DoubleTree by Hilton Istanbul Old Town"
-      ],
-      "5 yulduzli": [
-        "CVK Park Bosphorus",
-        "Swissotel The Bosphorus",
-        "Shangri-La Bosphorus"
-      ]
-    },
-    "info": [
-      "7 kun / 6 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ],
-    "note": ""
+ {
+  "id": "istanbul",
+  "type": "city",
+  "title": "Istanbul",
+  "country": "Turkiya",
+  "days": "7 kun",
+  "from": "Toshkent",
+  "direct": true,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": 650
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": 820
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": 1050
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Ayasofya masjidi",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdpDq74Iulterkz9KnnnO81E7cjYmSlS6C9l2IqrhnRzZ8UKin8Jklbo017U4Ump7ABfZ2Fs-iefYEafcAF1XpJqGBfPZ65QztOteQl837Oae5Cb5oDdQmbJ7GxTLWW40EqVztiVw=s4800-w1000-h1024"
+   },
+   {
+    "name": "Sultonahmad masjidi (Ko'k masjid)",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeP2HzpJgjPutBKWEiSpsGAR0XRpvhb8cNKvX0XocWFjXVeqmYcfYc29iam8Tume5QbUrIBrgZTL3TQC0-4LJFC_Tlfhl5aXmGmogLFJS2cUc92U-BcTKi5ityd2LWKrjvoo8ft4A=s4800-w1000-h1024"
+   },
+   {
+    "name": "Topqapi saroyi",
+    "img": null
+   },
+   {
+    "name": "Bosfor bo'g'ozi parom sayohati",
+    "img": null
+   },
+   {
+    "name": "Gran Bozor",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Ottoman Hotel Park",
+    "Sirkeci Mansion"
+   ],
+   "4 yulduzli": [
+    "Hotel Ibrahim Pasha",
+    "DoubleTree by Hilton Istanbul Old Town"
+   ],
+   "5 yulduzli": [
+    "CVK Park Bosphorus",
+    "Swissotel The Bosphorus",
+    "Shangri-La Bosphorus"
+   ]
   },
-  {
-    "id": "dubai",
-    "type": "city",
-    "title": "Dubai",
-    "country": "BAA",
-    "days": "5 kun",
-    "from": "Toshkent",
-    "direct": true,
-    "tiers": [
-      {
-        "name": "4 yulduzli",
-        "price_per_person": 700
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 900
-      }
-    ],
-    "attractions": [
-      "Burj Khalifa",
-      "Dubai Fountain shousi",
-      "Dubai Mall",
-      "Palm Jumeirah",
-      "Dubai Miracle Garden"
-    ],
-    "hotels": {
-      "4 yulduzli": [
-        "Rove Downtown",
-        "Millennium Atria Business Bay"
-      ],
-      "5 yulduzli": [
-        "Address Downtown",
-        "Atlantis The Palm"
-      ]
-    },
-    "info": [
-      "5 kun / 4 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ],
-    "note": ""
+  "info": [
+   "7 kun / 6 tun",
+   "To'g'ri parvoz Toshkentdan",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+   "Viza (50$ / kishi)"
+  ],
+  "note": "",
+  "vibes": [
+   "cultural",
+   "family",
+   "friends"
+  ],
+  "things_to_do": [
+   "Bosfor kechki kruizi",
+   "Hammam (turk cho'milxonasi)",
+   "Istiklol ko'chasi bo'ylab sayr",
+   "Gran Bozorda savdo"
+  ],
+  "featured": "Madaniyat va tarix sevgililariga",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLdAf7kz7pr3nddkqeqya8_808pNc1IHfMyL0vqTo0SAvVEkr8ekY0LRDUO1SiYDL4vTUClkS6of6CJu5rOxdiyE8CvbtRzok2Q_DgG1oH8hDUA_mIppBIbeQdkmZ-2Kj11fABQ=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLc_D48eM-447HWS5qlmA7oRu4ISVwnz3ZeWdTad3WUx587-bMmqME68SaycCpeMK8CIGX1dvnIEoGkWV5ewnvgdFNsXpvDbbahigVHtORncyk6H5kGJPTv0knKXf7IzUpo1dfol=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLcrkgIdHTIKcGXNARITZbd5kC0PwK4hoNaI1c57Flka11AS2MWtdMLrUSpYKkK6LPJ0mw9wEd_p0kS9sR3IocFe2yRjYcs3XEvA-S3O-KOCdIdCZbdttHAeqs3OezbqRYOap0hnRMPUm8Do=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLeJjZqy_7Puz82kpV5kFmSPPX5N1-p3tdG41iCLg68ujip6oWIg6zvrPuwDvThmFQ5RdPkOXUwK0IpOBbfuPpQXUfORHqhxHwqqf0BQo7rNZ2oo8RDVLDGkwOtiWrTS6AUhiGKzK8DlR6U=s4800-w1000-h1024"
+  ]
+ },
+ {
+  "id": "dubai",
+  "type": "city",
+  "title": "Dubai",
+  "country": "BAA",
+  "days": "5 kun",
+  "from": "Toshkent",
+  "direct": true,
+  "tiers": [
+   {
+    "name": "4 yulduzli",
+    "price_per_person": 700
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": 900
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Burj Khalifa",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLffdSWKttChhufVObu0M6WF-fPzMlSD_PiOBmBQv96AVS3IS0Mfxresr3q2pb4EnwYXzhDhTdGRE4JXyNsgFLYAotlQ8HyQhocRbIKj3dR6ptI72JoWknMqmEAlJ7FRVM-wNljU=s4800-w1000-h1024"
+   },
+   {
+    "name": "Dubai Fountain shousi",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfd078NMw9CWwUA08kLgT5uko9kwTXtkPrEYbC1y0DGDBHEyuKzP4Wv7bPxZAOCn7sY5FVyITS8cqMAk6ncX17AEfLPXkvHzHw--Ib0Co8wGxK3hNY1tPjgNfDWX-6EPwGdEMn9=s4800-w1000-h1024"
+   },
+   {
+    "name": "Dubai Mall",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeWv1nWEs3XgrrJPPUsxFdK-iGTap4wjiuTJz5h242p3lhP3waxPbsalnorJLnG-rQVr26HTKXnNMWUocUWGUZqTKqibCxqG5DHdBrx1uJhHLnPafyt2wgxdldmadZgCGV_HQP9rOjF8BQu=s4800-w1000-h1024"
+   },
+   {
+    "name": "Palm Jumeirah",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfdNzAip8HjWdt-fPbQOrIT0Y_Tx77rZEjN5ZJyH1uIqt1XXpjSfqtOmdiacfnmHtGGL3U8J6tNh26iRPUdjQL9fQhx1Z5OOajYcboYEpbKwcavmwhgk5kyTBL08R69XdScjc3b3A=s4800-w1000-h1024"
+   },
+   {
+    "name": "Dubai Miracle Garden",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "4 yulduzli": [
+    "Rove Downtown",
+    "Millennium Atria Business Bay"
+   ],
+   "5 yulduzli": [
+    "Address Downtown",
+    "Atlantis The Palm"
+   ]
   },
-  {
-    "id": "phuket",
-    "type": "city",
-    "title": "Phuket",
-    "country": "Tailand",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "direct": true,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": 980
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": 1150
-      }
-    ],
-    "attractions": [
-      "Patong plyaji",
-      "Katta Budda haykali",
-      "Phi Phi orollari ekskursiyasi",
-      "Karon plyaji",
-      "Promthep burni (quyosh botishi)"
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Baan Laimai Beach Resort",
-        "Andaman Beach Suites"
-      ],
-      "5 yulduzli": [
-        "Amari Phuket",
-        "Dusit Thani Laguna Phuket"
-      ]
-    },
-    "info": [
-      "7 kun / 6 tun",
-      "To'g'ri parvoz Toshkentdan",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
-      "Viza (50$ / kishi)"
-    ],
-    "note": ""
+  "info": [
+   "5 kun / 4 tun",
+   "To'g'ri parvoz Toshkentdan",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+   "Viza (50$ / kishi)"
+  ],
+  "note": "",
+  "vibes": [
+   "family",
+   "couples",
+   "experience"
+  ],
+  "things_to_do": [
+   "Cho'lda safari va barbekyu",
+   "Dhow kruizi Dubay ko'rfazida",
+   "Ski Dubai (ichki chang'i)",
+   "Global Village kechki sayohat"
+  ],
+  "featured": "Oila bilan dam olish uchun",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLfts6HNHi5gVqSqiEbVrqdI-9tAbmSzOpiaAHOfvlOqWlzx8RABJhhPsiV_rZYoXTd-I_cffGJVJC_qcJp_86_Nm5cHt3ibDdVStKzg1uBzM_K4CH34xhiFBrLmHDNCJpf27xh_Jw=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLew7icgB4Ll1wNcdNzClio7HVMAJ8bHxaCGfKS8dM5uM936ZMXHDaDY8HSjicQxild5QRB47Jq1gJG1VdJQQRYU6vI5z4_Di4HfhiEmwis4EjuXuKdg2Dg_DKTdCwLeGFi6oMOPOA=s4800-w1000-h1024"
+  ]
+ },
+ {
+  "id": "phuket",
+  "type": "city",
+  "title": "Phuket",
+  "country": "Tailand",
+  "days": "7 kun",
+  "from": "Toshkent",
+  "direct": true,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": 980
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": 1150
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Patong plyaji",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfm7R8k8-D3heU7AdZEKxZK5RkyVLHszbAq68Gz3mpxmVIz9bwyZQEM15M__z2HYCmv5rDecTqhZEJGBkk8goaAo590gSfhxrtv5yCYLHX4_HIJWnwlYJukpJFlarxdMimSl8A_=s4800-w1000-h1024"
+   },
+   {
+    "name": "Katta Budda haykali",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfbGyVSHb03diAccFPuHX2zHlkruUb7lOfC1nPjG2PD0ph6wlf5rmJq6Y5Gxc25lTUkQoLkOsiPEbs66nAC0A1G2IkpnrsyEQdN-44ovUC589VF2ABrP9QAjlT_EC1aIgvNyqyZTQ=s4800-w1000-h1024"
+   },
+   {
+    "name": "Phi Phi orollari ekskursiyasi",
+    "img": null
+   },
+   {
+    "name": "Karon plyaji",
+    "img": null
+   },
+   {
+    "name": "Promthep burni (quyosh botishi)",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Baan Laimai Beach Resort",
+    "Andaman Beach Suites"
+   ],
+   "5 yulduzli": [
+    "Amari Phuket",
+    "Dusit Thani Laguna Phuket"
+   ]
   },
-  {
-    "id": "kuala-lumpur",
-    "type": "city",
-    "title": "Kuala Lumpur",
-    "country": "Malayziya",
-    "days": "6 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      "Petronas qo'sh minoralari",
-      "Batu cave'lari",
-      "KLCC parki",
-      "Merdeka maydoni",
-      "Bukit Bintang ko'chasi"
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Hotel Sentral Kuala Lumpur",
-        "Apple 1 Hotel"
-      ],
-      "4 yulduzli": [
-        "DoubleTree by Hilton Kuala Lumpur",
-        "Sunway Putra Hotel"
-      ],
-      "5 yulduzli": [
-        "Mandarin Oriental Kuala Lumpur",
-        "Grand Hyatt Kuala Lumpur"
-      ]
-    },
-    "info": [
-      "6 kun / 5 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": ""
+  "info": [
+   "7 kun / 6 tun",
+   "To'g'ri parvoz Toshkentdan",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
+   "Viza (50$ / kishi)"
+  ],
+  "note": "",
+  "vibes": [
+   "friends",
+   "couples",
+   "honeymoon"
+  ],
+  "things_to_do": [
+   "Long-tail qayiqda orollarga sayohat",
+   "Snorkeling",
+   "Tailand masaji",
+   "Kechki bozor (Malin Plaza)"
+  ],
+  "featured": "Dengiz va plyaj kayfiyati uchun",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLe39rhl_2w90eNmsJt8VgPeIxR-69FQ_ynWZuB920bZ1uouhi-NqGeQCdiEJ1o6kEuOr6-XQBzxf9Lp7dBbP0zddkM6mWoxh-W-z2mWFbzTN8xln1KnYKJt6p0L8K2xYoc1DlZ6=s4800-w1000-h842",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLekZoZBE8PlhjQA6323cu0zijklo8PO82HTSk7f67PRusPSNmPUNbvYSuIoRKYjjrw_7HzQkhDl8oaKId3cP9utCm-rBaMDDQ9d6ygHGpyvNv8Bmh7Hs9v_gETrlyPXYYIl3ZKS=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLdIipB73PYZQtzjmIA_NMaoIQhirO0_hgNsj18J86rlUX1gcMOEkL36LlccE1DaLW-6SLioBQ81wO1k9S3LwnMyAWYRkhFJkIuUHpFJMv8varF5kPNmkTq0zznyubFVmTR93tw=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLeQXD_Zs2nW9EKSPOvtdwh-3v-WGbtIcqyDJDH26JGSbJrD9l7Qhf7AfcUyPqxBnbFHvKGN0AqmilU_H6nFFHfJEZKAYgIXjDxQptaMq0hDW0qU_aZvcF0dAw-vqAVBo1Ds6Qoi=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLel22puMr_1G9XjQuIXw1c0eb_EG9zNHD922Q7XbDPiB3wIA8Aslv1_Cl3KSkRIcIYubHYsNAtyg3qmFJlIBQKZXdHf-9Gc6Kwyuze05lnZhSkOQ-Yj9D-5P2FrzUZQ1kluakj8GA=s4800-w507-h338"
+  ]
+ },
+ {
+  "id": "kuala-lumpur",
+  "type": "city",
+  "title": "Kuala Lumpur",
+  "country": "Malayziya",
+  "days": "6 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Petronas qo'sh minoralari",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLc1yQbgjydY0xy4yc960arlSHNT5asSZdkCbYwSRtrNOvfPcKk3BNBvrHK0TCEWnsQYckAQggEExF9Rjy-TrENAeLAI8tEfx-asNLyC1EdckN0L0avMjGjOsh0x9uTKL4ElDAvB_uz1mhL1=s4800-w1000-h1024"
+   },
+   {
+    "name": "Batu cave'lari",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLcWEXtVVxPomIdFtG3bEBMX1-FF7ekG385lJ1ePiGZueih5HX_97gw35PgyKMiwu3GQI49I5bTHiaNkTbg9UDgYMQfWJVEh4nFxibNwPU8vlR6BsC5etjnterQw7ii9bl_to9Ti=s4800-w1000-h1024"
+   },
+   {
+    "name": "KLCC parki",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdoi3EWkoX6g3owPzHuInvSDtYDVyCgglveTLbncf9bD_VivwvhoX6TMK1Z8jjqBzKc4VIYv_AplPD8QcwwOk9MnSnzqjxwzSyqlWSFVmSNi2Z1PRY3RghWYplcy2TOYSdQUNhg=s4800-w1000-h1024"
+   },
+   {
+    "name": "Merdeka maydoni",
+    "img": null
+   },
+   {
+    "name": "Bukit Bintang ko'chasi",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Hotel Sentral Kuala Lumpur",
+    "Apple 1 Hotel"
+   ],
+   "4 yulduzli": [
+    "DoubleTree by Hilton Kuala Lumpur",
+    "Sunway Putra Hotel"
+   ],
+   "5 yulduzli": [
+    "Mandarin Oriental Kuala Lumpur",
+    "Grand Hyatt Kuala Lumpur"
+   ]
   },
-  {
-    "id": "muscat",
-    "type": "city",
-    "title": "Maskat",
-    "country": "Oman",
-    "days": "5 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      "Sulton Qobus katta masjidi",
-      "Muttrah bozori (souq)",
-      "Qirollik opera teatri",
-      "Muttrah Corniche qirg'og'i",
-      "Al Qurum plyaji"
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Ibis Muscat",
-        "City Seasons Muscat"
-      ],
-      "4 yulduzli": [
-        "Crowne Plaza Muscat",
-        "Millennium Resort Mussanah"
-      ],
-      "5 yulduzli": [
-        "Grand Millennium Muscat",
-        "InterContinental Muscat",
-        "Shangri-La Al Husn"
-      ]
-    },
-    "info": [
-      "5 kun / 4 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": ""
+  "info": [
+   "6 kun / 5 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "family",
+   "cultural",
+   "experience"
+  ],
+  "things_to_do": [
+   "Sunway Lagoon suv parki",
+   "Petaling ko'chasi kechki bozori",
+   "Genting Highlands tog' kurorti",
+   "KL Tower kuzatuv maydoni"
+  ],
+  "featured": "",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLetYybkznju6Sc1omHd_Hmc6k3o09fNiC4RfTZUuXy3-Du-t7eeYkAakO-WZLytrobCaNH-rQ0YPWHKBgS7KQQioxWBqAazl4bESat02FoUPqf9D-GGIfljtTEtl8_FJswEnUVT=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLfQTjXe41wkUbX5YIXxUv30lLQbB8jssOIcfUjZLA_Vmhr3D3RiiD5qzFLPx40GffseN6WgxDORww4IA6J6INHzW9pw6NLWMDDQlgEE_Wzt_puOlio3LsJtS6Wqt070UvzugSo=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLe1KsD3mt_rJuCQGS1VSLnyzLjQJTe2wzwnXEM7HNTx6iE4plOEDlpbi0TxxCNLMKzzVSlN7HIBXBzo2y8s4M-tIrUNfdaOUuXetR6d1ttDoLL06NORffS9amzBg_86ivBLlM3n3U_g3G4=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLcTOuDgLC1f3t7tMily2nfPC90DzaEXVzfKRJrSLdKIYTb7qBNz8eKfhfj50o-HI52rxCWECJnsSW0vGN-5-Sas-pmOdRiSCV2TprXNBfy0KgxxGIGSj38H5xBXem6szZ_uLGjBNGbN6bw=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLcqVlgzrEEPO9VWxccJwlfWjgLkoK8R9whDnW-Tacg4sTgf52gINJT4JIm90F5OKYLqN78HVuCaq5IuHh1znFuS5Sp2a0OYKuzP5z_X8eIKiHVWd5-Ps8kUK48TESJWj3P3Jbkkeg=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLdiYeZ8aW6-t2-PNUECGnUvJz9s2JPq9ceuxhGZNwpykoRRgt2S3Tekqr0eXkTm88u0NW83YZ_e9QJzhybdWrTN9F5jtAdRRK2UhwOaFDMxEujjrSQSFQsywHI8Gn4GeD7cVj8l=s4800-w1000-h1024"
+  ]
+ },
+ {
+  "id": "muscat",
+  "type": "city",
+  "title": "Maskat",
+  "country": "Oman",
+  "days": "5 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Sulton Qobus katta masjidi",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLci4sm4en9BLuqRBO0bxxQ80N0t9TOlVEVvVM1RgN_LN69vCqJiUXZjgAv6o1SFCdRwulQjTulQZX9pJL3L1847WSKuOY40glk5u88RqofWpSRYbovkvUT8sUNkiVL2hhjwR2nYBA=s4800-w1000-h1024"
+   },
+   {
+    "name": "Muttrah bozori (souq)",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdI8NLthhp5CUUlKNKrVDUGa6fQZAS_GApsA5fXe_FoV3xlbhGLszuZ-UD1stb_JwHXe8VkOLWa4YCzXPnP3SnGFkkux2dyKFFuwyqt40dnyxkV7vWxYEItEYg3ud2s_flWSxL1=s4800-w600-h300"
+   },
+   {
+    "name": "Qirollik opera teatri",
+    "img": null
+   },
+   {
+    "name": "Muttrah Corniche qirg'og'i",
+    "img": null
+   },
+   {
+    "name": "Al Qurum plyaji",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Ibis Muscat",
+    "City Seasons Muscat"
+   ],
+   "4 yulduzli": [
+    "Crowne Plaza Muscat",
+    "Millennium Resort Mussanah"
+   ],
+   "5 yulduzli": [
+    "Grand Millennium Muscat",
+    "InterContinental Muscat",
+    "Shangri-La Al Husn"
+   ]
   },
-  {
-    "id": "bali",
-    "type": "city",
-    "title": "Bali",
-    "country": "Indoneziya",
-    "days": "7 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      "Tanah Lot dengiz ibodatxonasi",
-      "Ubud guruch terrasalari (Tegallalang)",
-      "Uluwatu ibodatxonasi",
-      "Seminyak plyaji",
-      "Nusa Penida oroli ekskursiyasi"
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Ibis Styles Bali Legian",
-        "Ozz Hotel Kuta"
-      ],
-      "4 yulduzli": [
-        "Holiday Inn Resort Baruna Bali",
-        "Bali Dynasty Resort"
-      ],
-      "5 yulduzli": [
-        "AYANA Resort Jimbaran",
-        "Padma Resort Legian"
-      ]
-    },
-    "info": [
-      "7 kun / 6 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": ""
+  "info": [
+   "5 kun / 4 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "cultural",
+   "family"
+  ],
+  "things_to_do": [
+   "Delfinlarni kuzatish kruizi",
+   "Wadi Shab sayohati",
+   "Daymaniyat orollarida snorkeling",
+   "Muttrah Corniche kechki sayr"
+  ],
+  "featured": "",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLeACwgvUPBp3L2l9mt6l7l_xnxw8VMqz5i58oW1DX8l8w_eM6K2ztbliJcfSqKv1UTwoGgfevTWFXYe82RhBKD4RzH5Wqe7VMyQSTjdX725XurRCTwCNtGjR5-IjTy7Y-WBx9bBiA=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLd9-ynk_GV7TwaZhV5Z4YWmZRQ_Xv0fS9fbrP7KHHVaRR50Kev4Iqpt93ln_plQPlIwtEcbZSfnG7e51Dyr7juqQxsbOUA4QtRvNahIofPTdOiyHA4FW_yXplB4Q4qZ6IOE9Ce9Aw=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLeWbN0ydqiEeTbDU9ItfUVO60bK0zylWkLBy6hv1Phs5KgZ5U9tZaS2BO6Zav2LXEcbnYYKSTjh_PFr0f-NUyWiyj-jxu8dUExzUuFC0pkP-SBpOCHhg54HadkByU5-iPdeKKQNwLUeD9On=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLcfPz71gbbWllUMDBGdAorHvHjYqN3HLl0N76AUS60EHjWZC4NacNNAp3BPmK3-y0XwBJTUy0XT5tymkEjiWSElJlFTNyZnS7XDs5INk3RBj3WbHJLINlXvS-gwtWe4vxoLmG3NOhC03iw=s4800-w1000-h1024"
+  ]
+ },
+ {
+  "id": "bali",
+  "type": "city",
+  "title": "Bali",
+  "country": "Indoneziya",
+  "days": "7 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null
+   }
+  ],
+  "attractions": [
+   {
+    "name": "Tanah Lot dengiz ibodatxonasi",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLd6A8RFnPfME3l9H5dlUDqykkgVlihZgESSRCVI7xDtNI8WhDRLY3iaTCvpPhMwroKNDnwOcmi1T9bFB0CF5NoTB89cgQPr1PZv6pGqj8LOrNbqBa4zx2kX3euVcxCeZCmynqhKmA=s4800-w1000-h1024"
+   },
+   {
+    "name": "Ubud guruch terrasalari (Tegallalang)",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeaMb4jT7cxtu8HqkaspvdDQbs3SCGTVJoQwxKpgnT1K4prtde-59zzcQ8JTp_fqE2wNB_NTtX9HA3AhrqRN_PYzGLsLWyxcyqb33GuLuBkQWy_M95MdhEMksz9prl-IW7TheJn=s4800-w1000-h1024"
+   },
+   {
+    "name": "Uluwatu ibodatxonasi",
+    "img": null
+   },
+   {
+    "name": "Seminyak plyaji",
+    "img": null
+   },
+   {
+    "name": "Nusa Penida oroli ekskursiyasi",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Ibis Styles Bali Legian",
+    "Ozz Hotel Kuta"
+   ],
+   "4 yulduzli": [
+    "Holiday Inn Resort Baruna Bali",
+    "Bali Dynasty Resort"
+   ],
+   "5 yulduzli": [
+    "AYANA Resort Jimbaran",
+    "Padma Resort Legian"
+   ]
   },
-  {
-    "id": "shanghai",
-    "type": "city",
-    "title": "Shanxay",
-    "country": "Xitoy",
-    "days": "6 kun",
-    "from": "Toshkent",
-    "direct": false,
-    "tiers": [
-      {
-        "name": "3 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "4 yulduzli",
-        "price_per_person": null
-      },
-      {
-        "name": "5 yulduzli",
-        "price_per_person": null
-      }
-    ],
-    "attractions": [
-      "The Bund (Vaytan qirg'og'i)",
-      "Yu bog'i (Yu Garden)",
-      "Shanxay minorasi",
-      "Zhujiajiao suv shahri",
-      "Nankin yo'li (Nanjing Road)"
-    ],
-    "hotels": {
-      "3 yulduzli": [
-        "Holiday Inn Express Shanghai",
-        "Atour Hotel"
-      ],
-      "4 yulduzli": [
-        "Hotel Indigo Shanghai on the Bund",
-        "Radisson Hotel Shanghai"
-      ],
-      "5 yulduzli": [
-        "Fairmont Peace Hotel",
-        "The Peninsula Shanghai"
-      ]
-    },
-    "info": [
-      "6 kun / 5 tun",
-      "Toshkentdan parvoz",
-      "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
-    ],
-    "note": ""
-  }
+  "info": [
+   "7 kun / 6 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "honeymoon",
+   "couples",
+   "experience"
+  ],
+  "things_to_do": [
+   "Bali swing va jungl fotolari",
+   "Ayung daryosida rafting",
+   "Bali spa va massaj",
+   "Kechki Kechak raqsi tomoshasi"
+  ],
+  "featured": "Asal oyi uchun 1-raqamli tanlov",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLedX_K1AmM_tt7r5bjca0pjykBuBQYGUrd6xhEYwzsq_AuzEnnza3Vd_STc_sFtPZV0iG1QlvjRO21-AXzrrbHd_-p9_kprLLrM34ZF-n9Ina5sL64R_HzNTIoiJyPyKsaMFfQm=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLeoZARIku9QhJ_DwAplE2jzaTqVY-Qlflp9OjeoKl9nPweubcHcehcbI_OlwLtykjnrSGyDwsklRqiYGFjblLAr2brMKg0YxYxh8mNYwDAjhfg4JMOs5A1PWpOK64EM3YOil_de=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLcsM9zZa3yeWeiDJwnF8S1GCEMHAsXrPiy62Seytw7Nt22PIoEtsCiiGUWSTxE5YmBPGTUtu0oehH9rgAxm5-crBPcRphjc8SGqFyNAhIe9OMCz6ESbhcfAi0Klrdi27CDogmJH=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLcCLosin3oN_ZtX_4ZlFMrVFritsucmRkHaPBGGfA5jbsLfr6RbqSf6CnHqgnQiWrBpRyjXRfnIoCSgqL64wulj_kaRh3EHxXeDeIiYaDLpWgFDxBDNmYT2WrFReLAgE96YJFhPxMFEHgY=s4800-w1000-h1024"
+  ]
+ },
+ {
+  "id": "shanghai",
+  "type": "city",
+  "title": "Shanxay",
+  "country": "Xitoy",
+  "days": "6 kun",
+  "from": "Toshkent",
+  "direct": false,
+  "tiers": [
+   {
+    "name": "3 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "4 yulduzli",
+    "price_per_person": null
+   },
+   {
+    "name": "5 yulduzli",
+    "price_per_person": null
+   }
+  ],
+  "attractions": [
+   {
+    "name": "The Bund (Vaytan qirg'og'i)",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLehuEsjDU8oDQEG-VUcKTIxJEhAjufbqUa2fWr5Z7VqbO3VLzcNtHBgWlMVYLrzEnzWoWbuQnyTIM6zb74FlTUbXZAF1V2nYoxpaB772eVU7OHX4eIf8oiHMdEJkAzqsWpdJr1X=s4800-w1000-h1024"
+   },
+   {
+    "name": "Yu bog'i (Yu Garden)",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdWMUuZsdkC9LhWSLsBs58rQfkrhUHlMfBVr4BT9Tcc4f0C2gEhT1UVrLL4364epzaCAhAlWg_MtpOx3G_b-kI-naJArp2-20kSi6ylABpdPWkmWhaYb9VkJiRY8M-mw1438Z0N=s4800-w1000-h1024"
+   },
+   {
+    "name": "Shanxay minorasi",
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLcCegKYoPKKEaEwic3-2KrQyryDahUxoW_160Y0isBfv7uMiPWbcE9fo-frZQoTQiMw1vQPGrFhGUfjIDoDbKDh1j6gKobhtStRPAP3MzUP1x912GTnfz6ndmLOL0oQXLUrIpCMncrwh3s=s4800-w1000-h1024"
+   },
+   {
+    "name": "Zhujiajiao suv shahri",
+    "img": null
+   },
+   {
+    "name": "Nankin yo'li (Nanjing Road)",
+    "img": null
+   }
+  ],
+  "hotels": {
+   "3 yulduzli": [
+    "Holiday Inn Express Shanghai",
+    "Atour Hotel"
+   ],
+   "4 yulduzli": [
+    "Hotel Indigo Shanghai on the Bund",
+    "Radisson Hotel Shanghai"
+   ],
+   "5 yulduzli": [
+    "Fairmont Peace Hotel",
+    "The Peninsula Shanghai"
+   ]
+  },
+  "info": [
+   "6 kun / 5 tun",
+   "Toshkentdan parvoz",
+   "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
+  ],
+  "note": "",
+  "vibes": [
+   "cultural",
+   "family",
+   "experience"
+  ],
+  "things_to_do": [
+   "Huangpu daryosi kechki kruizi",
+   "Shanxay Disneylend",
+   "Maglev tezyurar poyezdda sayohat",
+   "Tianzifang ko'chalarida sayr"
+  ],
+  "featured": "",
+  "gallery": [
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLfqP2WAes5nrcKea4gmF-tM-IJzY86n5hMknqIiy7pg_4mbHS1IfNiUVVmy5u35wbcvkplG6gB74zwfG6jvJw3eTEdZ12n2KwUykGpqh77SLxmcvXTljQ3Nnn04h9ab23AM8MNI04pF_TCE=s4800-w946-h709",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLdTtyRfytgE8txznPEV1g59KXJ1SyGwKslurSTgkvYP0hCMbQZN_2XToGdVWBeA8n6yAABOvy1GWmSquxX4xpe8zHxAGQVY3TgqSxjwRs-D6P3_iBAbpmlcqWmAVStDFMTm2nVOdtFOEx8r=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLc6vzylb-3cTwFQIHh7gXeeD7mLGLLD-rlBDT6PBHXom8VQT0tlsQePYOY_z1GqzXggocb5fuUu6RGIGbn7Wu-BiC1GKeGX57wRTaMY9A7ph6jWELSZhENNhz8Ez7irH7WvSsN9dQ=s4800-w1000-h1024",
+   "https://lh3.googleusercontent.com/grass-cs/AABkmLePKUNzl-ubppZJ_fnshvW39tKc99s7FW5tbAj82y6PAXJSdpcLWMrOaJLxT6rsONwHRqv7vhQ2QoRN9r8fuWXmOI2T1KQzIFZuvITcyEuBI2Y88hWvL7SLtvtQ616gJAXYeWQGRA=s4800-w1000-h1024"
+  ]
+ }
 ]

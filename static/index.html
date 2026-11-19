@@ -2,214 +2,166 @@
 <html lang="uz">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
-<meta name="theme-color" content="#17212b">
-<meta name="color-scheme" content="dark light">
-<meta name="description" content="Safar paketlari: shahar bo'ylab turlar, yakuniy narx bilan">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <title>Safar paketlar</title>
 <style>
-  :root {
-    --bg:#17212b; --card:#202b38; --accent:#2ea6ff; --btn-text:#ffffff; --text:#eef3f8; --muted:#8ba0b5;
-    --border:rgba(255,255,255,.07);
-    --ease-out:cubic-bezier(0.23,1,0.32,1);
-  }
-  * { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
-  html { -webkit-text-size-adjust:100%; overscroll-behavior:none; }
-  body {
-    min-height:100dvh; background:var(--bg); color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-    -webkit-font-smoothing:antialiased;
-    padding:calc(14px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
-  }
-  h1 { font-size:22px; font-weight:700; letter-spacing:-0.02em; margin:8px 2px 6px; }
-  .sub { color:var(--muted); font-size:13px; line-height:1.5; margin:0 2px 18px; user-select:text; }
-  .chips { display:flex; gap:8px; margin-bottom:18px; overflow-x:auto; padding:2px 2px 4px; scrollbar-width:none; touch-action:pan-x; }
-  .chips::-webkit-scrollbar { display:none; }
-  .chip {
-    flex:none; padding:8px 16px; border-radius:999px; background:var(--card); color:var(--muted);
-    font-size:13.5px; font-weight:500; white-space:nowrap; cursor:pointer;
-    user-select:none; -webkit-user-select:none; touch-action:manipulation; border:1px solid var(--border);
-    transition:background 150ms var(--ease-out), color 150ms var(--ease-out), border-color 150ms var(--ease-out), transform 160ms var(--ease-out);
-  }
-  .chip:active { transform:scale(0.96); }
-  .chip.on { color:var(--accent); background:color-mix(in srgb, var(--accent) 14%, transparent); border-color:color-mix(in srgb, var(--accent) 38%, transparent); }
-  .card {
-    background:var(--card); border:1px solid var(--border); border-radius:18px; margin-bottom:16px; overflow:hidden;
-    box-shadow:0 1px 2px rgba(0,0,0,.2), 0 8px 24px rgba(0,0,0,.18);
-    opacity:0; transform:translateY(10px); animation:enter 320ms var(--ease-out) forwards; cursor:pointer;
-  }
-  .card.no-anim { animation:none; opacity:1; transform:none; }
-  .card:nth-child(2) { animation-delay:50ms; }
-  .card:nth-child(3) { animation-delay:90ms; }
-  .card:nth-child(4) { animation-delay:130ms; }
-  .card:nth-child(n+5) { animation-delay:170ms; }
-  @keyframes enter { to { opacity:1; transform:none; } }
-  .card:active { filter:brightness(1.04); }
-  .banner {
-    position:relative; height:140px; background-size:cover; background-position:center; display:flex; align-items:flex-end; padding:14px 16px;
-    font-size:21px; font-weight:700; letter-spacing:-0.01em; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.45);
-  }
-  .banner::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.4)); }
-  .banner span { position:relative; z-index:1; }
-  .inner { padding:14px 16px 16px; }
-  .meta { color:var(--muted); font-size:13px; line-height:1.5; margin-bottom:12px; user-select:text; }
-  .tier { display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:10px 0; border-top:1px solid var(--border); font-size:14.5px; }
-  .tier .price { font-weight:700; font-size:16px; color:var(--accent); font-variant-numeric:tabular-nums; white-space:nowrap; }
-  .tier .onreq { font-weight:600; font-size:14px; color:var(--muted); white-space:nowrap; }
-  .more-hint { display:flex; align-items:center; justify-content:space-between; margin-top:14px; padding:10px; border-radius:10px;
-    border:1px solid var(--border); color:var(--text); font-size:13.5px; font-weight:500; user-select:none; -webkit-user-select:none; }
-  .more-hint .chev { color:var(--muted); transition:transform 200ms var(--ease-out); }
-  .back {
-    display:inline-flex; align-items:center; gap:6px; margin:0 2px 14px; padding:8px 14px 8px 10px; border-radius:999px;
-    background:var(--card); border:1px solid var(--border); color:var(--text); font-size:14px; font-weight:500; cursor:pointer;
-    user-select:none; -webkit-user-select:none; touch-action:manipulation;
-    transition:transform 160ms var(--ease-out), background 150ms var(--ease-out);
-  }
-  .back:active { transform:scale(0.96); background:color-mix(in srgb, var(--text) 6%, transparent); }
-  .detail-anim { animation:enter 260ms var(--ease-out) forwards; opacity:0; transform:translateY(8px); }
-  .hero {
-    position:relative; height:220px; border-radius:18px; overflow:hidden; background-size:cover; background-position:center;
-    display:flex; align-items:flex-end; padding:18px; color:#fff; margin-bottom:16px;
-    box-shadow:0 1px 2px rgba(0,0,0,.2), 0 8px 24px rgba(0,0,0,.18);
-  }
-  .hero::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.5)); }
-  .hero .ht { position:relative; z-index:1; }
-  .hero .ht b { display:block; font-size:24px; font-weight:700; letter-spacing:-0.02em; text-shadow:0 1px 6px rgba(0,0,0,.45); }
-  .hero .ht i { display:block; font-style:normal; font-size:13px; opacity:.9; text-shadow:0 1px 4px rgba(0,0,0,.45); }
-  .sec { font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:18px 2px 8px; }
-  .plist { list-style:none; }
-  .plist li { display:flex; gap:9px; font-size:14px; line-height:1.5; padding:6px 0; user-select:text; }
-  .plist li .n { color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums; min-width:18px; }
-  .hot { padding:10px 0; border-top:1px solid var(--border); font-size:14px; line-height:1.55; user-select:text; }
-  .hot b { color:var(--accent); font-size:12.5px; font-weight:600; }
-  .hot div { color:var(--text); }
-  .infolist { list-style:none; }
-  .infolist li { display:flex; gap:8px; font-size:13.5px; color:var(--muted); padding:5px 0; line-height:1.45; user-select:text; }
-  .infolist li::before { content:'✓'; color:var(--accent); font-weight:700; }
-  .note { color:var(--muted); font-size:12.5px; line-height:1.5; margin-top:10px; user-select:text; }
-  .btn {
-    display:block; margin-top:16px; text-align:center; background:var(--accent); color:var(--btn-text); padding:12px;
-    border-radius:12px; font-size:15px; font-weight:600; text-decoration:none;
-    user-select:none; -webkit-user-select:none; touch-action:manipulation;
-    transition:transform 160ms var(--ease-out), filter 160ms var(--ease-out);
-  }
-  .btn:active { transform:scale(0.97); filter:brightness(.92); }
-  .chip:focus-visible, .card:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-  .empty { color:var(--muted); text-align:center; padding:36px 0; font-size:14px; line-height:1.5; }
-  @media (prefers-reduced-motion:reduce) {
-    .card, .detail-anim { animation:fade 200ms ease forwards; }
-    @keyframes fade { to { opacity:1; transform:none; } }
-    .chip, .back, .btn { transition:none; }
-  }
+:root{
+  --bg:#0e1621; --card:#17212b; --text:#ffffff; --muted:#708499;
+  --accent:#64b5ef; --btn-text:#ffffff; --sec-header:#64b5ef; --sep:rgba(255,255,255,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,'SF Pro Text','Segoe UI',Roboto,sans-serif}
+body{font-size:16px;line-height:1.45;min-height:100vh}
+.wrap{padding:16px 16px 40px;max-width:640px;margin:0 auto}
+h1.app-title{font-size:28px;font-weight:800;letter-spacing:-.3px;margin-top:8px}
+.sub{color:var(--muted);font-size:14px;margin-top:2px}
+.sec{margin-top:22px}
+.sec-title{color:var(--sec-header);font-size:13px;font-weight:600;margin:0 4px 8px}
+.card{background:var(--card);border-radius:14px;overflow:hidden}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;position:relative}
+.row + .row::before{content:'';position:absolute;top:0;left:16px;right:0;height:1px;background:var(--sep)}
+.row .t{font-size:15.5px;font-weight:600}
+.row .s{color:var(--muted);font-size:13px;margin-top:1px}
+.row .v{font-size:15.5px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap}
+.row .v.mut{color:var(--muted);font-weight:500;font-size:13px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 4px 6px;scrollbar-width:none;-ms-overflow-style:none;touch-action:pan-x}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;background:var(--card);color:var(--text);border:none;border-radius:20px;padding:8px 15px;font-size:14px;font-weight:600;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1),opacity .2s}
+.chip.on{background:var(--accent);color:var(--btn-text)}
+.chip:active{transform:scale(.95)}
+.city-card{background:var(--card);border-radius:16px;overflow:hidden;margin-top:14px;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
+.city-card:active{transform:scale(.98)}
+.banner{position:relative;height:172px;background:linear-gradient(135deg,#2b4c6f,#1d3550)}
+.banner img{width:100%;height:100%;object-fit:cover;display:block}
+.banner .ov{position:absolute;inset:auto 0 0 0;padding:36px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.72));display:flex;align-items:flex-end;justify-content:space-between}
+.banner .nm{font-size:20px;font-weight:800;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.banner .cn{font-size:12.5px;opacity:.9;margin-top:1px}
+.banner .badge{background:rgba(0,0,0,.45);backdrop-filter:blur(8px);border-radius:16px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
+.tier-rows{padding:2px 0 4px}
+.more{display:flex;align-items:center;justify-content:center;gap:5px;color:var(--sec-header);font-size:13.5px;font-weight:600;padding:10px 0 12px}
+.hscroll{display:flex;gap:10px;overflow-x:auto;padding:2px 4px 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
+.hscroll::-webkit-scrollbar{display:none}
+.feat-card,.attr-card{flex:0 0 auto;scroll-snap-align:start;border-radius:14px;overflow:hidden;position:relative;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
+.feat-card:active,.attr-card:active{transform:scale(.96)}
+.feat-card{width:158px;height:196px;background:linear-gradient(160deg,#2b4c6f,#1d3550)}
+.feat-card img,.attr-card img{width:100%;height:100%;object-fit:cover;display:block}
+.feat-card .ov,.attr-card .ov{position:absolute;inset:auto 0 0 0;padding:28px 10px 9px;background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.feat-card .fnm{font-size:15px;font-weight:800}
+.feat-card .why{font-size:11.5px;opacity:.92;line-height:1.3;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.attr-card{width:148px;height:184px;background:var(--card)}
+.attr-card.a-photo img{height:100%}
+.attr-card .ph{width:100%;height:130px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center;font-size:34px}
+.attr-card .anm{font-size:13px;font-weight:700;padding:8px 10px 10px;line-height:1.3}
+.gal{height:118px;border-radius:12px;overflow:hidden;flex:0 0 auto;scroll-snap-align:start;background:linear-gradient(160deg,#2b4c6f,#1d3550)}
+.gal img{width:170px;height:118px;object-fit:cover;display:block}
+.hero{position:relative;height:270px;border-radius:0 0 22px 22px;overflow:hidden;background:linear-gradient(135deg,#2b4c6f,#1d3550)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.hero .nm{font-size:26px;font-weight:800}
+.hero .cn{font-size:13.5px;opacity:.92}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:0 0 auto;margin-top:7px}
+.ok-ic{color:var(--accent);font-weight:800;flex:0 0 auto}
+.cta{display:block;width:100%;margin-top:24px;background:var(--accent);color:var(--btn-text);border:none;border-radius:14px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
+.cta:active{transform:scale(.97)}
+.empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
+.in{animation:fin .45s cubic-bezier(.23,1,.32,1) both}
+@keyframes fin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.city-card:nth-child(1){animation-delay:0ms}.city-card:nth-child(2){animation-delay:50ms}.city-card:nth-child(3){animation-delay:90ms}.city-card:nth-child(4){animation-delay:130ms}.city-card:nth-child(5){animation-delay:170ms}.city-card:nth-child(6){animation-delay:210ms}.city-card:nth-child(7){animation-delay:250ms}
+@media (prefers-reduced-motion:reduce){.in,.city-card{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 </head>
 <body>
-<div id="app"></div>
+<div class="wrap" id="app"></div>
 <script>
-const tg = window.Telegram && window.Telegram.WebApp;
-if (tg) { try { tg.ready(); tg.expand(); } catch(e) {} }
-
-/* Telegram theme params -> CSS variables (fallbacks live in :root) */
-const themeMap = [['--bg','bg_color'],['--card','secondary_bg_color'],['--text','text_color'],
-                  ['--muted','hint_color'],['--accent','button_color'],['--btn-text','button_text_color'],
-                  ['--link','link_color']];
-function applyTheme(){
-  if (!tg || !tg.themeParams) return;
-  const p = tg.themeParams, s = document.documentElement.style;
-  for (const [v,k] of themeMap) if (p[k]) s.setProperty(v, p[k]);
-  const mc = document.querySelector('meta[name=theme-color]');
-  if (mc && p.bg_color) mc.content = p.bg_color;
-  try { if (tg.setHeaderColor && p.header_bg_color) tg.setHeaderColor(p.header_bg_color); } catch(e) {}
-  try { if (tg.setBackgroundColor && p.bg_color) tg.setBackgroundColor(p.bg_color); } catch(e) {}
-}
-if (tg) { applyTheme(); if (tg.onEvent) tg.onEvent('themeChanged', applyTheme); }
-
-let pkgs = [], filter = 'all', firstRender = true;
+const TG = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
 const BOOK = 'https://t.me/muoziiy';
-const grads = {
-  'istanbul':'linear-gradient(135deg,#8e2de2,#4a00e0)',
-  'phuket':'linear-gradient(135deg,#11998e,#38ef7d)',
-  'dubai':'linear-gradient(135deg,#f7971e,#ffd200)',
-  'kuala-lumpur':'linear-gradient(135deg,#667eea,#764ba2)',
-  'muscat':'linear-gradient(135deg,#d9a740,#8a6d1d)',
-  'bali':'linear-gradient(135deg,#f9536b,#ef473a)',
-  'shanghai':'linear-gradient(135deg,#e53935,#e35d5b)'
-};
-function money(n){ return '$' + n.toLocaleString('en-US'); }
-function priceCell(t){ return t.price_per_person ? `<span class="price">${money(t.price_per_person)}${t.suffix||''}</span>` : `<span class="onreq">So'rov bo'yicha</span>`; }
-function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+const VIBES = {family:"Oila bilan",friends:"Do'stlar bilan",couples:"Juftliklar uchun",honeymoon:"Asal oyi",cultural:"Madaniyat",experience:"Sarguzasht"};
+const EMO = ['🕌','🌆','🏝️','🛕','🕌','🌾','🏮'];
+let DATA = [], vibe = '', country = '';
+const app = document.getElementById('app');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const price = v => v ? '$' + v : "So'rov bo'yicha";
 
-function renderChips(){
-  const countries = ['all', ...new Set(pkgs.map(p => p.country))];
-  return countries.map(c =>
-    `<div class="chip ${filter===c?'on':''}" role="button" tabindex="0" onclick="setFilter('${c.replace(/'/g,"\\'")}')">${c==='all'?'Hammasi':esc(c)}</div>`).join('');
+function applyTheme(){
+  if(!TG) return;
+  const p = TG.themeParams || {};
+  const m = {bg:'bg_color',card:'secondary_bg_color',text:'text_color',muted:'hint_color',accent:'button_color','btn-text':'button_text_color','sec-header':'section_header_text_color',sep:'section_separator_color'};
+  const fb = {'sec-header':'button_color',card:'section_bg_color'};
+  for(const k in m){ if(p[m[k]]) document.documentElement.style.setProperty('--'+k, p[m[k]]); else if(fb[k] && p[fb[k]]) document.documentElement.style.setProperty('--'+k, p[fb[k]]); }
+  const meta = document.querySelector('meta[name=theme-color]') || document.head.appendChild(Object.assign(document.createElement('meta'),{name:'theme-color'}));
+  meta.content = p.bg_color || '#0e1621';
 }
-function setFilter(f){ filter = f; renderList(); }
-function renderList(){
-  const shown = pkgs.filter(p => filter==='all' || p.country===filter);
-  const cls = firstRender ? '' : ' no-anim';
-  document.getElementById('app').innerHTML = `
-    <h1>Safar paketlar</h1>
-    <div class="sub">Yakuniy narx, 1 kishi uchun (2 kishi borasiz). Kartani bosing — batafsil sahifa ochiladi.</div>
-    <div class="chips" id="chips">${renderChips()}</div>
-    <div id="list">${shown.length ? shown.map(p => `
-      <div class="card${cls}" role="button" tabindex="0" onclick="openDetail('${p.id}')">
-        <div class="banner" style="background-image:url('img/${p.id}.jpg'),${grads[p.id]||'linear-gradient(135deg,#232e3c,#17212b)'}"><span>${esc(p.title)}</span></div>
-        <div class="inner">
-          <div class="meta">${esc(p.days)} · ${esc(p.country)} · ${esc(p.from)}dan${p.direct ? " to'g'ri parvoz" : ''} · mehmonxona (nonushta), parvoz, transfer</div>
-          ${p.tiers.map(t => `<div class="tier"><span>${esc(t.name)}</span>${priceCell(t)}</div>`).join('')}
-          ${p.note ? `<div class="note">${esc(p.note)}</div>` : ''}
-          <div class="more-hint"><span>Batafsil ma'lumot</span><span class="chev">›</span></div>
-        </div>
-      </div>`).join('') : `<div class="empty">Bu yo'nalishda hozircha paket yo'q.<br>Tez orada qo'shiladi.</div>`}</div>`;
-  firstRender = false;
-}
-function renderDetail(id){
-  const p = pkgs.find(x => x.id === id);
-  if (!p) { location.hash = ''; renderList(); return; }
-  document.getElementById('app').innerHTML = `
-    <div class="back" role="button" tabindex="0" onclick="goBack()">‹ Orqaga</div>
-    <div class="detail-anim">
-      <div class="hero" style="background-image:url('img/${p.id}.jpg'),${grads[p.id]||'linear-gradient(135deg,#232e3c,#17212b)'}">
-        <div class="ht"><b>${esc(p.title)}</b><i>${esc(p.country)} · ${esc(p.days)} · ${esc(p.from)}dan${p.direct ? " to'g'ri parvoz" : ''}</i></div>
-      </div>
-      <div class="sec">Narxlar · 1 kishi uchun</div>
-      ${p.tiers.map(t => `<div class="tier"><span>${esc(t.name)}</span>${priceCell(t)}</div>`).join('')}
-      ${p.note ? `<div class="note">${esc(p.note)}</div>` : ''}
-      <div class="sec">Diqqatga sazovor joylar</div>
-      <ul class="plist">${(p.attractions||[]).map((a,i) => `<li><span class="n">${i+1}</span><span>${esc(a)}</span></li>`).join('')}</ul>
-      <div class="sec">Mehmonxonalar</div>
-      ${Object.entries(p.hotels||{}).map(([tier, list]) => `<div class="hot"><b>${esc(tier)}</b><div>${list.map(esc).join(' · ')}</div></div>`).join('')}
-      <div class="sec">Paketga kiritilgan</div>
-      <ul class="infolist">${(p.info||[]).map(i => `<li>${esc(i)}</li>`).join('')}</ul>
-      <a class="btn" href="${BOOK}" ${tg?'onclick="return openBook(event)"':''}>Band qilish</a>
-    </div>`;
-  if (tg && tg.BackButton) { try { tg.BackButton.show(); } catch(e) {} }
-}
-function openDetail(id){ location.hash = '#/' + id; }
-function goBack(){
-  if (tg && tg.BackButton) { try { tg.BackButton.hide(); } catch(e) {} }
-  history.length > 1 ? history.back() : (location.hash = '');
+function initTG(){
+  if(!TG) return;
+  try{ TG.ready(); TG.expand(); if(TG.disableVerticalSwipes) TG.disableVerticalSwipes(); }catch(e){}
+  applyTheme();
+  try{ if(TG.setHeaderColor) TG.setHeaderColor('bg_color'); if(TG.setBackgroundColor) TG.setBackgroundColor('bg_color'); }catch(e){}
+  TG.onEvent('themeChanged', applyTheme);
+  TG.BackButton.onClick(() => { if(location.hash) history.back(); });
 }
 function route(){
-  const m = (location.hash || '').match(/^#\/(.+)$/);
-  m ? renderDetail(decodeURIComponent(m[1])) : (renderList(), tg && tg.BackButton && tg.BackButton.hide());
+  const id = (location.hash || '').replace('#/','');
+  const city = DATA.find(p => p.id === id);
+  if(city) renderCity(city); else renderList();
 }
-function openBook(e){ e.preventDefault(); tg.openTelegramLink(BOOK); return false; }
-if (tg && tg.BackButton) { try { tg.BackButton.onClick(goBack); } catch(e) {} }
+function renderList(){
+  if(TG){ try{ TG.BackButton.hide(); if(TG.MainButton) TG.MainButton.hide(); }catch(e){} }
+  const feats = DATA.filter(p => p.featured);
+  const countries = [...new Set(DATA.map(p => p.country))];
+  const cities = DATA.filter(p => (!vibe || (p.vibes||[]).includes(vibe)) && (!country || p.country === country));
+  app.innerHTML = `
+  <header class="in"><h1 class="app-title">Safar paketlar</h1><p class="sub">Toshkentdan to'g'ri parvozlar bilan</p></header>
+  ${feats.length ? `<section class="sec in"><div class="sec-title">Tavsiyalar</div><div class="hscroll">${feats.map(p=>`
+    <div class="feat-card" data-go="${p.id}"><img src="img/${p.id}.jpg" loading="lazy" alt="" onerror="this.remove()"><div class="ov"><div class="fnm">${esc(p.title)}</div><div class="why">${esc(p.featured)}</div></div></div>`).join('')}</div></section>` : ''}
+  <section class="sec in"><div class="sec-title">Kim uchun</div><div class="chips" id="vchips">
+    <button class="chip ${!vibe?'on':''}" data-v="">Hammasi</button>
+    ${Object.entries(VIBES).map(([k,l])=>`<button class="chip ${vibe===k?'on':''}" data-v="${k}">${l}</button>`).join('')}
+  </div></section>
+  <section class="sec in"><div class="sec-title">Davlatlar</div><div class="chips" id="cchips">
+    <button class="chip ${!country?'on':''}" data-c="">Hammasi</button>
+    ${countries.map(c=>`<button class="chip ${country===c?'on':''}" data-c="${esc(c)}">${esc(c)}</button>`).join('')}
+  </div></section>
+  <section class="sec"><div class="sec-title">Shaharlar</div><div id="cities">
+  ${cities.length ? cities.map(p=>`
+    <div class="city-card in" data-go="${p.id}">
+      <div class="banner"><img src="img/${p.id}.jpg" loading="lazy" alt="" onerror="this.remove()">
+        <div class="ov"><div><div class="nm">${esc(p.title)}</div><div class="cn">${esc(p.country)} · ${esc(p.days)}</div></div>
+        <div class="badge">${p.direct ? "To'g'ri parvoz" : '1 x transfer'}</div></div></div>
+      <div class="tier-rows">${p.tiers.map(t=>`<div class="row"><div><div class="t">${esc(t.name)}</div><div class="s">1 kishi uchun</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div>
+      <div class="more">Batafsil <span aria-hidden="true">›</span></div>
+    </div>`).join('') : `<div class="empty">Bu filtr bo'yicha paket yo'q</div>`}
+  </div></section>`;
+  app.querySelectorAll('[data-go]').forEach(el => el.addEventListener('click', () => { location.hash = '#/' + el.dataset.go; }));
+  app.querySelectorAll('#vchips .chip').forEach(el => el.addEventListener('click', () => { vibe = el.dataset.v; renderList(); }));
+  app.querySelectorAll('#cchips .chip').forEach(el => el.addEventListener('click', () => { country = el.dataset.c; renderList(); }));
+}
+function renderCity(p){
+  if(TG){ try{ TG.BackButton.show(); if(TG.MainButton){ TG.MainButton.setText('Band qilish'); TG.MainButton.show(); TG.MainButton.onClick(() => TG.openTelegramLink ? TG.openTelegramLink(BOOK) : location.href = BOOK); } }catch(e){} }
+  app.innerHTML = `
+  <div class="hero in"><img src="img/${p.id}.jpg" alt="" onerror="this.remove()">
+    <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</div></div></div>
+  <section class="sec in"><div class="sec-title">Galereya</div><div class="hscroll">${(p.gallery||[]).map(g=>`<div class="gal"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Narxlar · 1 kishi</div><div class="card">${p.tiers.map(t=>`<div class="row"><div><div class="t">${esc(t.name)}</div><div class="s">${p.days} · ${esc(p.from)}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mashhur joylar</div><div class="hscroll">${p.attractions.map((a,i)=> a.img
+    ? `<div class="attr-card a-photo"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();this.parentNode.classList.remove('a-photo');var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.textContent='📍';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm" style="font-size:13px;font-weight:700">${esc(a.name)}</div></div></div>`
+    : `<div class="attr-card"><div class="ph">${EMO[i % EMO.length]}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map(t=>`<div class="row" style="justify-content:flex-start"><span class="dot"></span><div class="t" style="font-weight:500;font-size:15px">${esc(t)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map(t=>`<div class="row"><div><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map(i=>`<div class="row" style="justify-content:flex-start;gap:10px"><span class="ok-ic">✓</span><div class="t" style="font-weight:500;font-size:15px">${esc(i)}</div></div>`).join('')}</div></section>
+  <button class="cta" id="book">Band qilish</button>`;
+  document.getElementById('book').addEventListener('click', () => { if(TG && TG.openTelegramLink) TG.openTelegramLink(BOOK); else location.href = BOOK; });
+  window.scrollTo(0,0);
+}
+async function boot(){
+  try{ const r = await fetch('api/packages'); DATA = await r.json(); }
+  catch(e){ const r2 = await fetch('packages.json'); DATA = await r2.json(); }
+  if(!Array.isArray(DATA)) DATA = DATA.packages || [];
+  initTG(); route();
+}
 window.addEventListener('hashchange', route);
-async function load_data(){
-  try {
-    let r = await fetch('./packages.json');
-    if (!r.ok) throw 0;
-    pkgs = await r.json();
-  } catch (e) {
-    pkgs = await (await fetch('/api/packages')).json();
-  }
-  route();
-}
-load_data();
+boot();
 </script>
 </body>
 </html>
