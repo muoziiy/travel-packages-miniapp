@@ -265,7 +265,7 @@ function renderCity(p){
   <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile">${ico(TODO_ICONS[i % TODO_ICONS.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
   <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row" data-hot="${i}"><div class="tile">${ico('bed',18)}</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((t.hotels_data||[]).slice(0,2).map(h=>h.n).join(', '))}${(t.hotels_data||[]).length>2?` +${t.hotels_data.length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
   <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile">${ico('check-circle',18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(x),16)}</div></div></div>`).join('')}</div></section>
-  ${TG ? '' : '<button class="cta" id="book">Narx so'rash</button>'}`;
+  ${TG ? '' : '<button class="cta" id="book">Narx so&#39;rash</button>'}`;
   app.querySelectorAll('[data-att]').forEach(el => el.addEventListener('click', () => openSheet(p, p.attractions[+el.dataset.att])));
   app.querySelectorAll('[data-hot]').forEach(el => el.addEventListener('click', () => { location.hash = '#/' + p.id + '/hotels/' + el.dataset.hot; }));
   const bk = document.getElementById('book'); if(bk) bk.addEventListener('click', () => openReq(p, -1, ''));
