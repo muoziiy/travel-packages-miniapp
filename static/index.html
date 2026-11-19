@@ -85,10 +85,13 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--muted);opacity:.4;transition:opacity .2s,width .2s}
 .dot.on{opacity:1;background:var(--accent);width:16px;border-radius:3px}
 .hero{position:relative;height:270px;border-radius:0 0 22px 22px;overflow:hidden;background:linear-gradient(135deg,#2b4c6f,#1d3550)}
-.hero img{width:100%;height:100%;object-fit:cover;display:block}
-.hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.75))}
-.hero .nm{font-size:26px;font-weight:800;color:#fff}
-.hero .cn{font-size:13.5px;color:#fff;opacity:.95;display:flex;align-items:center;gap:7px}
+.hero img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.12)}
+.hero .grid{position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,var(--accent) 30%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--accent) 30%,transparent) 1px,transparent 1px);background-size:36px 36px;opacity:.16;-webkit-mask-image:linear-gradient(to top,black 25%,transparent 88%);mask-image:linear-gradient(to top,black 25%,transparent 88%)}
+.hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.82))}
+.hero .nm{font-size:26px;font-weight:800;color:#fff;text-shadow:0 0 22px color-mix(in srgb,var(--accent) 55%,transparent)}
+.hero .cn{font-size:13.5px;color:#fff;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;background:rgba(8,16,26,.44);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.hero .beam{position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,transparent,var(--accent),transparent);background-size:220% 100%;animation:beam 3.4s linear infinite}
+@keyframes beam{from{background-position:220% 0}to{background-position:-220% 0}}
 .cta{display:block;width:100%;margin-top:24px;background:var(--accent);color:var(--btn-text);border:none;border-radius:14px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
 .cta:active{transform:scale(.97)}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
@@ -132,6 +135,24 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .hsub{margin-top:3px;font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hbtn{margin:10px 14px 14px;width:calc(100% - 28px);background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:700;cursor:pointer}
 .morehot{margin:2px 0 26px;text-align:center;color:var(--muted);font-size:13px}
+.sec-note{margin:-6px 0 8px;font-size:12.5px;color:var(--muted)}
+.hnav{display:flex;flex-direction:column;gap:10px}
+.hnav-card{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 14px;border-radius:16px;border:1px solid var(--sep);background:var(--card);cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
+.hnav-card:active{transform:scale(.98)}
+.hn-tile{width:42px;height:42px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.hn-body{min-width:0;flex:1;display:flex;flex-direction:column;gap:3px}
+.hn-t{font-weight:700;font-size:15px;color:var(--text)}
+.hn-s{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hn-go{flex:0 0 auto;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid var(--sep);color:var(--accent)}
+.inc-row{cursor:pointer}
+.inc-row:active{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.inc-go{flex:0 0 auto;color:var(--muted);display:flex;align-items:center}
+.hhead{margin:14px 16px 4px;padding:18px 18px 16px;border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 26%,var(--card)),var(--card) 72%);border:1px solid color-mix(in srgb,var(--accent) 40%,var(--sep))}
+.hh-kicker{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent)}
+.hh-title{font-size:21px;font-weight:800;margin-top:4px;color:var(--text)}
+.hh-sub{font-size:13px;color:var(--muted);margin-top:3px}
+.inc-pop{padding:18px 18px 4px;text-align:center}
+.inc-emoji{display:flex;justify-content:center;margin:8px 0 14px}
 .req-list{display:flex;flex-direction:column;gap:10px;margin-top:14px;padding-bottom:18px}
 .req-btn{width:100%;padding:13px 14px;border-radius:14px;border:1px solid var(--sep);background:var(--card);color:var(--text);font-weight:600;font-size:15px;text-align:left;cursor:pointer}
 .req-btn.primary{background:var(--accent);color:var(--btn-text);border:none}
@@ -168,7 +189,8 @@ const ICO = {
  clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
  sunrise:'<path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/>',
  bulb:'<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/>',
- 'map-pin':'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>'
+ 'map-pin':'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+ chev:'<path d="m9 18 6-6-6-6"/>'
 };
 const ico = (n, s) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:${s}px;height:${s}px" aria-hidden="true">${ICO[n] || ''}</svg>`;
 const flag = c => FLAG[c] ? `<span class="ae" data-j="emoji/flag-${FLAG[c]}.json" style="width:20px;height:20px"></span>` : '';
@@ -254,20 +276,23 @@ function renderCity(p){
   const gal = p.gallery || [];
   app.innerHTML = `
   <div class="hero in"><img src="img/${p.id}.jpg" alt="" onerror="this.remove()">
-    <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${flag(p.country)}<span>${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div></div>
+    <div class="grid"></div>
+    <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${flag(p.country)}<span>${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div>
+    <div class="beam"></div></div>
   <section class="sec in"><div class="sec-title">Galereya</div>
     <div class="slides"><div class="track" id="track">${gal.map(g=>`<div class="slide"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div>
     ${gal.length > 1 ? `<div class="dots">${gal.map((_,i)=>`<span class="dot${i?'':' on'}"></span>`).join('')}</div>` : ''}</div></section>
-  <section class="sec in"><div class="sec-title">Narxlar · 1 kishi</div><div class="card">${p.tiers.map(t=>`<div class="row"><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${p.days} · ${esc(p.from)}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Narxlar · 1 kishi</div><div class="sec-note">7 kecha · 8 kun · boshqa muddatlar ham kelishiladi</div><div class="card">${p.tiers.map(t=>`<div class="row"><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${p.days} · ${esc(p.from)}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
   <section class="sec in"><div class="sec-title">Mashhur joylar</div><div class="hscroll">${p.attractions.map((a,i)=> a.img
     ? `<div class="attr-card" data-att="${i}"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.innerHTML='${emj(EMO[i % EMO.length],44).replace(/'/g,'&#39;').replace(/"/g,'&quot;')}';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm">${esc(a.name)}</div></div></div>`
     : `<div class="attr-card" data-att="${i}"><div class="ph">${emj(EMO[i % EMO.length],44)}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
   <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile">${ico(TODO_ICONS[i % TODO_ICONS.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row" data-hot="${i}"><div class="tile">${ico('bed',18)}</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((t.hotels_data||[]).slice(0,2).map(h=>h.n).join(', '))}${(t.hotels_data||[]).length>2?` +${t.hotels_data.length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile">${ico('check-circle',18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(x),16)}</div></div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="hnav">${p.tiers.map((t,i)=>`<div class="hnav-card" data-hot="${i}"><span class="hn-tile">${ico('bed',20)}</span><span class="hn-body"><span class="hn-t">${esc(t.name)}</span><span class="hn-s">${esc((t.hotels_data||[]).slice(0,3).map(h=>h.n).join(', '))}${(t.hotels_data||[]).length>3?` +${t.hotels_data.length-3}`:''}</span></span><span class="hn-go">${ico('chev',16)}</span></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${(p.inc||p.info.map(x=>({e:'✅',t:x}))).map((x,i)=>`<div class="row inc-row" data-inc="${i}"><span class="tile">${emj(x.e,20)}</span><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(x.t)}</div></div><span class="inc-go">${ico('chev',16)}</span></div>`).join('')}</div></section>
   ${TG ? '' : '<button class="cta" id="book">Narx so&#39;rash</button>'}`;
   app.querySelectorAll('[data-att]').forEach(el => el.addEventListener('click', () => openSheet(p, p.attractions[+el.dataset.att])));
   app.querySelectorAll('[data-hot]').forEach(el => el.addEventListener('click', () => { location.hash = '#/' + p.id + '/hotels/' + el.dataset.hot; }));
+  app.querySelectorAll('[data-inc]').forEach(el => el.addEventListener('click', () => openInc(p, +el.dataset.inc)));
   const bk = document.getElementById('book'); if(bk) bk.addEventListener('click', () => openReq(p, -1, ''));
   initSlides(gal.length);
   hydrate(app);
@@ -289,8 +314,7 @@ function renderHotels(p, ti){
   if(TG){ try{ TG.BackButton.show(); if(TG.MainButton) TG.MainButton.hide(); }catch(e){} }
   const t = p.tiers[ti], hs = t.hotels_data || [];
   app.innerHTML = `
-  <div class="hero in"><img src="img/${p.id}.jpg" alt="" onerror="this.remove()">
-    <div class="ov"><div class="nm">${esc(p.title)} · ${esc(t.name)}</div><div class="cn">Mehmonxonalar</div></div></div>
+  <div class="hhead in"><div class="hh-kicker">Mehmonxonalar</div><div class="hh-title">${esc(p.title)} · ${esc(t.name)}</div><div class="hh-sub">${esc(p.days)} · ${esc(p.from)}</div></div>
   <section class="sec in"><div class="sec-title">Paket narxi · 1 kishi</div><div class="card"><div class="row"><div class="grow"><div class="t">${esc(p.days)} · ${esc(p.from)}</div><div class="s">To'g'ri parvoz, transfer va nonushta bilan</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div></div></section>
   <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="hlist">${hs.map(h => hotCard(h, p, ti)).join('')}</div>
   <div class="morehot">Boshqa mehmonxonalar ham so'rov bo'yicha mavjud</div></section>`;
@@ -342,6 +366,13 @@ function sendLead(how, contact){
   hydrate(sheetContent);
 }
 const sheet = document.getElementById('sheet'), sheetBg = document.getElementById('sheet-bg'), sheetContent = document.getElementById('sheet-content');
+function openInc(p, i){
+  const x = (p.inc||[])[i]; if(!x) return;
+  sheetContent.innerHTML = `<div class="inc-pop"><div class="inc-emoji">${emj(x.e, 84)}</div><div class="sh-name">${esc(x.t)}</div><div class="sh-desc">${esc(x.d||'')}</div><div class="sh-city">${esc(p.title)} paketiga kiritilgan</div></div>`;
+  sheetBg.classList.add('open'); sheet.classList.add('open'); sheetIsOpen = true;
+  hydrate(sheetContent);
+  if(TG){ try{ TG.BackButton.show(); }catch(e){} if(TG.HapticFeedback){ try{ TG.HapticFeedback.impactOccurred('light'); }catch(e){} } }
+}
 function openSheet(city, a){
   const imgs = a.imgs && a.imgs.length ? a.imgs : (a.img ? [a.img] : []);
   const inf = (icn, l, v) => v ? `<div class="sh-row"><span class="si">${ico(icn,15)}</span><div><div class="sl">${l}</div><div class="sv">${esc(v)}</div></div></div>` : '';

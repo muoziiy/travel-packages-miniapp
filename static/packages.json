@@ -4,7 +4,7 @@
   "type": "city",
   "title": "Istanbul",
   "country": "Turkiya",
-  "days": "7 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": true,
   "tiers": [
@@ -147,7 +147,7 @@
    ]
   },
   "info": [
-   "7 kun / 6 tun",
+   "8 kun / 7 kecha",
    "To'g'ri parvoz Toshkentdan",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
    "Viza (50$ / kishi)"
@@ -174,6 +174,33 @@
    "img/g/istanbul-3.jpg",
    "img/g/istanbul-4.jpg",
    "img/g/istanbul-5.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "To'g'ri parvoz Toshkentdan",
+    "d": "Borish-qaytish to'g'ri aviachiptalar paket narxiga kiritilgan. Bagaj ham qamrab olinadi, parvozlar qulay vaqtlarda tanlanadi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "🛂",
+    "t": "Viza (50$ / kishi)",
+    "d": "Viza rasmiylashtirish uchun hujjatlar to'plami va yordam paketga kiritilgan. Narx 50$ har bir kishi uchun."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  },
  {
@@ -181,7 +208,7 @@
   "type": "city",
   "title": "Dubai",
   "country": "BAA",
-  "days": "5 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": true,
   "tiers": [
@@ -319,7 +346,7 @@
    ]
   },
   "info": [
-   "5 kun / 4 tun",
+   "8 kun / 7 kecha",
    "To'g'ri parvoz Toshkentdan",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
    "Viza (50$ / kishi)"
@@ -342,6 +369,33 @@
    "img/g/dubai-1.jpg",
    "img/g/dubai-2.jpg",
    "img/g/dubai-3.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "To'g'ri parvoz Toshkentdan",
+    "d": "Borish-qaytish to'g'ri aviachiptalar paket narxiga kiritilgan. Bagaj ham qamrab olinadi, parvozlar qulay vaqtlarda tanlanadi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "🛂",
+    "t": "Viza (50$ / kishi)",
+    "d": "Viza rasmiylashtirish uchun hujjatlar to'plami va yordam paketga kiritilgan. Narx 50$ har bir kishi uchun."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  },
  {
@@ -349,7 +403,7 @@
   "type": "city",
   "title": "Phuket",
   "country": "Tailand",
-  "days": "7 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": true,
   "tiers": [
@@ -492,7 +546,7 @@
    ]
   },
   "info": [
-   "7 kun / 6 tun",
+   "8 kun / 7 kecha",
    "To'g'ri parvoz Toshkentdan",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan",
    "Viza (50$ / kishi)"
@@ -518,6 +572,33 @@
    "img/g/phuket-4.jpg",
    "img/g/phuket-5.jpg",
    "img/g/phuket-6.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "To'g'ri parvoz Toshkentdan",
+    "d": "Borish-qaytish to'g'ri aviachiptalar paket narxiga kiritilgan. Bagaj ham qamrab olinadi, parvozlar qulay vaqtlarda tanlanadi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "🛂",
+    "t": "Viza (50$ / kishi)",
+    "d": "Viza rasmiylashtirish uchun hujjatlar to'plami va yordam paketga kiritilgan. Narx 50$ har bir kishi uchun."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  },
  {
@@ -525,7 +606,7 @@
   "type": "city",
   "title": "Kuala Lumpur",
   "country": "Malayziya",
-  "days": "6 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": false,
   "tiers": [
@@ -686,7 +767,7 @@
    ]
   },
   "info": [
-   "6 kun / 5 tun",
+   "8 kun / 7 kecha",
    "Toshkentdan parvoz",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
   ],
@@ -712,6 +793,28 @@
    "img/g/kuala-lumpur-5.jpg",
    "img/g/kuala-lumpur-6.jpg",
    "img/g/kuala-lumpur-7.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "Toshkentdan parvoz",
+    "d": "Borish-qaytish aviachiptalar paket narxiga kiritilgan. Sizga eng qulay yo'nalish va vaqt tanlab beriladi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  },
  {
@@ -719,7 +822,7 @@
   "type": "city",
   "title": "Maskat",
   "country": "Oman",
-  "days": "5 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": false,
   "tiers": [
@@ -884,7 +987,7 @@
    ]
   },
   "info": [
-   "5 kun / 4 tun",
+   "8 kun / 7 kecha",
    "Toshkentdan parvoz",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
   ],
@@ -907,6 +1010,28 @@
    "img/g/muscat-3.jpg",
    "img/g/muscat-4.jpg",
    "img/g/muscat-5.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "Toshkentdan parvoz",
+    "d": "Borish-qaytish aviachiptalar paket narxiga kiritilgan. Sizga eng qulay yo'nalish va vaqt tanlab beriladi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  },
  {
@@ -914,7 +1039,7 @@
   "type": "city",
   "title": "Bali",
   "country": "Indoneziya",
-  "days": "7 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": false,
   "tiers": [
@@ -1070,7 +1195,7 @@
    ]
   },
   "info": [
-   "7 kun / 6 tun",
+   "8 kun / 7 kecha",
    "Toshkentdan parvoz",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
   ],
@@ -1094,6 +1219,28 @@
    "img/g/bali-3.jpg",
    "img/g/bali-4.jpg",
    "img/g/bali-5.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "Toshkentdan parvoz",
+    "d": "Borish-qaytish aviachiptalar paket narxiga kiritilgan. Sizga eng qulay yo'nalish va vaqt tanlab beriladi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  },
  {
@@ -1101,7 +1248,7 @@
   "type": "city",
   "title": "Shanxay",
   "country": "Xitoy",
-  "days": "6 kun",
+  "days": "7 kecha · 8 kun",
   "from": "Toshkent",
   "direct": false,
   "tiers": [
@@ -1248,7 +1395,7 @@
    ]
   },
   "info": [
-   "6 kun / 5 tun",
+   "8 kun / 7 kecha",
    "Toshkentdan parvoz",
    "Mehmonxona (nonushta), parvoz, transfer kiritilgan"
   ],
@@ -1272,6 +1419,28 @@
    "img/g/shanghai-3.jpg",
    "img/g/shanghai-4.jpg",
    "img/g/shanghai-5.jpg"
+  ],
+  "inc": [
+   {
+    "e": "✈️",
+    "t": "Toshkentdan parvoz",
+    "d": "Borish-qaytish aviachiptalar paket narxiga kiritilgan. Sizga eng qulay yo'nalish va vaqt tanlab beriladi."
+   },
+   {
+    "e": "🚐",
+    "t": "Transfer",
+    "d": "Aeroport — mehmonxona — aeroport individual transfer. Haydovchi sizni parvoz vaqtingizga qarab kutib oladi va jo'nash kunida ham shu xizmat qaytadi."
+   },
+   {
+    "e": "🏨",
+    "t": "Mehmonxona (nonushta)",
+    "d": "7 kecha tanlangan darajadagi mehmonxonada, har kuni nonushta bilan. 3, 4 va 5 yulduzli variantlardan birini tanlaysiz."
+   },
+   {
+    "e": "📅",
+    "t": "7 kecha · 8 kun",
+    "d": "Har bir paket 7 kecha va 8 kun davom etadi. Ko'proq dam olmoqchi bo'lsangiz, muddatni uzaytirish ham mumkin — shunchaki bizga yozing."
+   }
   ]
  }
 ]
