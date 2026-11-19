@@ -1,4 +1,4 @@
-const C = 'safar-v14';
+const C = 'safar-v15';
 self.addEventListener('install', e => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', e => {
