@@ -185,7 +185,7 @@ const EMO = ['🕌','🌆','🏝️','🛕','🕌','🌾','🏮'];
 const TODO_ICONS = ['waves','leaf','footprints','bag','food','camera','umbrella','moon'];
 const TINT = {'istanbul':'59 130 246','dubai':'234 179 8','phuket':'6 182 212','kuala-lumpur':'139 92 246','muscat':'217 164 65','bali':'34 197 94','shanghai':'244 63 94'};
 const FLAG = {'Turkiya':'tr','BAA':'ae','Tailand':'th','Malayziya':'my','Oman':'om','Indoneziya':'id','Xitoy':'cn',"O'zbekiston":'uz'};
-const AEMO = {'✈️':'emoji/plane.json','🏝️':'emoji/island.json','🛍️':'emoji/bags.json','🏖️':'emoji/beach.json','✅':'emoji/check.json','✨':'emoji/sparkles.json','⭐':'emoji/star.json','🌟':'emoji/glowstar.json','💫':'emoji/dizzy.json','🌴':'emoji/palm.json','🔥':'emoji/fire.json','🎉':'emoji/party.json','💎':'emoji/gem.json'};
+const AEMO = {'✈️':'emoji/plane.json','🏝️':'emoji/island.json','🛍️':'emoji/bags.json','🏖️':'emoji/beach.json','✅':'emoji/check.json','✨':'emoji/sparkles.json','⭐':'emoji/star.json','🌟':'emoji/glowstar.json','💫':'emoji/dizzy.json','🌴':'emoji/palm.json','🔥':'emoji/fire.json','🎉':'emoji/party.json','💎':'emoji/gem.json','🏨':'emoji/hotel.json','🛂':'emoji/passport.json','📆':'emoji/calendar.json','🚗':'emoji/car.json'};
 const ICO = {
  bed:'<path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/><path d="M5 10V6h6v4"/><circle cx="8" cy="8" r="0"/>',
  'check-circle':'<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3.01"/>',
@@ -204,6 +204,9 @@ const ICO = {
  chev:'<path d="m9 18 6-6-6-6"/>'
 };
 const ico = (n, s) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:${s}px;height:${s}px" aria-hidden="true">${ICO[n] || ''}</svg>`;
+
+const TILEC={waves:['#40C4E0','#1FA3C9'],leaf:['#5ACC6B','#34AF48'],footprints:['#FFA63E','#F58A0C'],bag:['#A78BFA','#8B5CF6'],food:['#FF8A65','#F4603E'],camera:['#55AAEA','#2E8FE0'],umbrella:['#F56E57','#E5472F'],moon:['#7C8CF8','#5B6BE8'],bed:['#55AAEA','#2E8FE0'],sunrise:['#FFC24B','#F5A623'],clock:['#A78BFA','#8B5CF6'],bulb:['#FFC24B','#F5A623'],'map-pin':['#F56E57','#E5472F']};
+const tbg=n=>TILEC[n]?`background:linear-gradient(180deg,${TILEC[n][0]},${TILEC[n][1]})`:'';
 const flag = c => FLAG[c] ? `<span class="ae" data-j="emoji/flag-${FLAG[c]}.json" style="width:20px;height:20px"></span>` : '';
 const EMOJI_RE = /[\p{Extended_Pictographic}\uFE0F\u200D\u2B50]+/gu;
 let DATA = [], vibe = '', country = '', sheetIsOpen = false, slideTimer = null, lottieReady = false;
@@ -296,9 +299,9 @@ function renderCity(p){
   <section class="sec in"><div class="sec-title">Mashhur joylar</div><div class="hscroll">${p.attractions.map((a,i)=> a.img
     ? `<div class="attr-card" data-att="${i}"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.innerHTML='${emj(EMO[i % EMO.length],44).replace(/'/g,'&#39;').replace(/"/g,'&quot;')}';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm">${esc(a.name)}</div></div></div>`
     : `<div class="attr-card" data-att="${i}"><div class="ph">${emj(EMO[i % EMO.length],44)}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile">${ico(TODO_ICONS[i % TODO_ICONS.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="hnav">${p.tiers.map((t,i)=>`<div class="hnav-card" data-hot="${i}"><span class="hn-tile">${ico('bed',20)}</span><span class="hn-body"><span class="hn-t">${esc(t.name)}</span><span class="hn-s">${esc((t.hotels_data||[]).slice(0,3).map(h=>h.n).join(', '))}${(t.hotels_data||[]).length>3?` +${t.hotels_data.length-3}`:''}</span></span><span class="hn-go">${ico('chev',16)}</span></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${(p.inc||p.info.map(x=>({e:'✅',t:x}))).map((x,i)=>`<div class="row inc-row" data-inc="${i}"><span class="tile">${emj(x.e,20)}</span><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(x.t)}</div></div><span class="inc-go">${ico('chev',16)}</span></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile" style="${tbg(TODO_ICONS[i % TODO_ICONS.length])}">${ico(TODO_ICONS[i % TODO_ICONS.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="hnav">${p.tiers.map((t,i)=>`<div class="hnav-card" data-hot="${i}"><span class="hn-tile" style="${tbg('bed')}">${ico('bed',20)}</span><span class="hn-body"><span class="hn-t">${esc(t.name)}</span><span class="hn-s">${esc((t.hotels_data||[]).slice(0,3).map(h=>h.n).join(', '))}${(t.hotels_data||[]).length>3?` +${t.hotels_data.length-3}`:''}</span></span><span class="hn-go">${ico('chev',16)}</span></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${(p.inc||p.info.map(x=>({e:'✅',t:x}))).map((x,i)=>`<div class="row inc-row" data-inc="${i}"><span class="tile" style="background:none">${emj(x.e,20)}</span><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(x.t)}</div></div><span class="inc-go">${ico('chev',16)}</span></div>`).join('')}</div></section>
   ${TG ? '' : '<button class="cta" id="book">Narx so&#39;rash</button>'}`;
   app.querySelectorAll('[data-att]').forEach(el => el.addEventListener('click', () => openSheet(p, p.attractions[+el.dataset.att])));
   app.querySelectorAll('[data-hot]').forEach(el => el.addEventListener('click', () => { location.hash = '#/' + p.id + '/hotels/' + el.dataset.hot; }));
@@ -385,7 +388,7 @@ function openInc(p, i){
 }
 function openSheet(city, a){
   const imgs = a.imgs && a.imgs.length ? a.imgs : (a.img ? [a.img] : []);
-  const inf = (icn, l, v) => v ? `<div class="sh-row"><span class="si">${ico(icn,15)}</span><div><div class="sl">${l}</div><div class="sv">${esc(v)}</div></div></div>` : '';
+  const inf = (icn, l, v) => v ? `<div class="sh-row"><span class="si" style="${tbg(icn)}">${ico(icn,15)}</span><div><div class="sl">${l}</div><div class="sv">${esc(v)}</div></div></div>` : '';
   sheetContent.innerHTML = `${imgs.length > 1
     ? `<div class="sh-slides"><div class="strack" id="strack">${imgs.map(g=>`<div class="sslide"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div></div><div class="dots" id="sdots">${imgs.map((_,i)=>`<span class="dot${i?'':' on'}"></span>`).join('')}</div>`
     : imgs.length === 1 ? `<img class="sh-img" src="${imgs[0]}" alt="" onerror="this.remove()">` : `<div class="sh-ph">${ico('map-pin',40)}</div>`}
