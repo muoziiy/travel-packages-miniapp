@@ -13,21 +13,32 @@
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{background:var(--bg);color:var(--text);font-family:-apple-system,'SF Pro Text','Segoe UI',Roboto,sans-serif}
 body{font-size:16px;line-height:1.45;min-height:100vh}
-.wrap{padding:16px 16px 40px;max-width:640px;margin:0 auto}
+.wrap{position:relative;padding:16px 16px 40px;max-width:640px;margin:0 auto}
+.backdrop{position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:520px;height:340px;border-radius:50%;overflow:hidden;filter:blur(48px) saturate(1.35);opacity:.5;pointer-events:none;z-index:0;-webkit-mask-image:radial-gradient(ellipse at center,black 35%,transparent 70%);mask-image:radial-gradient(ellipse at center,black 35%,transparent 70%)}
+.backdrop img{width:200%;height:200%;object-fit:cover;transform:translate(-25%,-25%)}
+.wrap > *{position:relative;z-index:1}
 h1.app-title{font-size:28px;font-weight:800;letter-spacing:-.3px;margin-top:8px}
 .sub{color:var(--muted);font-size:14px;margin-top:2px}
 .sec{margin-top:22px}
 .sec-title{color:var(--sec-header);font-size:13px;font-weight:600;margin:0 4px 8px}
 .card{background:var(--card);border-radius:14px;overflow:hidden}
-.row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;position:relative}
-.row + .row::before{content:'';position:absolute;top:0;left:16px;right:0;height:1px;background:var(--sep)}
+.row{display:flex;align-items:center;gap:12px;padding:12px 16px;position:relative}
+.row + .row::before{content:'';position:absolute;top:0;left:62px;right:0;height:1px;background:var(--sep)}
+.row .grow{flex:1;min-width:0}
 .row .t{font-size:15.5px;font-weight:600}
 .row .s{color:var(--muted);font-size:13px;margin-top:1px}
 .row .v{font-size:15.5px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap}
 .row .v.mut{color:var(--muted);font-weight:500;font-size:13px}
+.tile{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;flex:0 0 auto;box-shadow:inset 0 -6px 12px rgba(0,0,0,.18)}
+.g1{background:linear-gradient(135deg,#4facfe,#2563eb)}
+.g2{background:linear-gradient(135deg,#fbbf24,#f97316)}
+.g3{background:linear-gradient(135deg,#4ade80,#16a34a)}
+.g4{background:linear-gradient(135deg,#fb7185,#e11d48)}
+.g5{background:linear-gradient(135deg,#a5b4fc,#4f46e5)}
+.g6{background:linear-gradient(135deg,#2dd4bf,#0d9488)}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 4px 6px;scrollbar-width:none;-ms-overflow-style:none;touch-action:pan-x}
 .chips::-webkit-scrollbar{display:none}
-.chip{flex:0 0 auto;background:var(--card);color:var(--text);border:none;border-radius:20px;padding:8px 15px;font-size:14px;font-weight:600;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1),opacity .2s}
+.chip{flex:0 0 auto;background:var(--card);color:var(--text);border:none;border-radius:20px;padding:8px 15px;font-size:14px;font-weight:600;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1),background .2s,color .2s}
 .chip.on{background:var(--accent);color:var(--btn-text)}
 .chip:active{transform:scale(.95)}
 .city-card{background:var(--card);border-radius:16px;overflow:hidden;margin-top:14px;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
@@ -35,9 +46,9 @@ h1.app-title{font-size:28px;font-weight:800;letter-spacing:-.3px;margin-top:8px}
 .banner{position:relative;height:172px;background:linear-gradient(135deg,#2b4c6f,#1d3550)}
 .banner img{width:100%;height:100%;object-fit:cover;display:block}
 .banner .ov{position:absolute;inset:auto 0 0 0;padding:36px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.72));display:flex;align-items:flex-end;justify-content:space-between}
-.banner .nm{font-size:20px;font-weight:800;text-shadow:0 1px 8px rgba(0,0,0,.5)}
-.banner .cn{font-size:12.5px;opacity:.9;margin-top:1px}
-.banner .badge{background:rgba(0,0,0,.45);backdrop-filter:blur(8px);border-radius:16px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
+.banner .nm{font-size:20px;font-weight:800;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.banner .cn{font-size:12.5px;color:#fff;opacity:.9;margin-top:1px}
+.banner .badge{background:rgba(0,0,0,.45);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:5px 11px;font-size:12px;font-weight:600;white-space:nowrap}
 .tier-rows{padding:2px 0 4px}
 .more{display:flex;align-items:center;justify-content:center;gap:5px;color:var(--sec-header);font-size:13.5px;font-weight:600;padding:10px 0 12px}
 .hscroll{display:flex;gap:10px;overflow-x:auto;padding:2px 4px 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
@@ -47,21 +58,19 @@ h1.app-title{font-size:28px;font-weight:800;letter-spacing:-.3px;margin-top:8px}
 .feat-card{width:158px;height:196px;background:linear-gradient(160deg,#2b4c6f,#1d3550)}
 .feat-card img,.attr-card img{width:100%;height:100%;object-fit:cover;display:block}
 .feat-card .ov,.attr-card .ov{position:absolute;inset:auto 0 0 0;padding:28px 10px 9px;background:linear-gradient(transparent,rgba(0,0,0,.78))}
-.feat-card .fnm{font-size:15px;font-weight:800}
-.feat-card .why{font-size:11.5px;opacity:.92;line-height:1.3;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.attr-card{width:148px;height:184px;background:var(--card)}
+.feat-card .fnm{font-size:15px;font-weight:800;color:#fff}
+.feat-card .why{font-size:11.5px;color:#fff;opacity:.92;line-height:1.3;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.attr-card{width:170px;height:216px;background:var(--card)}
 .attr-card.a-photo img{height:100%}
-.attr-card .ph{width:100%;height:130px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center;font-size:34px}
-.attr-card .anm{font-size:13px;font-weight:700;padding:8px 10px 10px;line-height:1.3}
+.attr-card .ph{width:100%;height:158px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center;font-size:40px}
+.attr-card .anm{font-size:14px;font-weight:700;padding:9px 11px 11px;line-height:1.3}
 .gal{height:118px;border-radius:12px;overflow:hidden;flex:0 0 auto;scroll-snap-align:start;background:linear-gradient(160deg,#2b4c6f,#1d3550)}
 .gal img{width:170px;height:118px;object-fit:cover;display:block}
 .hero{position:relative;height:270px;border-radius:0 0 22px 22px;overflow:hidden;background:linear-gradient(135deg,#2b4c6f,#1d3550)}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}
 .hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.75))}
-.hero .nm{font-size:26px;font-weight:800}
-.hero .cn{font-size:13.5px;opacity:.92}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:0 0 auto;margin-top:7px}
-.ok-ic{color:var(--accent);font-weight:800;flex:0 0 auto}
+.hero .nm{font-size:26px;font-weight:800;color:#fff}
+.hero .cn{font-size:13.5px;color:#fff;opacity:.92}
 .cta{display:block;width:100%;margin-top:24px;background:var(--accent);color:var(--btn-text);border:none;border-radius:14px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
 .cta:active{transform:scale(.97)}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
@@ -70,15 +79,29 @@ h1.app-title{font-size:28px;font-weight:800;letter-spacing:-.3px;margin-top:8px}
 .city-card:nth-child(1){animation-delay:0ms}.city-card:nth-child(2){animation-delay:50ms}.city-card:nth-child(3){animation-delay:90ms}.city-card:nth-child(4){animation-delay:130ms}.city-card:nth-child(5){animation-delay:170ms}.city-card:nth-child(6){animation-delay:210ms}.city-card:nth-child(7){animation-delay:250ms}
 @media (prefers-reduced-motion:reduce){.in,.city-card{animation:none!important;transition:none!important}}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
+#sheet{position:fixed;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:var(--card);border-radius:20px 20px 0 0;transform:translateY(105%);transition:transform .3s cubic-bezier(.23,1,.32,1);z-index:51;padding-bottom:calc(env(safe-area-inset-bottom) + 18px);will-change:transform}
+#sheet-bg.open{opacity:1;pointer-events:auto}
+#sheet.open{transform:translateY(0)}
+#sheet .handle{width:40px;height:4px;border-radius:2px;background:var(--muted);opacity:.5;margin:10px auto 0;cursor:pointer}
+#sheet .sh-img{width:100%;height:200px;object-fit:cover;display:block}
+#sheet .sh-ph{width:100%;height:120px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center;font-size:52px}
+#sheet .sh-body{padding:14px 18px 0}
+#sheet .sh-name{font-size:19px;font-weight:800}
+#sheet .sh-desc{color:var(--text);opacity:.85;font-size:14.5px;margin-top:6px;line-height:1.5}
+#sheet .sh-city{color:var(--sec-header);font-size:12.5px;font-weight:600;margin-top:10px}
 </style>
 </head>
 <body>
 <div class="wrap" id="app"></div>
+<div id="sheet-bg"></div>
+<div id="sheet" role="dialog"><div class="handle" id="sheet-handle"></div><div id="sheet-content"></div></div>
 <script>
 const TG = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
 const BOOK = 'https://t.me/muoziiy';
 const VIBES = {family:"Oila bilan",friends:"Do'stlar bilan",couples:"Juftliklar uchun",honeymoon:"Asal oyi",cultural:"Madaniyat",experience:"Sarguzasht"};
 const EMO = ['🕌','🌆','🏝️','🛕','🕌','🌾','🏮'];
+const TODO_EMO = ['🚤','🧖','🚶','🛍️','🍜','📸','🏖️','🌃'];
 let DATA = [], vibe = '', country = '';
 const app = document.getElementById('app');
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -87,73 +110,90 @@ const price = v => v ? '$' + v : "So'rov bo'yicha";
 function applyTheme(){
   if(!TG) return;
   const p = TG.themeParams || {};
-  const m = {bg:'bg_color',card:'secondary_bg_color',text:'text_color',muted:'hint_color',accent:'button_color','btn-text':'button_text_color','sec-header':'section_header_text_color',sep:'section_separator_color'};
-  const fb = {'sec-header':'button_color',card:'section_bg_color'};
+  // Muoziiy's theme: secondary_bg_color is the page, bg_color is the section card
+  const m = {bg:'secondary_bg_color',card:'bg_color',text:'text_color',muted:'hint_color',accent:'button_color','btn-text':'button_text_color','sec-header':'section_header_text_color',sep:'section_separator_color'};
+  const fb = {'sec-header':'button_color',bg:'bg_color',card:'section_bg_color'};
   for(const k in m){ if(p[m[k]]) document.documentElement.style.setProperty('--'+k, p[m[k]]); else if(fb[k] && p[fb[k]]) document.documentElement.style.setProperty('--'+k, p[fb[k]]); }
   const meta = document.querySelector('meta[name=theme-color]') || document.head.appendChild(Object.assign(document.createElement('meta'),{name:'theme-color'}));
-  meta.content = p.bg_color || '#0e1621';
+  meta.content = p.secondary_bg_color || p.bg_color || '#0e1621';
 }
 function initTG(){
   if(!TG) return;
   try{ TG.ready(); TG.expand(); if(TG.disableVerticalSwipes) TG.disableVerticalSwipes(); }catch(e){}
   applyTheme();
-  try{ if(TG.setHeaderColor) TG.setHeaderColor('bg_color'); if(TG.setBackgroundColor) TG.setBackgroundColor('bg_color'); }catch(e){}
+  try{ if(TG.setHeaderColor) TG.setHeaderColor('secondary_bg_color'); if(TG.setBackgroundColor) TG.setBackgroundColor('secondary_bg_color'); }catch(e){}
   TG.onEvent('themeChanged', applyTheme);
-  TG.BackButton.onClick(() => { if(location.hash) history.back(); });
+  TG.BackButton.onClick(() => { closeSheet(); if(location.hash) history.back(); });
 }
-function route(){
-  const id = (location.hash || '').replace('#/','');
-  const city = DATA.find(p => p.id === id);
-  if(city) renderCity(city); else renderList();
-}
-function renderList(){
+function route(){ closeSheet(); const id = (location.hash || '').replace('#/',''); const city = DATA.find(p => p.id === id); if(city) renderCity(city); else renderList(true); }
+function renderList(withAnim){
   if(TG){ try{ TG.BackButton.hide(); if(TG.MainButton) TG.MainButton.hide(); }catch(e){} }
   const feats = DATA.filter(p => p.featured);
-  const countries = [...new Set(DATA.map(p => p.country))];
-  const cities = DATA.filter(p => (!vibe || (p.vibes||[]).includes(vibe)) && (!country || p.country === country));
+  const a = withAnim ? 'in' : '';
   app.innerHTML = `
-  <header class="in"><h1 class="app-title">Safar paketlar</h1><p class="sub">Toshkentdan to'g'ri parvozlar bilan</p></header>
-  ${feats.length ? `<section class="sec in"><div class="sec-title">Tavsiyalar</div><div class="hscroll">${feats.map(p=>`
+  ${feats.length ? `<div class="backdrop"><img src="img/${feats[0].id}.jpg" alt="" onerror="this.remove()"></div>` : ''}
+  <header class="${a}"><h1 class="app-title">Safar paketlar</h1><p class="sub">Toshkentdan to'g'ri parvozlar bilan</p></header>
+  ${feats.length ? `<section class="sec ${a}"><div class="sec-title">Tavsiyalar</div><div class="hscroll">${feats.map(p=>`
     <div class="feat-card" data-go="${p.id}"><img src="img/${p.id}.jpg" loading="lazy" alt="" onerror="this.remove()"><div class="ov"><div class="fnm">${esc(p.title)}</div><div class="why">${esc(p.featured)}</div></div></div>`).join('')}</div></section>` : ''}
-  <section class="sec in"><div class="sec-title">Kim uchun</div><div class="chips" id="vchips">
+  <section class="sec ${a}"><div class="sec-title">Kim uchun</div><div class="chips" id="vchips">
     <button class="chip ${!vibe?'on':''}" data-v="">Hammasi</button>
     ${Object.entries(VIBES).map(([k,l])=>`<button class="chip ${vibe===k?'on':''}" data-v="${k}">${l}</button>`).join('')}
   </div></section>
-  <section class="sec in"><div class="sec-title">Davlatlar</div><div class="chips" id="cchips">
+  <section class="sec ${a}"><div class="sec-title">Davlatlar</div><div class="chips" id="cchips">
     <button class="chip ${!country?'on':''}" data-c="">Hammasi</button>
-    ${countries.map(c=>`<button class="chip ${country===c?'on':''}" data-c="${esc(c)}">${esc(c)}</button>`).join('')}
+    ${[...new Set(DATA.map(p=>p.country))].map(c=>`<button class="chip ${country===c?'on':''}" data-c="${esc(c)}">${esc(c)}</button>`).join('')}
   </div></section>
-  <section class="sec"><div class="sec-title">Shaharlar</div><div id="cities">
-  ${cities.length ? cities.map(p=>`
-    <div class="city-card in" data-go="${p.id}">
+  <section class="sec"><div class="sec-title">Shaharlar</div><div id="cities">${citiesHTML(false)}</div></section>`;
+  bindList();
+}
+function citiesHTML(anim){
+  const cities = DATA.filter(p => (!vibe || (p.vibes||[]).includes(vibe)) && (!country || p.country === country));
+  if(!cities.length) return `<div class="empty">Bu filtr bo'yicha paket yo'q</div>`;
+  return cities.map(p=>`
+    <div class="city-card ${anim?'in':''}" data-go="${p.id}">
       <div class="banner"><img src="img/${p.id}.jpg" loading="lazy" alt="" onerror="this.remove()">
         <div class="ov"><div><div class="nm">${esc(p.title)}</div><div class="cn">${esc(p.country)} · ${esc(p.days)}</div></div>
         <div class="badge">${p.direct ? "To'g'ri parvoz" : '1 x transfer'}</div></div></div>
-      <div class="tier-rows">${p.tiers.map(t=>`<div class="row"><div><div class="t">${esc(t.name)}</div><div class="s">1 kishi uchun</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div>
+      <div class="tier-rows">${p.tiers.map(t=>`<div class="row"><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">1 kishi uchun</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div>
       <div class="more">Batafsil <span aria-hidden="true">›</span></div>
-    </div>`).join('') : `<div class="empty">Bu filtr bo'yicha paket yo'q</div>`}
-  </div></section>`;
-  app.querySelectorAll('[data-go]').forEach(el => el.addEventListener('click', () => { location.hash = '#/' + el.dataset.go; }));
-  app.querySelectorAll('#vchips .chip').forEach(el => el.addEventListener('click', () => { vibe = el.dataset.v; renderList(); }));
-  app.querySelectorAll('#cchips .chip').forEach(el => el.addEventListener('click', () => { country = el.dataset.c; renderList(); }));
+    </div>`).join('');
 }
+function bindList(){
+  const setChip = (id, attr, val) => { document.querySelectorAll(id + ' .chip').forEach(el => el.classList.toggle('on', el.dataset[attr] === val)); };
+  app.querySelectorAll('#vchips .chip').forEach(el => el.addEventListener('click', () => { if(vibe === el.dataset.v) return; vibe = el.dataset.v; setChip('#vchips','v',vibe); document.getElementById('cities').innerHTML = citiesHTML(false); bindCityCards(); }));
+  app.querySelectorAll('#cchips .chip').forEach(el => el.addEventListener('click', () => { if(country === el.dataset.c) return; country = el.dataset.c; setChip('#cchips','c',country); document.getElementById('cities').innerHTML = citiesHTML(false); bindCityCards(); }));
+  bindCityCards();
+}
+function bindCityCards(){ app.querySelectorAll('[data-go]').forEach(el => el.onclick = () => { location.hash = '#/' + el.dataset.go; }); }
 function renderCity(p){
   if(TG){ try{ TG.BackButton.show(); if(TG.MainButton){ TG.MainButton.setText('Band qilish'); TG.MainButton.show(); TG.MainButton.onClick(() => TG.openTelegramLink ? TG.openTelegramLink(BOOK) : location.href = BOOK); } }catch(e){} }
   app.innerHTML = `
   <div class="hero in"><img src="img/${p.id}.jpg" alt="" onerror="this.remove()">
     <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</div></div></div>
   <section class="sec in"><div class="sec-title">Galereya</div><div class="hscroll">${(p.gallery||[]).map(g=>`<div class="gal"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Narxlar · 1 kishi</div><div class="card">${p.tiers.map(t=>`<div class="row"><div><div class="t">${esc(t.name)}</div><div class="s">${p.days} · ${esc(p.from)}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Narxlar · 1 kishi</div><div class="card">${p.tiers.map(t=>`<div class="row"><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${p.days} · ${esc(p.from)}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
   <section class="sec in"><div class="sec-title">Mashhur joylar</div><div class="hscroll">${p.attractions.map((a,i)=> a.img
-    ? `<div class="attr-card a-photo"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();this.parentNode.classList.remove('a-photo');var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.textContent='📍';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm" style="font-size:13px;font-weight:700">${esc(a.name)}</div></div></div>`
-    : `<div class="attr-card"><div class="ph">${EMO[i % EMO.length]}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map(t=>`<div class="row" style="justify-content:flex-start"><span class="dot"></span><div class="t" style="font-weight:500;font-size:15px">${esc(t)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map(t=>`<div class="row"><div><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map(i=>`<div class="row" style="justify-content:flex-start;gap:10px"><span class="ok-ic">✓</span><div class="t" style="font-weight:500;font-size:15px">${esc(i)}</div></div>`).join('')}</div></section>
-  <button class="cta" id="book">Band qilish</button>`;
-  document.getElementById('book').addEventListener('click', () => { if(TG && TG.openTelegramLink) TG.openTelegramLink(BOOK); else location.href = BOOK; });
+    ? `<div class="attr-card a-photo" data-att="${i}"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();this.parentNode.classList.remove('a-photo');var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.textContent='📍';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm" style="font-size:13.5px;font-weight:700">${esc(a.name)}</div></div></div>`
+    : `<div class="attr-card" data-att="${i}"><div class="ph">${EMO[i % EMO.length]}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${TODO_EMO[i % TODO_EMO.length]}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(t)}</div></div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">🏨</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">✓</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${esc(x)}</div></div></div>`).join('')}</div></section>
+  ${TG ? '' : '<button class="cta" id="book">Band qilish</button>'}`;
+  app.querySelectorAll('[data-att]').forEach(el => el.addEventListener('click', () => openSheet(p, p.attractions[+el.dataset.att])));
+  const bk = document.getElementById('book'); if(bk) bk.addEventListener('click', () => { if(TG && TG.openTelegramLink) TG.openTelegramLink(BOOK); else location.href = BOOK; });
   window.scrollTo(0,0);
 }
+const sheet = document.getElementById('sheet'), sheetBg = document.getElementById('sheet-bg'), sheetContent = document.getElementById('sheet-content');
+function openSheet(city, a){
+  sheetContent.innerHTML = `${a.img ? `<img class="sh-img" src="${a.img}" alt="" onerror="this.remove()">` : `<div class="sh-ph">📍</div>`}
+    <div class="sh-body"><div class="sh-name">${esc(a.name)}</div><div class="sh-desc">${esc(a.desc || '')}</div>
+    <div class="sh-city">${esc(city.title)} · ${esc(city.country)} paketiga kiradi</div></div>`;
+  sheetBg.classList.add('open'); sheet.classList.add('open');
+  if(TG && TG.HapticFeedback){ try{ TG.HapticFeedback.impactOccurred('light'); }catch(e){} }
+}
+function closeSheet(){ sheetBg.classList.remove('open'); sheet.classList.remove('open'); }
+sheetBg.addEventListener('click', closeSheet);
+document.getElementById('sheet-handle').addEventListener('click', closeSheet);
 async function boot(){
   try{ const r = await fetch('api/packages'); DATA = await r.json(); }
   catch(e){ const r2 = await fetch('packages.json'); DATA = await r2.json(); }

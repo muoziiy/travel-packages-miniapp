@@ -24,23 +24,28 @@
   "attractions": [
    {
     "name": "Ayasofya masjidi",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdpDq74Iulterkz9KnnnO81E7cjYmSlS6C9l2IqrhnRzZ8UKin8Jklbo017U4Ump7ABfZ2Fs-iefYEafcAF1XpJqGBfPZ65QztOteQl837Oae5Cb5oDdQmbJ7GxTLWW40EqVztiVw=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdpDq74Iulterkz9KnnnO81E7cjYmSlS6C9l2IqrhnRzZ8UKin8Jklbo017U4Ump7ABfZ2Fs-iefYEafcAF1XpJqGBfPZ65QztOteQl837Oae5Cb5oDdQmbJ7GxTLWW40EqVztiVw=s4800-w1000-h1024",
+    "desc": "1500 yillik tarix: Rim bazilikasidan masjiga aylangan me'moriy mo'jiza, shahar ramzi."
    },
    {
     "name": "Sultonahmad masjidi (Ko'k masjid)",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeP2HzpJgjPutBKWEiSpsGAR0XRpvhb8cNKvX0XocWFjXVeqmYcfYc29iam8Tume5QbUrIBrgZTL3TQC0-4LJFC_Tlfhl5aXmGmogLFJS2cUc92U-BcTKi5ityd2LWKrjvoo8ft4A=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeP2HzpJgjPutBKWEiSpsGAR0XRpvhb8cNKvX0XocWFjXVeqmYcfYc29iam8Tume5QbUrIBrgZTL3TQC0-4LJFC_Tlfhl5aXmGmogLFJS2cUc92U-BcTKi5ityd2LWKrjvoo8ft4A=s4800-w1000-h1024",
+    "desc": "6 ta minorali, ko'k iznik plitkalari bilan mashhur eng chiroyli masjidlardan."
    },
    {
     "name": "Topqapi saroyi",
-    "img": null
+    "img": null,
+    "desc": "Usmonli sultonlar 400 yil yashagan saroy: xazina, hovlilar va Bosphor qarashi."
    },
    {
     "name": "Bosfor bo'g'ozi parom sayohati",
-    "img": null
+    "img": null,
+    "desc": "Ikki qit'ani bog'lovchi bo'g'oz bo'ylab 1,5 soatlik kruiz, saroylar va minoralar bilan."
    },
    {
     "name": "Gran Bozor",
-    "img": null
+    "img": null,
+    "desc": "4000 do'konli o'rta asr bozori: ziravorlar, gilam va hunarmandchilik markazi."
    }
   ],
   "hotels": {
@@ -105,23 +110,28 @@
   "attractions": [
    {
     "name": "Burj Khalifa",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLffdSWKttChhufVObu0M6WF-fPzMlSD_PiOBmBQv96AVS3IS0Mfxresr3q2pb4EnwYXzhDhTdGRE4JXyNsgFLYAotlQ8HyQhocRbIKj3dR6ptI72JoWknMqmEAlJ7FRVM-wNljU=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLffdSWKttChhufVObu0M6WF-fPzMlSD_PiOBmBQv96AVS3IS0Mfxresr3q2pb4EnwYXzhDhTdGRE4JXyNsgFLYAotlQ8HyQhocRbIKj3dR6ptI72JoWknMqmEAlJ7FRVM-wNljU=s4800-w1000-h1024",
+    "desc": "828 metr, dunyoning eng baland binosi. 124-qavat kuzatuv maydoni."
    },
    {
     "name": "Dubai Fountain shousi",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfd078NMw9CWwUA08kLgT5uko9kwTXtkPrEYbC1y0DGDBHEyuKzP4Wv7bPxZAOCn7sY5FVyITS8cqMAk6ncX17AEfLPXkvHzHw--Ib0Co8wGxK3hNY1tPjgNfDWX-6EPwGdEMn9=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfd078NMw9CWwUA08kLgT5uko9kwTXtkPrEYbC1y0DGDBHEyuKzP4Wv7bPxZAOCn7sY5FVyITS8cqMAk6ncX17AEfLPXkvHzHw--Ib0Co8wGxK3hNY1tPjgNfDWX-6EPwGdEMn9=s4800-w1000-h1024",
+    "desc": "Burj Khalifa ostida har 30 daqiqada boshlanadigan musiqali suv shousi."
    },
    {
     "name": "Dubai Mall",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeWv1nWEs3XgrrJPPUsxFdK-iGTap4wjiuTJz5h242p3lhP3waxPbsalnorJLnG-rQVr26HTKXnNMWUocUWGUZqTKqibCxqG5DHdBrx1uJhHLnPafyt2wgxdldmadZgCGV_HQP9rOjF8BQu=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeWv1nWEs3XgrrJPPUsxFdK-iGTap4wjiuTJz5h242p3lhP3waxPbsalnorJLnG-rQVr26HTKXnNMWUocUWGUZqTKqibCxqG5DHdBrx1uJhHLnPafyt2wgxdldmadZgCGV_HQP9rOjF8BQu=s4800-w1000-h1024",
+    "desc": "1200 do'kon, ulkan akvarium va muz saroyi bilan dunyoning eng katta savdo markazlaridan."
    },
    {
     "name": "Palm Jumeirah",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfdNzAip8HjWdt-fPbQOrIT0Y_Tx77rZEjN5ZJyH1uIqt1XXpjSfqtOmdiacfnmHtGGL3U8J6tNh26iRPUdjQL9fQhx1Z5OOajYcboYEpbKwcavmwhgk5kyTBL08R69XdScjc3b3A=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfdNzAip8HjWdt-fPbQOrIT0Y_Tx77rZEjN5ZJyH1uIqt1XXpjSfqtOmdiacfnmHtGGL3U8J6tNh26iRPUdjQL9fQhx1Z5OOajYcboYEpbKwcavmwhgk5kyTBL08R69XdScjc3b3A=s4800-w1000-h1024",
+    "desc": "Dengizga qurilgan palma shaklidagi sun'iy orol, Atlantis mehmonxonasi bilan."
    },
    {
     "name": "Dubai Miracle Garden",
-    "img": null
+    "img": null,
+    "desc": "150 million guldun qurilgan dunyodagi eng katta gul bog'i (noyabrdan maygacha)."
    }
   ],
   "hotels": {
@@ -179,23 +189,28 @@
   "attractions": [
    {
     "name": "Patong plyaji",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfm7R8k8-D3heU7AdZEKxZK5RkyVLHszbAq68Gz3mpxmVIz9bwyZQEM15M__z2HYCmv5rDecTqhZEJGBkk8goaAo590gSfhxrtv5yCYLHX4_HIJWnwlYJukpJFlarxdMimSl8A_=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfm7R8k8-D3heU7AdZEKxZK5RkyVLHszbAq68Gz3mpxmVIz9bwyZQEM15M__z2HYCmv5rDecTqhZEJGBkk8goaAo590gSfhxrtv5yCYLHX4_HIJWnwlYJukpJFlarxdMimSl8A_=s4800-w1000-h1024",
+    "desc": "Suv sportlari va tungi hayot markazi, 3 km oq qumli plyaj."
    },
    {
     "name": "Katta Budda haykali",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfbGyVSHb03diAccFPuHX2zHlkruUb7lOfC1nPjG2PD0ph6wlf5rmJq6Y5Gxc25lTUkQoLkOsiPEbs66nAC0A1G2IkpnrsyEQdN-44ovUC589VF2ABrP9QAjlT_EC1aIgvNyqyZTQ=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLfbGyVSHb03diAccFPuHX2zHlkruUb7lOfC1nPjG2PD0ph6wlf5rmJq6Y5Gxc25lTUkQoLkOsiPEbs66nAC0A1G2IkpnrsyEQdN-44ovUC589VF2ABrP9QAjlT_EC1aIgvNyqyZTQ=s4800-w1000-h1024",
+    "desc": "45 metrli oq marmar Budda, Nakkerd tepasidan butun orol ko'rinadi."
    },
    {
     "name": "Phi Phi orollari ekskursiyasi",
-    "img": null
+    "img": null,
+    "desc": "Tez qayiqda bir kunlik ekskursiya: Maya Bay va baliqlar orasida snorkeling."
    },
    {
     "name": "Karon plyaji",
-    "img": null
+    "img": null,
+    "desc": "Patongdan tinchroq, uzun qumli plyaj, maishiy muhit saqlangan."
    },
    {
     "name": "Promthep burni (quyosh botishi)",
-    "img": null
+    "img": null,
+    "desc": "Orolning eng mashhur quyosh botish nuqtasi, janubiy burnida mayak bilan."
    }
   ],
   "hotels": {
@@ -260,23 +275,28 @@
   "attractions": [
    {
     "name": "Petronas qo'sh minoralari",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLc1yQbgjydY0xy4yc960arlSHNT5asSZdkCbYwSRtrNOvfPcKk3BNBvrHK0TCEWnsQYckAQggEExF9Rjy-TrENAeLAI8tEfx-asNLyC1EdckN0L0avMjGjOsh0x9uTKL4ElDAvB_uz1mhL1=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLc1yQbgjydY0xy4yc960arlSHNT5asSZdkCbYwSRtrNOvfPcKk3BNBvrHK0TCEWnsQYckAQggEExF9Rjy-TrENAeLAI8tEfx-asNLyC1EdckN0L0avMjGjOsh0x9uTKL4ElDAvB_uz1mhL1=s4800-w1000-h1024",
+    "desc": "451 metrli egizak minoralar, osmon ko'prigi 41-qavatda bog'laydi."
    },
    {
     "name": "Batu cave'lari",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLcWEXtVVxPomIdFtG3bEBMX1-FF7ekG385lJ1ePiGZueih5HX_97gw35PgyKMiwu3GQI49I5bTHiaNkTbg9UDgYMQfWJVEh4nFxibNwPU8vlR6BsC5etjnterQw7ii9bl_to9Ti=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLcWEXtVVxPomIdFtG3bEBMX1-FF7ekG385lJ1ePiGZueih5HX_97gw35PgyKMiwu3GQI49I5bTHiaNkTbg9UDgYMQfWJVEh4nFxibNwPU8vlR6BsC5etjnterQw7ii9bl_to9Ti=s4800-w1000-h1024",
+    "desc": "272 pog'ona, 42 metrli oltin Budda va g'or ichidagi ibodatxonalar."
    },
    {
     "name": "KLCC parki",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdoi3EWkoX6g3owPzHuInvSDtYDVyCgglveTLbncf9bD_VivwvhoX6TMK1Z8jjqBzKc4VIYv_AplPD8QcwwOk9MnSnzqjxwzSyqlWSFVmSNi2Z1PRY3RghWYplcy2TOYSdQUNhg=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdoi3EWkoX6g3owPzHuInvSDtYDVyCgglveTLbncf9bD_VivwvhoX6TMK1Z8jjqBzKc4VIYv_AplPD8QcwwOk9MnSnzqjxwzSyqlWSFVmSNi2Z1PRY3RghWYplcy2TOYSdQUNhg=s4800-w1000-h1024",
+    "desc": "Minoralar ostidagi yashil voha: tonggi yugurish va kechki favvoralar uchun."
    },
    {
     "name": "Merdeka maydoni",
-    "img": null
+    "img": null,
+    "desc": "Mustaqilik e'lon qilingan tarixiy maydon, Moorish uslubidagi hukumat binolari yonida."
    },
    {
     "name": "Bukit Bintang ko'chasi",
-    "img": null
+    "img": null,
+    "desc": "Shaharning asosiy savdo va taom ko'chasi, kechqurun ayniqsa jonli."
    }
   ],
   "hotels": {
@@ -345,23 +365,28 @@
   "attractions": [
    {
     "name": "Sulton Qobus katta masjidi",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLci4sm4en9BLuqRBO0bxxQ80N0t9TOlVEVvVM1RgN_LN69vCqJiUXZjgAv6o1SFCdRwulQjTulQZX9pJL3L1847WSKuOY40glk5u88RqofWpSRYbovkvUT8sUNkiVL2hhjwR2nYBA=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLci4sm4en9BLuqRBO0bxxQ80N0t9TOlVEVvVM1RgN_LN69vCqJiUXZjgAv6o1SFCdRwulQjTulQZX9pJL3L1847WSKuOY40glk5u88RqofWpSRYbovkvUT8sUNkiVL2hhjwR2nYBA=s4800-w1000-h1024",
+    "desc": "346 tonnalik gilam va ikkinchi yirik qandil bilan mashhur marmar masjid."
    },
    {
     "name": "Muttrah bozori (souq)",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdI8NLthhp5CUUlKNKrVDUGa6fQZAS_GApsA5fXe_FoV3xlbhGLszuZ-UD1stb_JwHXe8VkOLWa4YCzXPnP3SnGFkkux2dyKFFuwyqt40dnyxkV7vWxYEItEYg3ud2s_flWSxL1=s4800-w600-h300"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdI8NLthhp5CUUlKNKrVDUGa6fQZAS_GApsA5fXe_FoV3xlbhGLszuZ-UD1stb_JwHXe8VkOLWa4YCzXPnP3SnGFkkux2dyKFFuwyqt40dnyxkV7vWxYEItEYg3ud2s_flWSxL1=s4800-w600-h300",
+    "desc": "An'anaviy arab bozori: ладан, ziravorlar, kumush va hunarmandchilik."
    },
    {
     "name": "Qirollik opera teatri",
-    "img": null
+    "img": null,
+    "desc": "2011-yilda ochilgan marmar opera uyi, xalqaro repertuar bilan."
    },
    {
     "name": "Muttrah Corniche qirg'og'i",
-    "img": null
+    "img": null,
+    "desc": "Port qarashlari bilan sohil sayrgohi, kechqurun yoritilganda ayniqsa chiroyli."
    },
    {
     "name": "Al Qurum plyaji",
-    "img": null
+    "img": null,
+    "desc": "Shahar markaziga yaqin jamoat plyaji, palmalar va suv sportlari bilan."
    }
   ],
   "hotels": {
@@ -428,23 +453,28 @@
   "attractions": [
    {
     "name": "Tanah Lot dengiz ibodatxonasi",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLd6A8RFnPfME3l9H5dlUDqykkgVlihZgESSRCVI7xDtNI8WhDRLY3iaTCvpPhMwroKNDnwOcmi1T9bFB0CF5NoTB89cgQPr1PZv6pGqj8LOrNbqBa4zx2kX3euVcxCeZCmynqhKmA=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLd6A8RFnPfME3l9H5dlUDqykkgVlihZgESSRCVI7xDtNI8WhDRLY3iaTCvpPhMwroKNDnwOcmi1T9bFB0CF5NoTB89cgQPr1PZv6pGqj8LOrNbqBa4zx2kX3euVcxCeZCmynqhKmA=s4800-w1000-h1024",
+    "desc": "Qoya ustidagi dengiz ibodatxonasi, quyosh botishida eng chiroyli manzara."
    },
    {
     "name": "Ubud guruch terrasalari (Tegallalang)",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeaMb4jT7cxtu8HqkaspvdDQbs3SCGTVJoQwxKpgnT1K4prtde-59zzcQ8JTp_fqE2wNB_NTtX9HA3AhrqRN_PYzGLsLWyxcyqb33GuLuBkQWy_M95MdhEMksz9prl-IW7TheJn=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLeaMb4jT7cxtu8HqkaspvdDQbs3SCGTVJoQwxKpgnT1K4prtde-59zzcQ8JTp_fqE2wNB_NTtX9HA3AhrqRN_PYzGLsLWyxcyqb33GuLuBkQWy_M95MdhEMksz9prl-IW7TheJn=s4800-w1000-h1024",
+    "desc": "Tepaliklarga qurilgan yashil guruch terrasalari, baliqchilik va swing rasmlari uchun."
    },
    {
     "name": "Uluwatu ibodatxonasi",
-    "img": null
+    "img": null,
+    "desc": "70 metrli qoya ustidagi ibodatxona, kechqurun kechak oyi raqsi namoyishi."
    },
    {
     "name": "Seminyak plyaji",
-    "img": null
+    "img": null,
+    "desc": "Kafe va beach-clublar bilan mashhur, chiroyli quyosh botishi."
    },
    {
     "name": "Nusa Penida oroli ekskursiyasi",
-    "img": null
+    "img": null,
+    "desc": "Tez qayiqda bir kunlik safari: Kelingking plyaji va Angel's Billabong."
    }
   ],
   "hotels": {
@@ -511,23 +541,28 @@
   "attractions": [
    {
     "name": "The Bund (Vaytan qirg'og'i)",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLehuEsjDU8oDQEG-VUcKTIxJEhAjufbqUa2fWr5Z7VqbO3VLzcNtHBgWlMVYLrzEnzWoWbuQnyTIM6zb74FlTUbXZAF1V2nYoxpaB772eVU7OHX4eIf8oiHMdEJkAzqsWpdJr1X=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLehuEsjDU8oDQEG-VUcKTIxJEhAjufbqUa2fWr5Z7VqbO3VLzcNtHBgWlMVYLrzEnzWoWbuQnyTIM6zb74FlTUbXZAF1V2nYoxpaB772eVU7OHX4eIf8oiHMdEJkAzqsWpdJr1X=s4800-w1000-h1024",
+    "desc": "Kolonial binolar qatoridan Pududning osmono'par binolariga qarash."
    },
    {
     "name": "Yu bog'i (Yu Garden)",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdWMUuZsdkC9LhWSLsBs58rQfkrhUHlMfBVr4BT9Tcc4f0C2gEhT1UVrLL4364epzaCAhAlWg_MtpOx3G_b-kI-naJArp2-20kSi6ylABpdPWkmWhaYb9VkJiRY8M-mw1438Z0N=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLdWMUuZsdkC9LhWSLsBs58rQfkrhUHlMfBVr4BT9Tcc4f0C2gEhT1UVrLL4364epzaCAhAlWg_MtpOx3G_b-kI-naJArp2-20kSi6ylABpdPWkmWhaYb9VkJiRY8M-mw1438Z0N=s4800-w1000-h1024",
+    "desc": "Ming sulolasidan qolgan klassik xitoy bog'i: ko'priklar, koi baliqlari va choy uylari."
    },
    {
     "name": "Shanxay minorasi",
-    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLcCegKYoPKKEaEwic3-2KrQyryDahUxoW_160Y0isBfv7uMiPWbcE9fo-frZQoTQiMw1vQPGrFhGUfjIDoDbKDh1j6gKobhtStRPAP3MzUP1x912GTnfz6ndmLOL0oQXLUrIpCMncrwh3s=s4800-w1000-h1024"
+    "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLcCegKYoPKKEaEwic3-2KrQyryDahUxoW_160Y0isBfv7uMiPWbcE9fo-frZQoTQiMw1vQPGrFhGUfjIDoDbKDh1j6gKobhtStRPAP3MzUP1x912GTnfz6ndmLOL0oQXLUrIpCMncrwh3s=s4800-w1000-h1024",
+    "desc": "468 metrli TV minorasi, shar shaklidagi kuzatuv sharlari bilan."
    },
    {
     "name": "Zhujiajiao suv shahri",
-    "img": null
+    "img": null,
+    "desc": "1700 yillik kanal shahri: tosh ko'priklar, qayiq sayrlari va choy uylari."
    },
    {
     "name": "Nankin yo'li (Nanjing Road)",
-    "img": null
+    "img": null,
+    "desc": "Dunyoning eng gavjum savdo ko'chalaridan biri, kechqurun neon yoritishda."
    }
   ],
   "hotels": {
