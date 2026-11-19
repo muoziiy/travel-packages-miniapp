@@ -25,27 +25,67 @@
       {
         "name": "Ayasofya masjidi",
         "img": "img/a/istanbul-0.jpg",
-        "desc": "1500 yillik tarix: 537-yilda qurilgan Rim bazilikasidan masjiga aylangan me'moriy mo'jiza ✨ Gumbazi deyarli 1000 yil davomida dunyodagi eng kattasi bo'lib qoldi."
+        "desc": "1500 yillik tarix: 537-yilda qurilgan Rim bazilikasidan masjiga aylangan me'moriy mo'jiza ✨ Gumbazi deyarli 1000 yil davomida dunyodagi eng kattasi bo'lib qoldi.",
+        "bt": "Tong 08:00-10:00",
+        "dur": "1-1.5 soat",
+        "tip": "Namoz vaqtlarida turistlarga ichki qism yopiladi, shunga reja tuzing",
+        "imgs": [
+          "img/a/istanbul-0.jpg",
+          "img/a/istanbul-0-3.jpg",
+          "img/a/istanbul-0-4.jpg"
+        ]
       },
       {
         "name": "Sultonahmad masjidi (Ko'k masjid)",
         "img": "img/a/istanbul-1.jpg",
-        "desc": "1616-yilda qurilgan 6 minorali masjid 🕌 Ichi 20 000 dan ortiq ko'k iznik plitkalari bilan bezatilgan, shu rangi uchun 'Ko'k masjid' deb ataladi."
+        "desc": "1616-yilda qurilgan 6 minorali masjid 🕌 Ichi 20 000 dan ortiq ko'k iznik plitkalari bilan bezatilgan, shu rangi uchun 'Ko'k masjid' deb ataladi.",
+        "bt": "Tong, sokin soatlarda",
+        "dur": "45-60 daqiqa",
+        "tip": "Yopinqlar bilan keling, kirishda beriladigan yopinqlar ham bor",
+        "imgs": [
+          "img/a/istanbul-1.jpg",
+          "img/a/istanbul-1-3.jpg",
+          "img/a/istanbul-1-4.jpg"
+        ]
       },
       {
         "name": "Topqapi saroyi",
         "img": "img/a/istanbul-2.jpg",
-        "desc": "Usmonli sultonlar 400 yil yashagan saroy 👑 Xazina, hovlilar va Bosphor manzarali terrasalari bilan dunyodagi eng katta saroylardan biri."
+        "desc": "Usmonli sultonlar 400 yil yashagan saroy 👑 Xazina, hovlilar va Bosphor manzarali terrasalari bilan dunyodagi eng katta saroylardan biri.",
+        "bt": "08:30-10:00, ochilishda",
+        "dur": "2-3 soat",
+        "tip": "Xazina bo'limi uchun alohida navbat bor - birinchi navbat unga boring",
+        "imgs": [
+          "img/a/istanbul-2.jpg",
+          "img/a/istanbul-2-3.jpg",
+          "img/a/istanbul-2-4.jpg"
+        ]
       },
       {
         "name": "Bosfor bo'g'ozi parom sayohati",
         "img": "img/a/istanbul-3.jpg",
-        "desc": "Ikki qit'ani bog'lovchi 30 kmlik bo'g'oz bo'ylab kruiz 🌊 Saroylar, qal'alar va Yevropa-Osiyo osmon chizig'i suvdan ko'rinadi."
+        "desc": "Ikki qit'ani bog'lovchi 30 kmlik bo'g'oz bo'ylab kruiz 🌊 Saroylar, qal'alar va Yevropa-Osiyo osmon chizig'i suvdan ko'rinadi.",
+        "bt": "Quyosh botishi oldi (18:00-19:30)",
+        "dur": "1.5 soat",
+        "tip": "Yuqori palubaning o'ng tomonidagi o'rindiq - eng yaxshi manzara",
+        "imgs": [
+          "img/a/istanbul-3.jpg",
+          "img/a/istanbul-3-3.jpg",
+          "img/a/istanbul-3-4.jpg"
+        ]
       },
       {
         "name": "Gran Bozor",
         "img": "img/a/istanbul-4.jpg",
-        "desc": "1461-yildan beri ishlaydigan 4000 do'konli o'rta asr bozori 🛍️ Ziravorlar, gilam, zargarlik va hunarmandchilik — savdo qilib chiqishga bir kun kerak."
+        "desc": "1461-yildan beri ishlaydigan 4000 do'konli o'rta asr bozori 🛍️ Ziravorlar, gilam, zargarlik va hunarmandchilik — savdo qilib chiqishga bir kun kerak.",
+        "bt": "10:00-15:00",
+        "dur": "2 soat",
+        "tip": "Narxlar birinchi so'ralganidan 30-40% past bo'ladi, savdolashish odat",
+        "imgs": [
+          "img/a/istanbul-4.jpg",
+          "img/a/istanbul-4-3.jpg",
+          "img/a/istanbul-4-4.jpg"
+        ]
       }
     ],
     "hotels": {
@@ -115,27 +155,67 @@
       {
         "name": "Burj Khalifa",
         "img": "img/a/dubai-0.jpg",
-        "desc": "828 metr, dunyoning eng baland binosi ✨ 124-qavatdagi kuzatuv maydonchasidan butun shahar ko'rinadi, tunda yorug'lik shousi alohida."
+        "desc": "828 metr, dunyoning eng baland binosi ✨ 124-qavatdagi kuzatuv maydonchasidan butun shahar ko'rinadi, tunda yorug'lik shousi alohida.",
+        "bt": "Kechqurun 17:30-19:00",
+        "dur": "1-1.5 soat",
+        "tip": "Chiptani oldindan onlayn oling, tonggi slotlar arzonroq",
+        "imgs": [
+          "img/a/dubai-0.jpg",
+          "img/a/dubai-0-3.jpg",
+          "img/a/dubai-0-4.jpg"
+        ]
       },
       {
         "name": "Dubai Fountain shousi",
         "img": "img/a/dubai-1.jpg",
-        "desc": "Burj Khalifa ostida har 30 daqiqada boshlanadigan musiqali suv shousi 🌊 Suv oqimlari 150 metr balandlikka otiladi."
+        "desc": "Burj Khalifa ostida har 30 daqiqada boshlanadigan musiqali suv shousi 🌊 Suv oqimlari 150 metr balandlikka otiladi.",
+        "bt": "Kechqurun shoular, 18:00 dan",
+        "dur": "30-45 daqiqa",
+        "tip": "Eng yaxshi ko'rish nuqtasi Souk Al Bahar ko'prigi tomoni",
+        "imgs": [
+          "img/a/dubai-1.jpg",
+          "img/a/dubai-1-3.jpg",
+          "img/a/dubai-1-4.jpg"
+        ]
       },
       {
         "name": "Dubai Mall",
         "img": "img/a/dubai-2.jpg",
-        "desc": "1200 do'kon, ulkan akvarium va muz saroyi bilan dunyoning eng katta savdo markazlaridan biri 🛍️"
+        "desc": "1200 do'kon, ulkan akvarium va muz saroyi bilan dunyoning eng katta savdo markazlaridan biri 🛍️",
+        "bt": "Kun bo'yi, tunda ham ochiq",
+        "dur": "3-4 soat",
+        "tip": "Akvarium uchun kombinatsiyalangan chipta oldindan arzonroq",
+        "imgs": [
+          "img/a/dubai-2.jpg",
+          "img/a/dubai-2-3.jpg",
+          "img/a/dubai-2-4.jpg"
+        ]
       },
       {
         "name": "Palm Jumeirah",
         "img": "img/a/dubai-3.jpg",
-        "desc": "Dengizga qurilgan palma shaklidagi sun'iy orol 🌴 Atlantis mehmonxonasi va o'z plyajlari bilan dam olish markazi."
+        "desc": "Dengizga qurilgan palma shaklidagi sun'iy orol 🌴 Atlantis mehmonxonasi va o'z plyajlari bilan dam olish markazi.",
+        "bt": "Kechqurun yoritish vaqti",
+        "dur": "2-3 soat",
+        "tip": "The View at The Palm maydonchasidan palma shakli to'liq ko'rinadi",
+        "imgs": [
+          "img/a/dubai-3.jpg",
+          "img/a/dubai-3-3.jpg",
+          "img/a/dubai-3-4.jpg"
+        ]
       },
       {
         "name": "Dubai Miracle Garden",
         "img": "img/a/dubai-4.jpg",
-        "desc": "150 million gul bilan qurilgan dunyodagi eng katta gul bog'i 🌸 Noyabrdan maygacha ochiq bo'ladi."
+        "desc": "150 million gul bilan qurilgan dunyodagi eng katta gul bog'i 🌸 Noyabrdan maygacha ochiq bo'ladi.",
+        "bt": "Tong 09:00-11:00",
+        "dur": "2 soat",
+        "tip": "May-oktabr oylarida yopiq, noyabr-aprel orasida borish kerak",
+        "imgs": [
+          "img/a/dubai-4.jpg",
+          "img/a/dubai-4-3.jpg",
+          "img/a/dubai-4-4.jpg"
+        ]
       }
     ],
     "hotels": {
@@ -196,27 +276,67 @@
       {
         "name": "Patong plyaji",
         "img": "img/a/phuket-0.jpg",
-        "desc": "Suv sportlari va tungi hayot markazi, 3 km oq qumli plyaj 🏖️ Kechqurun Bangla Road gavjum bo'ladi."
+        "desc": "Suv sportlari va tungi hayot markazi, 3 km oq qumli plyaj 🏖️ Kechqurun Bangla Road gavjum bo'ladi.",
+        "bt": "Erta tong suv sportlari",
+        "dur": "Kun bo'yi",
+        "tip": "Jet ski va parasailing narxlarini oldindan kelishib oling",
+        "imgs": [
+          "img/a/phuket-0.jpg",
+          "img/a/phuket-0-3.jpg",
+          "img/a/phuket-0-4.jpg"
+        ]
       },
       {
         "name": "Katta Budda haykali",
         "img": "img/a/phuket-1.jpg",
-        "desc": "45 metrli oq marmar Budda haykali 🛕 Nakkerd tepasida turib butun orolni ko'rish mumkin."
+        "desc": "45 metrli oq marmar Budda haykali 🛕 Nakkerd tepasida turib butun orolni ko'rish mumkin.",
+        "bt": "Tong 08:00-10:00, salqin",
+        "dur": "1-1.5 soat",
+        "tip": "Yelkalar yopiq kiyim kerak, kirishda sarong beriladi",
+        "imgs": [
+          "img/a/phuket-1.jpg",
+          "img/a/phuket-1-3.jpg",
+          "img/a/phuket-1-4.jpg"
+        ]
       },
       {
         "name": "Phi Phi orollari ekskursiyasi",
         "img": "img/a/phuket-2.jpg",
-        "desc": "Tez qayiqda bir kunlik ekskursiya 🏝️ Maya Bay, snorkeley va baliqlar orasida suzish kiritilgan."
+        "desc": "Tez qayiqda bir kunlik ekskursiya 🏝️ Maya Bay, snorkeley va baliqlar orasida suzish kiritilgan.",
+        "bt": "Noyabr-aprel, dengiz tinch",
+        "dur": "Kun bo'yi (7:30-17:00)",
+        "tip": "Maya Bay tashrif cheklovlarini tur operatoridan so'rang",
+        "imgs": [
+          "img/a/phuket-2.jpg",
+          "img/a/phuket-2-3.jpg",
+          "img/a/phuket-2-4.jpg"
+        ]
       },
       {
         "name": "Karon plyaji",
         "img": "img/a/phuket-3.jpg",
-        "desc": "Patongdan tinchroq, uzun qumli plyaj 🏖️ Maishiy muhit saqlangan, kunduzi sokin dam olish uchun qulay."
+        "desc": "Patongdan tinchroq, uzun qumli plyaj 🏖️ Maishiy muhit saqlangan, kunduzi sokin dam olish uchun qulay.",
+        "bt": "Kun bo'yi",
+        "dur": "2-3 soat",
+        "tip": "Janubiy uchi sokinroq, oila bilan uchun qulay",
+        "imgs": [
+          "img/a/phuket-3.jpg",
+          "img/a/phuket-3-3.jpg",
+          "img/a/phuket-3-4.jpg"
+        ]
       },
       {
         "name": "Promthep burni (quyosh botishi)",
         "img": "img/a/phuket-4.jpg",
-        "desc": "Orolning eng mashhur quyosh botish nuqtasi 🌅 Janubiy burnidagi maydoncha har kuni to'lgan bo'ladi."
+        "desc": "Orolning eng mashhur quyosh botish nuqtasi 🌅 Janubiy burnidagi maydoncha har kuni to'lgan bo'ladi.",
+        "bt": "Quyosh botishidan 40 daqiqa oldin",
+        "dur": "45-60 daqiqa",
+        "tip": "Tumanli kunlarda manzara yopiladi, ob-havoni tekshiring",
+        "imgs": [
+          "img/a/phuket-4.jpg",
+          "img/a/phuket-4-3.jpg",
+          "img/a/phuket-4-4.jpg"
+        ]
       }
     ],
     "hotels": {
@@ -284,27 +404,67 @@
       {
         "name": "Petronas qo'sh minoralari",
         "img": "img/a/kuala-lumpur-0.jpg",
-        "desc": "451 metrli egizak minoralar ✨ 41-qavatdagi osmon ko'prigi orqali ikkisi bog'langan, kechqurun yoritish ayni go'zal."
+        "desc": "451 metrli egizak minoralar ✨ 41-qavatdagi osmon ko'prigi orqali ikkisi bog'langan, kechqurun yoritish ayni go'zal.",
+        "bt": "Tong, navbatsiz",
+        "dur": "1-1.5 soat",
+        "tip": "Skybridge chiptalari tushgach tugaydi, ertalab onlayn oling",
+        "imgs": [
+          "img/a/kuala-lumpur-0.jpg",
+          "img/a/kuala-lumpur-0-3.jpg",
+          "img/a/kuala-lumpur-0-4.jpg"
+        ]
       },
       {
         "name": "Batu cave'lari",
         "img": "img/a/kuala-lumpur-1.jpg",
-        "desc": "272 pog'onadan yuqoridagi g'or ibodatxonalari 🛕 Old tomonda 42 metrli oltin Budda haykali turadi."
+        "desc": "272 pog'onadan yuqoridagi g'or ibodatxonalari 🛕 Old tomonda 42 metrli oltin Budda haykali turadi.",
+        "bt": "Tong 07:00-09:00",
+        "dur": "1.5-2 soat",
+        "tip": "Maymunlar sumkani olishadi, ichimlikni yashiring",
+        "imgs": [
+          "img/a/kuala-lumpur-1.jpg",
+          "img/a/kuala-lumpur-1-3.jpg",
+          "img/a/kuala-lumpur-1-4.jpg"
+        ]
       },
       {
         "name": "KLCC parki",
         "img": "img/a/kuala-lumpur-2.jpg",
-        "desc": "Minoralar ostidagi yashil voha 🌴 Tongi yugurish va kechqurun musiqali fontonlar sevimli joy."
+        "desc": "Minoralar ostidagi yashil voha 🌴 Tongi yugurish va kechqurun musiqali fontonlar sevimli joy.",
+        "bt": "Tong yoki 19:00-21:00",
+        "dur": "1 soat",
+        "tip": "Kechqurun musiqali fonton shousi shu parkdan ko'rinadi",
+        "imgs": [
+          "img/a/kuala-lumpur-2.jpg",
+          "img/a/kuala-lumpur-2-3.jpg",
+          "img/a/kuala-lumpur-2-4.jpg"
+        ]
       },
       {
         "name": "Merdeka maydoni",
         "img": "img/a/kuala-lumpur-3.jpg",
-        "desc": "Mustaqilik e'lon qilingan tarixiy maydon 🏛️ Atrofida Moorish uslubidagi eski binolar saqlangan."
+        "desc": "Mustaqilik e'lon qilingan tarixiy maydon 🏛️ Atrofida Moorish uslubidagi eski binolar saqlangan.",
+        "bt": "Kun bo'yi",
+        "dur": "30-45 daqiqa",
+        "tip": "Yaqindagi Sultan Abdul Samad binosi tunda chiroyli yoritiladi",
+        "imgs": [
+          "img/a/kuala-lumpur-3.jpg",
+          "img/a/kuala-lumpur-3-3.jpg",
+          "img/a/kuala-lumpur-3-4.jpg"
+        ]
       },
       {
         "name": "Bukit Bintang ko'chasi",
         "img": "img/a/kuala-lumpur-4.jpg",
-        "desc": "Shaharning asosiy savdo va taom ko'chasi 🍜 Kechqurun ko'cha taomlari va jonli muhit ayni qiziqarli."
+        "desc": "Shaharning asosiy savdo va taom ko'chasi 🍜 Kechqurun ko'cha taomlari va jonli muhit ayni qiziqarli.",
+        "bt": "Kechqurun 18:00-23:00",
+        "dur": "2-3 soat",
+        "tip": "Jalan Alor ko'cha taomlari shu hududda, 19:00 dan jonli",
+        "imgs": [
+          "img/a/kuala-lumpur-4.jpg",
+          "img/a/kuala-lumpur-4-3.jpg",
+          "img/a/kuala-lumpur-4-4.jpg"
+        ]
       }
     ],
     "hotels": {
@@ -376,27 +536,62 @@
       {
         "name": "Sulton Qobus katta masjidi",
         "img": "img/a/muscat-0.jpg",
-        "desc": "346 tonnalik gilam va ikkinchi yirik qandil bilan mashhur masjid 🕌 Marmar devorlar va arab naqshlari hayratda qoldiradi."
+        "desc": "346 tonnalik gilam va ikkinchi yirik qandil bilan mashhur masjid 🕌 Marmar devorlar va arab naqshlari hayratda qoldiradi.",
+        "bt": "Tong 08:00-10:00",
+        "dur": "1-1.5 soat",
+        "tip": "Juma kunlari tashrif cheklanadi, yopiq kiyim majburiy",
+        "imgs": [
+          "img/a/muscat-0.jpg",
+          "img/a/muscat-0-3.jpg",
+          "img/a/muscat-0-4.jpg"
+        ]
       },
       {
         "name": "Muttrah bozori (souq)",
         "img": "img/a/muscat-1.jpg",
-        "desc": "An'anaviy arab bozori ✨ Tamyon (baxor), ziravorlar, kumush buyumlar va hunarmandchilik sotiladi."
+        "desc": "An'anaviy arab bozori ✨ Tamyon (baxor), ziravorlar, kumush buyumlar va hunarmandchilik sotiladi.",
+        "bt": "Kechqurun 17:00-20:00",
+        "dur": "1-1.5 soat",
+        "tip": "Tamyon va ziravor narxini bir nechta do'konda solishtiring",
+        "imgs": [
+          "img/a/muscat-1.jpg",
+          "img/a/muscat-1-3.jpg",
+          "img/a/muscat-1-4.jpg"
+        ]
       },
       {
         "name": "Qirollik opera teatri",
         "img": "img/a/muscat-2.jpg",
-        "desc": "2011-yilda ochilgan marmar opera uyi 🎭 Xalqaro repertuar va klassik arab musiqasi konsertlari o'tkaziladi."
+        "desc": "2011-yilda ochilgan marmar opera uyi 🎭 Xalqaro repertuar va klassik arab musiqasi konsertlari o'tkaziladi.",
+        "bt": "Konsert kechalari",
+        "dur": "45-60 daqiqa",
+        "tip": "Gidli tur kuniga cheklangan vaqtda, oldindan ro'yxatdan o'ting"
       },
       {
         "name": "Muttrah Corniche qirg'og'i",
         "img": "img/a/muscat-3.jpg",
-        "desc": "Port qarashlari bilan sohil sayrgohi 🌊 Kechqurun yoritilganda suvdagi akslar ayni chiroyli ko'rinadi."
+        "desc": "Port qarashlari bilan sohil sayrgohi 🌊 Kechqurun yoritilganda suvdagi akslar ayni chiroyli ko'rinadi.",
+        "bt": "Quyosh botishi",
+        "dur": "45 daqiqa",
+        "tip": "Sohildagi kofelardan karak choyi ichib sayr qiling",
+        "imgs": [
+          "img/a/muscat-3.jpg",
+          "img/a/muscat-3-3.jpg",
+          "img/a/muscat-3-4.jpg"
+        ]
       },
       {
         "name": "Al Qurum plyaji",
         "img": "img/a/muscat-4.jpg",
-        "desc": "Shahar markaziga yaqin jamoat plyaji 🏖️ Palmalar soyasi va suv sportlari bilan dam olishga qulay."
+        "desc": "Shahar markaziga yaqin jamoat plyaji 🏖️ Palmalar soyasi va suv sportlari bilan dam olishga qulay.",
+        "bt": "Tong va kechqurun",
+        "dur": "2-3 soat",
+        "tip": "Soya oz, shlyapa va suv olib boring",
+        "imgs": [
+          "img/a/muscat-4.jpg",
+          "img/a/muscat-4-3.jpg",
+          "img/a/muscat-4-4.jpg"
+        ]
       }
     ],
     "hotels": {
@@ -466,27 +661,67 @@
       {
         "name": "Tanah Lot dengiz ibodatxonasi",
         "img": "img/a/bali-0.jpg",
-        "desc": "Qoya ustidagi dengiz ibodatxonasi 🌅 Quyosh botish paytida eng chiroyli manzara ochiladi."
+        "desc": "Qoya ustidagi dengiz ibodatxonasi 🌅 Quyosh botish paytida eng chiroyli manzara ochiladi.",
+        "bt": "Quyosh botishi (17:30-18:30)",
+        "dur": "1.5 soat",
+        "tip": "Suv ko'tarilganda qoyaga chiqish yopiladi, past suvda ochiladi",
+        "imgs": [
+          "img/a/bali-0.jpg",
+          "img/a/bali-0-3.jpg",
+          "img/a/bali-0-4.jpg"
+        ]
       },
       {
         "name": "Ubud guruch terrasalari (Tegallalang)",
         "img": "img/a/bali-1.jpg",
-        "desc": "Tepaliklarga qurilgan yashil guruch terrasalari 🌾 Palma daraxtlari orasidagi choy xonalar va chinjarka maydonlari."
+        "desc": "Tepaliklarga qurilgan yashil guruch terrasalari 🌾 Palma daraxtlari orasidagi choy xonalar va chinjarka maydonlari.",
+        "bt": "Tong 07:00-09:00",
+        "dur": "1-2 soat",
+        "tip": "Swing va kafe narxlari turlicha, bir nechasini solishtiring",
+        "imgs": [
+          "img/a/bali-1.jpg",
+          "img/a/bali-1-3.jpg",
+          "img/a/bali-1-4.jpg"
+        ]
       },
       {
         "name": "Uluwatu ibodatxonasi",
         "img": "img/a/bali-2.jpg",
-        "desc": "70 metrli qoya ustidagi ibodatxona 🛕 Kechqurun an'anaviy Kecak olov raqsi namoyish etiladi."
+        "desc": "70 metrli qoya ustidagi ibodatxona 🛕 Kechqurun an'anaviy Kecak olov raqsi namoyish etiladi.",
+        "bt": "18:00, Kecak raqsi",
+        "dur": "2 soat",
+        "tip": "Raqs chiptalarini bir kun oldin oling, o'tirish joyini tanlang",
+        "imgs": [
+          "img/a/bali-2.jpg",
+          "img/a/bali-2-3.jpg",
+          "img/a/bali-2-4.jpg"
+        ]
       },
       {
         "name": "Seminyak plyaji",
         "img": "img/a/bali-3.jpg",
-        "desc": "Kafe va beach-clublar bilan mashhur plyaj 🏖️ Quyosh botishi paytida sohil bo'ylab sayr qilinadi."
+        "desc": "Kafe va beach-clublar bilan mashhur plyaj 🏖️ Quyosh botishi paytida sohil bo'ylab sayr qilinadi.",
+        "bt": "15:00-19:00",
+        "dur": "Kun bo'yi",
+        "tip": "Beach-clublarga min sarflash bo'lishi mumkin, oldindan band qiling",
+        "imgs": [
+          "img/a/bali-3.jpg",
+          "img/a/bali-3-3.jpg",
+          "img/a/bali-3-4.jpg"
+        ]
       },
       {
         "name": "Nusa Penida oroli ekskursiyasi",
         "img": "img/a/bali-4.jpg",
-        "desc": "Tez qayiqda bir kunlik safari 🏝️ Kelingking plyaji, Angel's Billabong va Broken Beach manzaralari."
+        "desc": "Tez qayiqda bir kunlik safari 🏝️ Kelingking plyaji, Angel's Billabong va Broken Beach manzaralari.",
+        "bt": "April-noyabr, dengiz tinch",
+        "dur": "Kun bo'yi (6:30-18:30)",
+        "tip": "Yo'lllar tor, haydovchili tur olib boring",
+        "imgs": [
+          "img/a/bali-4.jpg",
+          "img/a/bali-4-3.jpg",
+          "img/a/bali-4-4.jpg"
+        ]
       }
     ],
     "hotels": {
@@ -556,27 +791,67 @@
       {
         "name": "The Bund (Vaytan qirg'og'i)",
         "img": "img/a/shanghai-0.jpg",
-        "desc": "Kolonial binolar qatoridan Pudongning osmono'par binolariga qarash 🌃 Kechqurun yorug'lik shousi ayni mashhur."
+        "desc": "Kolonial binolar qatoridan Pudongning osmono'par binolariga qarash 🌃 Kechqurun yorug'lik shousi ayni mashhur.",
+        "bt": "Kechqurun 19:00-21:00",
+        "dur": "1-2 soat",
+        "tip": "Pudong manzarasi uchun daryo bo'yining shimoliy qismiga boring",
+        "imgs": [
+          "img/a/shanghai-0.jpg",
+          "img/a/shanghai-0-3.jpg",
+          "img/a/shanghai-0-4.jpg"
+        ]
       },
       {
         "name": "Yu bog'i (Yu Garden)",
         "img": "img/a/shanghai-1.jpg",
-        "desc": "Ming sulolasidan qolgan klassik xitoy bog'i 🏮 Tosh ko'priklar, koi baliqlari va choyxonalar saqlangan."
+        "desc": "Ming sulolasidan qolgan klassik xitoy bog'i 🏮 Tosh ko'priklar, koi baliqlari va choyxonalar saqlangan.",
+        "bt": "Tong 09:00-10:30",
+        "dur": "1.5 soat",
+        "tip": "Atrofidagi Chenghuang bozoriga ham vaqt qoldiring",
+        "imgs": [
+          "img/a/shanghai-1.jpg",
+          "img/a/shanghai-1-3.jpg",
+          "img/a/shanghai-1-4.jpg"
+        ]
       },
       {
         "name": "Shanxay minorasi",
         "img": "img/a/shanghai-2.jpg",
-        "desc": "468 metrli TV minorasi 🌆 Shar shaklidagi kuzatuv sharlaridan butun shahar ko'rinadi."
+        "desc": "468 metrli TV minorasi 🌆 Shar shaklidagi kuzatuv sharlaridan butun shahar ko'rinadi.",
+        "bt": "Kechqurun",
+        "dur": "1-1.5 soat",
+        "tip": "Ob-havo yaxshi bo'lgan kunda ko'rish maqsadga muvofiq",
+        "imgs": [
+          "img/a/shanghai-2.jpg",
+          "img/a/shanghai-2-3.jpg",
+          "img/a/shanghai-2-4.jpg"
+        ]
       },
       {
         "name": "Zhujiajiao suv shahri",
         "img": "img/a/shanghai-3.jpg",
-        "desc": "1700 yillik kanal shahri 🛶 Tosh ko'priklar, qayiq sayrlari va eski ko'cha bozori saqlangan."
+        "desc": "1700 yillik kanal shahri 🛶 Tosh ko'priklar, qayiq sayrlari va eski ko'cha bozori saqlangan.",
+        "bt": "Dushanba-juma, tinchroq",
+        "dur": "3-4 soat (yo'l bilan)",
+        "tip": "Shahardan 17-metro liniyasi bilan boriladi, qayiq sayri arzon",
+        "imgs": [
+          "img/a/shanghai-3.jpg",
+          "img/a/shanghai-3-3.jpg",
+          "img/a/shanghai-3-4.jpg"
+        ]
       },
       {
         "name": "Nankin yo'li (Nanjing Road)",
         "img": "img/a/shanghai-4.jpg",
-        "desc": "Dunyoning eng gavjum savdo ko'chalaridan biri 🛍️ Kechqurun neon yoritish va ko'cha shoulari boshlanadi."
+        "desc": "Dunyoning eng gavjum savdo ko'chalaridan biri 🛍️ Kechqurun neon yoritish va ko'cha shoulari boshlanadi.",
+        "bt": "Kechqurun",
+        "dur": "2-3 soat",
+        "tip": "Piyoda zona East Nanjing Road, People's Square dan boshlang",
+        "imgs": [
+          "img/a/shanghai-4.jpg",
+          "img/a/shanghai-4-3.jpg",
+          "img/a/shanghai-4-4.jpg"
+        ]
       }
     ],
     "hotels": {

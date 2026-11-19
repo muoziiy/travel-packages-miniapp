@@ -36,13 +36,7 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .row .s{color:var(--muted);font-size:13px;margin-top:1px}
 .row .v{font-size:15.5px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap}
 .row .v.mut{color:var(--muted);font-weight:500;font-size:13px}
-.tile{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;box-shadow:inset 0 -6px 12px rgba(0,0,0,.18)}
-.g1{background:linear-gradient(135deg,#4facfe,#2563eb)}
-.g2{background:linear-gradient(135deg,#fbbf24,#f97316)}
-.g3{background:linear-gradient(135deg,#4ade80,#16a34a)}
-.g4{background:linear-gradient(135deg,#fb7185,#e11d48)}
-.g5{background:linear-gradient(135deg,#a5b4fc,#4f46e5)}
-.g6{background:linear-gradient(135deg,#2dd4bf,#0d9488)}
+.tile{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
 .ae{display:inline-block;vertical-align:middle;line-height:0}
 .ae svg{width:100%;height:100%;display:block}
 .ae-s{display:inline-block;vertical-align:middle;line-height:1;animation:aeb 2.4s ease-in-out infinite}
@@ -60,7 +54,7 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .badge{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);color:#fff;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:14px;white-space:nowrap}
 .cc-body{padding:11px 14px 10px}
 .cc-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
-.cc-nm{font-size:19px;font-weight:800}
+.cc-nm{font-size:19px;font-weight:800;display:flex;align-items:center;gap:7px}
 .cc-cn{color:var(--muted);font-size:12.5px;white-space:nowrap}
 .pill{display:flex;align-items:center;justify-content:space-between;gap:10px;background:color-mix(in srgb,var(--text) 8%,transparent);border:1px solid color-mix(in srgb,var(--text) 13%,transparent);backdrop-filter:blur(10px);border-radius:12px;padding:9px 12px;margin-top:7px}
 .pill span{font-size:14px;font-weight:600}
@@ -94,7 +88,7 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}
 .hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.75))}
 .hero .nm{font-size:26px;font-weight:800;color:#fff}
-.hero .cn{font-size:13.5px;color:#fff;opacity:.92}
+.hero .cn{font-size:13.5px;color:#fff;opacity:.95;display:flex;align-items:center;gap:7px}
 .cta{display:block;width:100%;margin-top:24px;background:var(--accent);color:var(--btn-text);border:none;border-radius:14px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
 .cta:active{transform:scale(.97)}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
@@ -107,12 +101,21 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 #sheet-bg.open{opacity:1;pointer-events:auto}
 #sheet.open{transform:translateY(0)}
 #sheet .handle{width:40px;height:4px;border-radius:2px;background:var(--muted);opacity:.5;margin:10px auto 0;cursor:pointer}
-#sheet .sh-img{width:100%;height:200px;object-fit:cover;display:block}
-#sheet .sh-ph{width:100%;height:120px;background:linear-gradient(160deg,var(--accent),rgba(0,0,0,.35));display:flex;align-items:center;justify-content:center}
 #sheet .sh-body{padding:14px 18px 0}
 #sheet .sh-name{font-size:19px;font-weight:800}
 #sheet .sh-desc{font-size:14.5px;margin-top:6px;line-height:1.6}
 #sheet .sh-city{color:var(--sec-header);font-size:12.5px;font-weight:600;margin-top:10px}
+.sh-slides{margin-top:12px;border-radius:14px;overflow:hidden}
+.strack{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
+.strack::-webkit-scrollbar{display:none}
+.sslide{flex:0 0 100%;height:190px;scroll-snap-align:center}
+.sslide img{width:100%;height:100%;object-fit:cover;display:block}
+.sh-info{margin-top:14px;background:color-mix(in srgb,var(--text) 5%,transparent);border-radius:12px;padding:4px 12px}
+.sh-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0}
+.sh-row + .sh-row::before{content:none}
+.sh-row .si{width:30px;height:30px;border-radius:9px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:1px}
+.sh-row .sl{font-size:11px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;color:var(--muted)}
+.sh-row .sv{font-size:14px;line-height:1.45;margin-top:1px}
 </style>
 </head>
 <body>
@@ -126,9 +129,28 @@ const TG = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : 
 const BOOK = 'https://t.me/muoziiy';
 const VIBES = {family:"Oila bilan",friends:"Do'stlar bilan",couples:"Juftliklar uchun",honeymoon:"Asal oyi",cultural:"Madaniyat",experience:"Sarguzasht"};
 const EMO = ['🕌','🌆','🏝️','🛕','🕌','🌾','🏮'];
-const TODO_EMO = ['🚤','🧖','🚶','🛍️','🍜','📸','🏖️','🌃'];
+const TODO_ICONS = ['waves','leaf','footprints','bag','food','camera','umbrella','moon'];
 const TINT = {'istanbul':'59 130 246','dubai':'234 179 8','phuket':'6 182 212','kuala-lumpur':'139 92 246','muscat':'217 164 65','bali':'34 197 94','shanghai':'244 63 94'};
+const FLAG = {'Turkiya':'tr','BAA':'ae','Tailand':'th','Malayziya':'my','Oman':'om','Indoneziya':'id','Xitoy':'cn',"O'zbekiston":'uz'};
 const AEMO = {'✈️':'emoji/plane.json','🏝️':'emoji/island.json','🛍️':'emoji/bags.json','🏖️':'emoji/beach.json','✅':'emoji/check.json','✨':'emoji/sparkles.json','⭐':'emoji/star.json','🌟':'emoji/glowstar.json','💫':'emoji/dizzy.json','🌴':'emoji/palm.json','🔥':'emoji/fire.json','🎉':'emoji/party.json','💎':'emoji/gem.json'};
+const ICO = {
+ bed:'<path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/><path d="M5 10V6h6v4"/><circle cx="8" cy="8" r="0"/>',
+ 'check-circle':'<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3.01"/>',
+ waves:'<path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>',
+ leaf:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+ footprints:'<path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/>',
+ bag:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
+ food:'<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>',
+ camera:'<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>',
+ umbrella:'<path d="M22 12a10.06 10.06 0 0 0-20 0Z"/><path d="M12 12v8a2 2 0 0 0 4 0"/><path d="M12 2v1"/>',
+ moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+ clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+ sunrise:'<path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/>',
+ bulb:'<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/>',
+ 'map-pin':'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>'
+};
+const ico = (n, s) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:${s}px;height:${s}px" aria-hidden="true">${ICO[n] || ''}</svg>`;
+const flag = c => FLAG[c] ? `<span class="ae" data-j="emoji/flag-${FLAG[c]}.json" style="width:20px;height:20px"></span>` : '';
 const EMOJI_RE = /[\p{Extended_Pictographic}\uFE0F\u200D\u2B50]+/gu;
 let DATA = [], vibe = '', country = '', sheetIsOpen = false, slideTimer = null, lottieReady = false;
 const LQ = [];
@@ -138,7 +160,7 @@ const price = v => v ? '$' + v : "So'rov bo'yicha";
 const emj = (ch, px) => AEMO[ch.replace(/\uFE0F/g,'')]
   ? `<span class="ae" data-j="${AEMO[ch.replace(/\uFE0F/g,'')]}" style="width:${px}px;height:${px}px"></span>`
   : `<span class="ae-s" style="font-size:${px}px">${ch}</span>`;
-const emojify = (txt, px) => txt.replace(EMOJI_RE, m => /\p{Extended_Pictographic}|⭐/u.test(m) ? emj(m, px || Math.round(1.15 * 16)) : m);
+const emojify = (txt, px) => txt.replace(EMOJI_RE, m => /\p{Extended_Pictographic}|⭐/u.test(m) ? emj(m, px || 17) : m);
 function startLottie(el){ try{ lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:true,path:el.dataset.j}); }catch(e){} }
 function hydrate(root){ if(!root) return; root.querySelectorAll('.ae[data-j]').forEach(el => { if(el._a) return; el._a = 1; lottieReady ? startLottie(el) : LQ.push(el); }); }
 function initEmoji(){
@@ -183,6 +205,7 @@ function renderList(withAnim){
   </div></section>
   <section class="sec"><div class="sec-title">Shaharlar</div><div id="cities">${citiesHTML(false)}</div></section>`;
   bindList();
+  hydrate(app);
 }
 function citiesHTML(anim){
   const cities = DATA.filter(p => (!vibe || (p.vibes||[]).includes(vibe)) && (!country || p.country === country));
@@ -190,15 +213,15 @@ function citiesHTML(anim){
   return cities.map(p=>`
     <div class="city-card ${anim?'in':''}" style="--tint:${TINT[p.id]||'100 149 237'}" data-go="${p.id}">
       <div class="shot"><img src="img/${p.id}.jpg" loading="lazy" alt="" onerror="this.remove()"><div class="badge">${p.direct ? "To'g'ri parvoz" : '1 x transfer'}</div></div>
-      <div class="cc-body"><div class="cc-head"><div class="cc-nm">${esc(p.title)}</div><div class="cc-cn">${esc(p.country)} · ${esc(p.days)}</div></div>
+      <div class="cc-body"><div class="cc-head"><div class="cc-nm">${flag(p.country)}${esc(p.title)}</div><div class="cc-cn">${esc(p.country)} · ${esc(p.days)}</div></div>
       <div class="pills">${p.tiers.map(t=>`<div class="pill"><span>${esc(t.name)}</span><b class="${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</b></div>`).join('')}</div>
       <div class="more">Batafsil <span aria-hidden="true">›</span></div></div>
     </div>`).join('');
 }
 function bindList(){
   const setChip = (id, attr, val) => { document.querySelectorAll(id + ' .chip').forEach(el => el.classList.toggle('on', el.dataset[attr] === val)); };
-  app.querySelectorAll('#vchips .chip').forEach(el => el.addEventListener('click', () => { if(vibe === el.dataset.v) return; vibe = el.dataset.v; setChip('#vchips','v',vibe); document.getElementById('cities').innerHTML = citiesHTML(false); bindCityCards(); }));
-  app.querySelectorAll('#cchips .chip').forEach(el => el.addEventListener('click', () => { if(country === el.dataset.c) return; country = el.dataset.c; setChip('#cchips','c',country); document.getElementById('cities').innerHTML = citiesHTML(false); bindCityCards(); }));
+  app.querySelectorAll('#vchips .chip').forEach(el => el.addEventListener('click', () => { if(vibe === el.dataset.v) return; vibe = el.dataset.v; setChip('#vchips','v',vibe); document.getElementById('cities').innerHTML = citiesHTML(false); bindCityCards(); hydrate(app); }));
+  app.querySelectorAll('#cchips .chip').forEach(el => el.addEventListener('click', () => { if(country === el.dataset.c) return; country = el.dataset.c; setChip('#cchips','c',country); document.getElementById('cities').innerHTML = citiesHTML(false); bindCityCards(); hydrate(app); }));
   bindCityCards();
 }
 function bindCityCards(){ app.querySelectorAll('[data-go]').forEach(el => el.onclick = () => { location.hash = '#/' + el.dataset.go; }); }
@@ -208,7 +231,7 @@ function renderCity(p){
   const gal = p.gallery || [];
   app.innerHTML = `
   <div class="hero in"><img src="img/${p.id}.jpg" alt="" onerror="this.remove()">
-    <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</div></div></div>
+    <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${flag(p.country)}<span>${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div></div>
   <section class="sec in"><div class="sec-title">Galereya</div>
     <div class="slides"><div class="track" id="track">${gal.map(g=>`<div class="slide"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div>
     ${gal.length > 1 ? `<div class="dots">${gal.map((_,i)=>`<span class="dot${i?'':' on'}"></span>`).join('')}</div>` : ''}</div></section>
@@ -216,9 +239,9 @@ function renderCity(p){
   <section class="sec in"><div class="sec-title">Mashhur joylar</div><div class="hscroll">${p.attractions.map((a,i)=> a.img
     ? `<div class="attr-card" data-att="${i}"><img src="${a.img}" loading="lazy" alt="${esc(a.name)}" onerror="this.remove();var n=this.parentNode;var ph=document.createElement('div');ph.className='ph';ph.innerHTML='${emj(EMO[i % EMO.length],44).replace(/'/g,'&#39;')}';n.insertBefore(ph,n.firstChild)"><div class="ov"><div class="fnm">${esc(a.name)}</div></div></div>`
     : `<div class="attr-card" data-att="${i}"><div class="ph">${emj(EMO[i % EMO.length],44)}</div><div class="anm">${esc(a.name)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${emj(TODO_EMO[i % TODO_EMO.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${emj('🏨',18)}</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
-  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile ${'g'+(i%6+1)}">${emj('✅',18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(x),16)}</div></div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Nima qilish kerak</div><div class="card">${p.things_to_do.map((t,i)=>`<div class="row"><div class="tile">${ico(TODO_ICONS[i % TODO_ICONS.length],18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(t),16)}</div></div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Mehmonxonalar</div><div class="card">${p.tiers.map((t,i)=>`<div class="row"><div class="tile">${ico('bed',18)}</div><div class="grow"><div class="t">${esc(t.name)}</div><div class="s">${esc((p.hotels?.[t.name]||[]).slice(0,2).join(', '))}${(p.hotels?.[t.name]||[]).length>2?` +${p.hotels[t.name].length-2}`:''}</div></div><div class="v ${t.price_per_person?'':'mut'}">${price(t.price_per_person)}</div></div>`).join('')}</div></section>
+  <section class="sec in"><div class="sec-title">Paketga kiritilgan</div><div class="card">${p.info.map((x,i)=>`<div class="row"><div class="tile">${ico('check-circle',18)}</div><div class="grow"><div class="t" style="font-weight:600;font-size:15px">${emojify(esc(x),16)}</div></div></div>`).join('')}</div></section>
   ${TG ? '' : '<button class="cta" id="book">Band qilish</button>'}`;
   app.querySelectorAll('[data-att]').forEach(el => el.addEventListener('click', () => openSheet(p, p.attractions[+el.dataset.att])));
   const bk = document.getElementById('book'); if(bk) bk.addEventListener('click', () => { if(TG && TG.openTelegramLink) TG.openTelegramLink(BOOK); else location.href = BOOK; });
@@ -239,9 +262,20 @@ function initSlides(n){
 function stopSlides(){ if(slideTimer){ clearInterval(slideTimer); slideTimer = null; } }
 const sheet = document.getElementById('sheet'), sheetBg = document.getElementById('sheet-bg'), sheetContent = document.getElementById('sheet-content');
 function openSheet(city, a){
-  sheetContent.innerHTML = `${a.img ? `<img class="sh-img" src="${a.img}" alt="" onerror="this.remove()">` : `<div class="sh-ph">${emj('📍',52)}</div>`}
+  const imgs = a.imgs && a.imgs.length ? a.imgs : (a.img ? [a.img] : []);
+  const inf = (icn, l, v) => v ? `<div class="sh-row"><span class="si">${ico(icn,15)}</span><div><div class="sl">${l}</div><div class="sv">${esc(v)}</div></div></div>` : '';
+  sheetContent.innerHTML = `${imgs.length > 1
+    ? `<div class="sh-slides"><div class="strack" id="strack">${imgs.map(g=>`<div class="sslide"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div></div><div class="dots" id="sdots">${imgs.map((_,i)=>`<span class="dot${i?'':' on'}"></span>`).join('')}</div>`
+    : imgs.length === 1 ? `<img class="sh-img" src="${imgs[0]}" alt="" onerror="this.remove()">` : `<div class="sh-ph">${ico('map-pin',40)}</div>`}
     <div class="sh-body"><div class="sh-name">${esc(a.name)}</div><div class="sh-desc">${emojify(esc(a.desc || ''),17)}</div>
+    ${a.bt || a.dur || a.tip ? `<div class="sh-info">${inf('sunrise','Eng yaxshi vaqt',a.bt)}${inf('clock','Davomiyligi',a.dur)}${inf('bulb','Maslahat',a.tip)}</div>` : ''}
     <div class="sh-city">${esc(city.title)} · ${esc(city.country)} paketiga kiradi</div></div>`;
+  if(imgs.length > 1){
+    const st = document.getElementById('strack'), sd = [...document.querySelectorAll('#sdots .dot')];
+    let sidx = 0;
+    st.addEventListener('scroll', () => { sidx = Math.round(st.scrollLeft / st.clientWidth); sd.forEach((d,i)=>d.classList.toggle('on', i === sidx)); }, {passive:true});
+    sd.forEach((d,i)=> d.addEventListener('click', () => st.scrollTo({left:i*st.clientWidth, behavior:'smooth'})));
+  }
   sheetBg.classList.add('open'); sheet.classList.add('open'); sheetIsOpen = true;
   hydrate(sheetContent);
   if(TG){ try{ TG.BackButton.show(); }catch(e){} if(TG.HapticFeedback){ try{ TG.HapticFeedback.impactOccurred('light'); }catch(e){} } }
@@ -249,16 +283,15 @@ function openSheet(city, a){
 function closeSheet(){ sheetBg.classList.remove('open'); sheet.classList.remove('open'); sheetIsOpen = false; }
 sheetBg.addEventListener('click', closeSheet);
 document.getElementById('sheet-handle').addEventListener('click', closeSheet);
-function initEmojiLoader(){ initEmoji(); }
 async function boot(){
   try{ const r = await fetch('api/packages'); DATA = await r.json(); }
   catch(e){ const r2 = await fetch('packages.json'); DATA = await r2.json(); }
   if(!Array.isArray(DATA)) DATA = DATA.packages || [];
-  initTG(); initEmojiLoader(); hydrate(document.getElementById('hdr')); route();
+  initTG(); initEmoji(); hydrate(document.getElementById('hdr')); route();
   if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 window.addEventListener('hashchange', route);
-boot().catch(e => { app.innerHTML = `<div class=\"empty\" style=\"padding-top:80px\">Yuklanmadi 🔄<br><br><button class=\"cta\" onclick=\"location.reload()\">Qayta yuklash</button></div>`; });
+boot().catch(e => { app.innerHTML = `<div class="empty" style="padding-top:80px">Yuklanmadi 🔄<br><br><button class="cta" onclick="location.reload()">Qayta yuklash</button></div>`; });
 </script>
 </body>
 </html>
