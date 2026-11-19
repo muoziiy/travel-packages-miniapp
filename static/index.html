@@ -84,26 +84,31 @@ h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
 .dots{display:flex;gap:6px;justify-content:center;padding:10px 0 2px}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--muted);opacity:.4;transition:opacity .2s,width .2s}
 .dot.on{opacity:1;background:var(--accent);width:16px;border-radius:3px}
-.hero{position:relative;height:280px;margin:-6px -16px 0;border-radius:0;overflow:hidden;background:var(--bg)}
-.hero .sky{position:absolute;inset:0;overflow:hidden}
-.sky-track{display:flex;height:100%;width:max-content;animation:skyscroll 46s linear infinite;will-change:transform}
+.hero{position:relative;height:252px;margin:-6px -16px 0;overflow:hidden;background:var(--bg)}
+.hero .sky{position:absolute;left:0;right:0;top:22px;bottom:0;overflow:hidden;animation:sfade .45s cubic-bezier(.23,1,.32,1) both}
+.sky-track{display:flex;height:100%;width:max-content;animation:skyscroll 56s linear infinite;will-change:transform}
 .sky-track img{height:100%;width:auto;flex:0 0 auto;display:block}
 @keyframes skyscroll{from{transform:translateX(0)}to{transform:translateX(-25%)}}
+@keyframes sfade{from{opacity:0}to{opacity:1}}
 .hero .skyf{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;filter:saturate(1.12)}
 .hero.nosky .skyf{display:block}
 .hero.nosky .sky{display:none}
-.hero .grid{position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,var(--accent) 30%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--accent) 30%,transparent) 1px,transparent 1px);background-size:36px 36px;opacity:.16;-webkit-mask-image:linear-gradient(to top,black 25%,transparent 88%);mask-image:linear-gradient(to top,black 25%,transparent 88%)}
-.hero .ov{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,color-mix(in srgb,var(--bg) 72%,transparent))}
-.hero .nm{font-size:26px;font-weight:800;color:var(--text);text-shadow:0 0 22px color-mix(in srgb,var(--accent) 55%,transparent)}
-.hero .cn{font-size:13.5px;color:var(--text);display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;background:color-mix(in srgb,var(--bg) 55%,transparent);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-.hero .beam{position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,transparent,var(--accent),transparent);background-size:220% 100%;animation:beam 3.4s linear infinite}
-@keyframes beam{from{background-position:220% 0}to{background-position:-220% 0}}
+.hero .ov{position:relative;z-index:1;padding:24px 18px 0}
+.hero .kick{display:flex;align-items:center;gap:7px;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);animation:hrise .3s cubic-bezier(.23,1,.32,1) .08s both}
+.hero .nm{margin-top:5px;font-size:34px;line-height:1.08;font-weight:800;letter-spacing:-.03em;color:var(--text);animation:hrise .3s cubic-bezier(.23,1,.32,1) .14s both}
+.hero .meta{margin-top:11px;display:flex;align-items:center;gap:9px;font-size:14px;font-weight:500;color:var(--muted);animation:hrise .3s cubic-bezier(.23,1,.32,1) .2s both}
+.hero .meta i{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.5}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
+.hero.nosky::after{background:linear-gradient(transparent,rgba(0,0,0,.55))}
+.hero.nosky .nm,.hero.nosky .meta{color:#fff}
+.hero.nosky .nm{text-shadow:0 1px 14px rgba(0,0,0,.4)}
+@keyframes hrise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .cta{display:block;width:100%;margin-top:24px;background:var(--accent);color:var(--btn-text);border:none;border-radius:14px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer;transition:transform .16s cubic-bezier(.23,1,.32,1)}
 .cta:active{transform:scale(.97)}
 .empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
 .in{animation:fin .45s cubic-bezier(.23,1,.32,1) both}
 @keyframes fin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.in{animation:none!important;transition:none!important}.sky-track{animation:none!important}}
+@media (prefers-reduced-motion:reduce){.in{animation:none!important;transition:none!important}.sky-track,.hero .sky,.hero .kick,.hero .nm,.hero .meta{animation:none!important}}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
 #sheet{position:fixed;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:var(--card);border-radius:20px 20px 0 0;transform:translateY(105%);transition:transform .3s cubic-bezier(.23,1,.32,1);z-index:51;padding-bottom:calc(env(safe-area-inset-bottom) + 18px);will-change:transform}
@@ -281,11 +286,9 @@ function renderCity(p){
   if(TG){ try{ TG.BackButton.show(); if(TG.MainButton){ TG.MainButton.setText("Narx so'rash"); TG.MainButton.show(); TG.MainButton.onClick(() => openReq(p, -1, "")); } }catch(e){} }
   const gal = p.gallery || [];
   app.innerHTML = `
-  <div class="hero in"><img class="skyf" src="img/${p.id}.jpg" alt="" onerror="this.remove()">
+  <div class="hero"><img class="skyf" src="img/${p.id}.jpg" alt="" onerror="this.remove()">
     <div class="sky"><div class="sky-track"><img src="img/sky/${p.id}.webp" alt="" onerror="skyFail(this)"><img src="img/sky/${p.id}.webp" alt=""><img src="img/sky/${p.id}.webp" alt=""><img src="img/sky/${p.id}.webp" alt=""></div></div>
-    <div class="grid"></div>
-    <div class="ov"><div class="nm">${esc(p.title)}</div><div class="cn">${flag(p.country)}<span>${esc(p.country)} · ${esc(p.days)} · ${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div>
-    <div class="beam"></div></div>
+    <div class="ov"><div class="kick">${flag(p.country)}<span>${esc(p.country)}</span></div><div class="nm">${esc(p.title)}</div><div class="meta"><span>${esc(p.days)}</span><i></i><span>${p.direct ? "to'g'ri parvoz" : '1 x transfer'}</span></div></div></div>
   <section class="sec in"><div class="sec-title">Galereya</div>
     <div class="slides"><div class="track" id="track">${gal.map(g=>`<div class="slide"><img src="${g}" loading="lazy" alt="" onerror="this.parentNode.remove()"></div>`).join('')}</div>
     ${gal.length > 1 ? `<div class="dots">${gal.map((_,i)=>`<span class="dot${i?'':' on'}"></span>`).join('')}</div>` : ''}</div></section>
